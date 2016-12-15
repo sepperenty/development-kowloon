@@ -1,0 +1,23 @@
+.gameFrame {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  height: 500px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+  .gameFrame .glass {
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    position: absolute; }
+  .gameFrame .tap {
+    top: 0px;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    margin-left: 30%; }
+
+/*# sourceMappingURL=style.css.map */

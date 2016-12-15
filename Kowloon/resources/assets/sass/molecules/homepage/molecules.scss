@@ -1,0 +1,172 @@
+@import "../../variables";
+
+.header-picture{
+  background-image: url("../images/headerBackground.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  width:100%;
+  min-height: 500px;
+  padding-top: 3%;
+}
+
+.header-logo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  display: block;
+}
+
+
+.home-button{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 120px;
+  float:left;
+  width: 16.66%;
+  text-align: center;
+  position: relative;
+  border-right: 1px solid $secondary-color;
+  .sub-title{
+    position: absolute;
+    bottom:0;
+    font-size: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: $secondary-font-color;
+  }
+  .iconSprite{
+    position: absolute;
+    bottom: 50px;
+    font-size: 20px;
+    left: 0;
+    right: 0;
+    margin: auto
+  }
+  &:last-child{
+    border-right: none;
+  }
+
+}
+
+
+.hot-item
+{
+  background-color: $hot-item-background-color;
+  border: 1px solid $hot-item-border-color;
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  .hot-item-image{
+    width: 240px;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+    img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .hot-item-info
+  {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $secondary-font-color;
+    font-family: $primary-font;
+    overflow: hidden;
+    .hot-item-name{
+      float:left;
+      margin:0;
+    }
+    .hot-item-price{
+      float: right;
+      margin:0;
+    }
+  }
+}
+
+.newsletter{
+  clear: both;
+  height: 188px;
+  .newsletter-image{
+    float: left;
+    background-image: url("../images/patroon.jpg");
+    background-repeat: repeat;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    color: $secondary-font-color;
+    .newsletter-title{
+      font-family: $h1-font;
+      font-size: 44px;
+      margin-bottom:0;
+      margin-top: 25px;
+    }
+    .newsletter-subtitle{
+      font-family: $h1-font;
+      font-size: 20px;
+      margin-bottom:0;
+      margin-top: 25px;
+
+    }
+  }
+
+  .newsletter-subscribe{
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: $newsletter-background-color;
+    padding:35px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: $primary-font;
+    .subscribe-title{
+      margin-top:0px;
+      color: $secondary-font-color;
+      font-size: 20px;
+    }
+    .subscribe-subtitle{
+      margin-top:0px;
+      color: $primary-font-color;
+      font-size: 14px;
+    }
+    .newsletter-form{
+      font-family: $primary-font;
+      width:100%;
+      .newsletter-email-input{
+        padding:12px;
+        font-size: 16px;
+        color: $third-font-color;
+        width: 70%;
+        border: 1px solid $hot-item-border-color;
+      }
+      .newsletter-submit{
+        padding: 12px;
+        background-color: $third-background-color;
+        color: $secondary-font-color;
+        width: 20%;
+        font-size: 16px;
+        border: none;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+//organisms
+.hot_items{
+  width: 960px;
+}

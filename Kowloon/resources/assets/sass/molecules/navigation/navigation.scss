@@ -1,0 +1,53 @@
+@import "../../variables";
+
+.nav-option{
+  width:100%;
+  height: 60px;
+  position: relative;
+  clear: both;
+  //overflow: hidden;
+}
+
+.nav-icon{
+  float: left;
+  width: 60px;
+  height: 100%;
+  position: relative;
+  .sprite{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+.nav-info{
+  height: 100%;
+  float: left;
+  font-family: $primary-font;
+  font-size: 22px;
+  color: white;
+  padding-top:20px;
+  padding-left:15px;
+  p{
+    margin: 0px;
+  }
+
+}
+
+.navigation-options{
+  .nav-option
+  {
+    &:first-child{
+      .nav-icon{
+        background-color: #252525;
+        &:hover{
+          background: none;
+        }
+      }
+    }
+  }
+
+}

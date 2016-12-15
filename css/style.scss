@@ -1,0 +1,52 @@
+
+
+$gameFrameWidth : 50%;
+$gameFrameHeight : 500px;
+
+$glassWidth :  50%;
+$glassHeight : 100%;
+
+$tapWidth : 40%;
+$tapHeight: 100%;
+
+
+.gameFrame{
+	padding-left : 0px;
+	padding-right : 0px;
+	position: relative;
+	
+	
+	
+	height: $gameFrameHeight;
+	width: $gameFrameWidth;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+
+	
+	.glass{
+		top: 0px;
+		width: $glassWidth;
+		height: $glassHeight;
+		z-index: 10;
+		position: absolute;
+	 }
+
+
+
+	.tap{
+		top: 0px;
+		width: $tapWidth;
+		height: $tapHeight;
+		z-index: 1;
+		position: absolute;
+		margin-left: 30%;
+
+	}
+
+
+}
+
+
+
