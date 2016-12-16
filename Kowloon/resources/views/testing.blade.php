@@ -121,29 +121,31 @@
 </div>
 
 <div class="display">
-    <div class="home-button">
-        <div class="iconSprite sprite-bird"></div>
-        <p class="sub-title">BIRD</p>
-    </div>
-    <div class="home-button">
-        <div class="iconSprite sprite-cat"></div>
-        <p class="sub-title">CATS</p>
-    </div>
-    <div class="home-button">
-        <div class="iconSprite sprite-dog"></div>
-        <p class="sub-title">DOG</p>
-    </div>
-    <div class="home-button">
-        <div class="iconSprite sprite-fish"></div>
-        <p class="sub-title">FISH</p>
-    </div>
-    <div class="home-button">
-        <div class="iconSprite sprite-hamster"></div>
-        <p class="sub-title">SMAL ANIMALS</p>
-    </div>
-    <div class="home-button">
-        <div class="iconSprite sprite-plus"></div>
-        <p class="sub-title">OTHER</p>
+    <div class="homepage-navigation">
+        <div class="home-button">
+            <div class="iconSprite sprite-bird"></div>
+            <p class="sub-title">BIRD</p>
+        </div>
+        <div class="home-button">
+            <div class="iconSprite sprite-cat"></div>
+            <p class="sub-title">CATS</p>
+        </div>
+        <div class="home-button">
+            <div class="iconSprite sprite-dog"></div>
+            <p class="sub-title">DOG</p>
+        </div>
+        <div class="home-button">
+            <div class="iconSprite sprite-fish"></div>
+            <p class="sub-title">FISH</p>
+        </div>
+        <div class="home-button">
+            <div class="iconSprite sprite-hamster"></div>
+            <p class="sub-title">SMAL ANIMALS</p>
+        </div>
+        <div class="home-button">
+            <div class="iconSprite sprite-plus"></div>
+            <p class="sub-title">OTHER</p>
+        </div>
     </div>
 </div>
 
@@ -152,7 +154,7 @@
 <div class="display">
     <div class="navigation-bar">
         <div class="navigation-options">
-            <div class="nav-option">
+            <div class="nav-option" id="hamburger">
                 <div class="nav-icon">
                     <div class="sprite sprite-Menu-hmburger-icon"></div>
                 </div>
@@ -239,7 +241,8 @@
                 <img src="../assets/images/hotItem.png" alt="">
             </div>
             <div class="hot-item-info">
-
+                <p class="hot-item-name">Cooling Mat</p>
+                <p class="hot-item-price">€5,40</p>
             </div>
         </div>
         <div class="hot-item">
@@ -247,7 +250,8 @@
                 <img src="../assets/images/hotItem.png" alt="">
             </div>
             <div class="hot-item-info">
-
+                <p class="hot-item-name">Cooling Mat</p>
+                <p class="hot-item-price">€5,40</p>
             </div>
         </div>
         <div class="hot-item">
@@ -255,7 +259,8 @@
                 <img src="../assets/images/hotItem.png" alt="">
             </div>
             <div class="hot-item-info">
-
+                <p class="hot-item-name">Cooling Mat</p>
+                <p class="hot-item-price">€5,40</p>
             </div>
         </div>
     </div>
@@ -297,7 +302,8 @@
 </div>
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/navigation.js"></script>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .nav-option{
-  width:100%;
+  width: 217px;
   height: 60px;
   position: relative;
   clear: both;
@@ -33,21 +33,6 @@
   padding-left:15px;
   p{
     margin: 0px;
-  }
-
-}
-
-.navigation-options{
-  .nav-option
-  {
-    &:first-child{
-      .nav-icon{
-        background-color: #252525;
-        &:hover{
-          background: none;
-        }
-      }
-    }
   }
 
 }

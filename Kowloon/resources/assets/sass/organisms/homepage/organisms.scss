@@ -1,0 +1,56 @@
+@import "../../variables";
+
+.navigation-bar{
+  width: 60px;
+  overflow: hidden;
+  transition: width 0.2s;
+  background-color: $third-background-color;
+}
+
+.expand-navigation-bar{
+  width:217px;
+}
+
+.navigation-options{
+  box-sizing: border-box;
+  .nav-option
+  {
+    &:first-child{
+      .nav-icon{
+        background-color: #252525;
+        &:hover{
+          background: none;
+        }
+      }
+    }
+  }
+
+  padding-bottom: 15px;
+  border-bottom: 1px solid $secondary-color;
+  p{
+    color: $secondary-color;
+  }
+
+}
+
+.navigation-animals{
+  box-sizing: border-box;
+  padding-top: 15px;
+
+}
+
+.homepage-navigation{
+  width: 960px;
+}
+
+.hot_items{
+  width: 960px;
+  .hot-item{
+    margin-right: 1%;
+    width: 24.25%;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+
+}
