@@ -200,6 +200,7 @@
 
 .title {
   font-family: Choplin;
+  color: #ffffff;
 }
 
 .sub-title {
@@ -535,6 +536,64 @@
 
 .hot_items .hot-item:last-child {
   margin-right: 0px;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  height: 1600px;
+  background-color: #454545;
+}
+
+.navigation-bar {
+  height: 100%;
+  float: left;
+}
+
+.content {
+  overflow: hidden;
+  height: 100%;
+}
+
+.content .content-store {
+  padding-top: 50px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .content-store .info-block {
+  width: 100%;
+  text-align: center;
+}
+
+.content .content-store .info-block p {
+  font-family: Arial;
+  font-size: 14px;
+  color: #cecece;
+  margin-top: 0px;
+}
+
+.content .content-store .homepage-navigation {
+  margin-top: 50px;
+  height: 120px;
+}
+
+.content .content-store .hot_items {
+  margin-top: 70px;
+  height: 260px;
 }
 
 /*# sourceMappingURL=app.css.map */

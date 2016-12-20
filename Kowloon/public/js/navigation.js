@@ -66,8 +66,9 @@ $(document).ready(function(){
 
             $( "#progressBar" ).animate({
                 width: "100%"
-            }, 5000, "linear", function() {
+            }, 10000, "linear", function() {
                 $("#progressBar").css("width", "0px");
+                carousel();
             });
 
             var i;
@@ -78,7 +79,7 @@ $(document).ready(function(){
             slideIndex++;
             if (slideIndex > x.length) {slideIndex = 1}
             x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 5000);
+
         }
 
 

@@ -21,38 +21,88 @@
     </script>
 </head>
 <body>
-    <div id="app">
+<div id="app">
+            <div class="navigation-bar">
+                <div class="navigation-options">
+                    <div class="nav-option" id="hamburger">
+                        <div class="nav-icon">
+                            <div class="sprite sprite-Menu-hmburger-icon"></div>
+                        </div>
+                    </div>
+                    <div class="nav-option">
+                        <div class="nav-icon">
+                            <div class="sprite sprite-PassiveSearchIcon"></div>
+                        </div>
+                        <div class="nav-info">
+                            <p>Search</p>
+                        </div>
+                    </div>
+                    <div class="nav-option">
+                        <div class="nav-icon">
+                            <div class="sprite sprite-PassiveFAQ"></div>
+                        </div>
+                        <div class="nav-info">
+                            <p>FAQ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-animals">
+                    <div class="nav-option">
+                        <div class="nav-icon">
+                            <div class="sprite sprite-passiveDog"></div>
+                        </div>
+                        <div class="nav-info">
+                            <p>Dogs</p>
+                        </div>
+                    </div>
+                    <div class="nav-option">
+                        <div class="nav-icon">
+                            <div class="sprite sprite-passiveCat"></div>
+                        </div>
+                        <div class="nav-info">
+                            <p>Cats</p>
+                        </div>
+                    </div>
+                    <div class="nav-option">
+                        <div class="nav-icon">
+                            <div class="sprite sprite-passiveFish"></div>
+                        </div>
+                        <div class="nav-info">
+                            <p>Fish</p>
+                        </div>
+                    </div>
+                    <div class="nav-option">
+                        <div class="nav-icon">
+                            <div class="sprite sprite-passiveBird"></div>
+                        </div>
+                        <div class="nav-info">
+                            <p>Birds</p>
+                        </div>
+                    </div>
+                    <div class="nav-option">
+                        <div class="nav-icon">
+                            <div class="sprite sprite-passiveHamster"></div>
+                        </div>
+                        <div class="nav-info">
+                            <p>Smal Animals</p>
+                        </div>
+                    </div>
 
-        @if (Auth::guest())
-            <li><a href="{{ url('/login') }}">Login</a></li>
-            <li><a href="{{ url('/register') }}">Register</a></li>
-        @else
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                    {{ Auth::user()->name }} <span class="caret"></span>
-                </a>
+                </div>
+            </div>
 
-                <ul class="dropdown-menu" role="menu">
-                    <li>
-                        <a href="{{ url('/logout') }}"
-                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                            Logout
-                        </a>
+        <div class="content">
 
-                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form>
-                    </li>
-                </ul>
-            </li>
-        @endif
 
 
         @yield('content')
-    </div>
 
+        </div>
+</div>
     <!-- Scripts -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/navigation.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,49 @@
+@import "../../variables";
+
+body{
+  margin:0;
+}
+
+#app{
+  height: 1600px;
+  background-color: $background-color;
+}
+
+.navigation-bar{
+  height: 100%;
+  float:left;
+}
+
+.content{
+  overflow:hidden;
+  height:100%;
+
+  .content-store{
+    padding-top:50px;
+    width:960px;
+    margin-left: auto;
+    margin-right: auto;
+    .info-block{
+      width: 100%;
+      text-align: center;
+      p{
+        font-family: $primary-font;
+        font-size: 14px;
+        color:$primary-font-color;
+        margin-top:0px;
+      }
+    }
+
+    .homepage-navigation{
+      margin-top: 50px;
+      height:120px;
+    }
+
+    .hot_items{
+      margin-top: 70px;
+      height: 260px;
+    }
+  }
+
+
+}
