@@ -116,8 +116,12 @@
 
 <h2>Molecules</h2>
 
-<div class="header-picture">
+<div class="header-picture pictureA">
     <img class="header-logo" src="assets/images/logo.png" alt="">
+    <img class="mySlides" src="assets/images/backgroundA.jpg">
+    <img class="mySlides" src="assets/images/backgroundB.jpg">
+    <img class="mySlides" src="assets/images/backgroundC.jpg">
+    <div id="progressBar"></div>
 </div>
 
 <div class="display">
@@ -230,6 +234,7 @@
         <div class="hot-item">
             <div class="hot-item-image">
                 <img src="../assets/images/hotItem.png" alt="">
+                <div class="hot-item-overlay"></div>
             </div>
             <div class="hot-item-info">
                 <p class="hot-item-name">Cooling Mat</p>
@@ -239,6 +244,7 @@
         <div class="hot-item">
             <div class="hot-item-image">
                 <img src="../assets/images/hotItem.png" alt="">
+                <div class="hot-item-overlay"></div>
             </div>
             <div class="hot-item-info">
                 <p class="hot-item-name">Cooling Mat</p>
@@ -248,6 +254,7 @@
         <div class="hot-item">
             <div class="hot-item-image">
                 <img src="../assets/images/hotItem.png" alt="">
+                <div class="hot-item-overlay"></div>
             </div>
             <div class="hot-item-info">
                 <p class="hot-item-name">Cooling Mat</p>
@@ -257,6 +264,7 @@
         <div class="hot-item">
             <div class="hot-item-image">
                 <img src="../assets/images/hotItem.png" alt="">
+                <div class="hot-item-overlay"></div>
             </div>
             <div class="hot-item-info">
                 <p class="hot-item-name">Cooling Mat</p>

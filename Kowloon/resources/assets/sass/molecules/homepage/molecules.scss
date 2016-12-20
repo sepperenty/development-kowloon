@@ -1,23 +1,31 @@
 @import "../../variables";
 
 .header-picture{
-  background-image: url("../images/headerBackground.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
   display: block;
   width:100%;
-  min-height: 500px;
-  padding-top: 3%;
+  position: relative;
+  .mySlides{
+    width: 100%;
+    z-index: 0;
+  }
 }
 
 .header-logo{
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%, 50%);
   width: 20%;
-  display: block;
 }
 
-
+#progressBar{
+  background-color: white;
+  height:3px;
+  position: absolute;
+  bottom:0px;
+  z-index: 30;
+  opacity: 0.4;
+}
 .home-button{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -60,6 +68,9 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  &:hover div.hot-item-overlay{
+    visibility: visible;
+  }
   .hot-item-image{
     width: 95%;
     height: 170px;
@@ -67,8 +78,25 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    img{
+
+    .hot-item-overlay{
       position: absolute;
+      z-index: 10;
+      background-color: rgba(255,111,158,0.7);
+      width:100%;
+      height:160px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image:url("../images/informatilOverlay.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      visibility:hidden;
+    }
+    img{
+      max-height: 160px;
+      position: absolute;
+      z-index: 0;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
