@@ -5,16 +5,23 @@ body{
 }
 
 #app{
-  height: 1600px;
+  height: 1700px;
   background-color: $background-color;
 }
 
 .navigation-bar{
-  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 40;
+  height: 1700px;
   float:left;
+
 }
 
 .content{
+  margin-left:60px;
+  z-index: 10;
   overflow:hidden;
   height:100%;
 

@@ -13,48 +13,14 @@ $(document).ready(function(){
 
             if(!isClicked){
                 $(".navigation-bar").addClass("expand-navigation-bar");
+                $(".store-name p").html("KOWLOON");
                 isClicked = true;
             }else {
                 $(".navigation-bar").removeClass("expand-navigation-bar");
+                $(".store-name p").html("K");
                 isClicked = false;
             }
         });
-
-
-        // $(".header-picture").on("click", function(){
-        //
-        //     $(".header-picture").removeClass("pictureA");
-        //     $(".header-picture").addClass("pictureC");
-        //
-        // });
-        //
-        // var picture = "A";
-        //
-        // function moveCarrousel(){
-        //     deleteClasses();
-        //     if(picture === "A"){
-        //         $(".header-picture").addClass("pictureB");
-        //         picture = "B";
-        //     }else if(picture === "B"){
-        //         $(".header-picture").addClass("pictureC");
-        //         picture = "C";
-        //     }else if(picture === "C"){
-        //         $(".header-picture").addClass("pictureA");
-        //         picture = "A";
-        //     }
-        //
-        // }
-        //
-        // function deleteClasses(){
-        //     $(".header-picture").removeClass("pictureA");
-        //     $(".header-picture").removeClass("pictureB");
-        //     $(".header-picture").removeClass("pictureC");
-        // }
-        //
-        //
-        // setInterval(function() {
-        //     moveCarrousel();
-        // }, 10000);
 
 
         var slideIndex = 0;

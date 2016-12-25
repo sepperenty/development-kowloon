@@ -87,6 +87,9 @@
                             <p>Smal Animals</p>
                         </div>
                     </div>
+                    <div class="store-name">
+                        <p>K</p>
+                    </div>
 
                 </div>
             </div>

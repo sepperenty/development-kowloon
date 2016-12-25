@@ -47,6 +47,7 @@
                 <div class="iconSprite sprite-plus"></div>
                 <p class="sub-title">OTHER</p>
             </div>
+
         </div>
 
 
@@ -82,7 +83,7 @@
                     <p class="hot-item-price">€5,40</p>
                 </div>
             </div>
-            <div class="hot-item">
+            <div class="hot-item multiple-borders">
                 <div class="hot-item-image">
                     <img src="../assets/images/hotItem.png" alt="">
                     <div class="hot-item-overlay"></div>

@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .nav-option{
-  width: 217px;
+  width: 230px;
   height: 60px;
   position: relative;
   clear: both;
@@ -35,4 +35,22 @@
     margin: 0px;
   }
 
+}
+
+#hamburger{
+  background-color: #252525;
+  margin:0px;
+}
+
+.store-name{
+  width:100%;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+  p{
+    font-size: 30px;
+    color: $secondary-color;
+    font-family: $h2-font;
+
+  }
 }

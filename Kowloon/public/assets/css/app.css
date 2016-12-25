@@ -292,6 +292,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  height: 210px;
 }
 
 .hot-item:hover div.hot-item-overlay {
@@ -351,6 +352,39 @@
 .hot-item .hot-item-info .hot-item-price {
   float: right;
   margin: 0;
+}
+
+.multiple-borders {
+  position: relative;
+  width: calc(24.25% - 13px) !important;
+  height: 197px;
+  margin-top: 13px;
+}
+
+.multiple-borders .hot-item-image {
+  height: 152px;
+}
+
+.multiple-borders:after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 14px;
+  right: -14px;
+  bottom: 0px;
+  border-right: 5px solid #cfcfcf;
+  border-top: 5px solid #cfcfcf;
+}
+
+.multiple-borders:before {
+  content: " ";
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  right: -7px;
+  bottom: 0px;
+  border-right: 5px solid #818181;
+  border-top: 5px solid #818181;
 }
 
 .newsletter {
@@ -439,7 +473,7 @@
 }
 
 .nav-option {
-  width: 217px;
+  width: 230px;
   height: 60px;
   position: relative;
   clear: both;
@@ -476,6 +510,24 @@
   margin: 0px;
 }
 
+#hamburger {
+  background-color: #252525;
+  margin: 0px;
+}
+
+.store-name {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.store-name p {
+  font-size: 30px;
+  color: #616161;
+  font-family: Choplin-light;
+}
+
 @font-face {
   font-family: "Choplin";
   src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
@@ -495,7 +547,7 @@
 }
 
 .expand-navigation-bar {
-  width: 217px;
+  width: 230px;
 }
 
 .navigation-options {
@@ -553,16 +605,22 @@ body {
 }
 
 #app {
-  height: 1600px;
+  height: 1700px;
   background-color: #454545;
 }
 
 .navigation-bar {
-  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 40;
+  height: 1700px;
   float: left;
 }
 
 .content {
+  margin-left: 60px;
+  z-index: 10;
   overflow: hidden;
   height: 100%;
 }

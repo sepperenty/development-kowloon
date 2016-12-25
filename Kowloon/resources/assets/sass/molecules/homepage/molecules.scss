@@ -68,6 +68,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  height: 210px;
   &:hover div.hot-item-overlay{
     visibility: visible;
   }
@@ -121,6 +122,38 @@
     }
   }
 }
+
+.multiple-borders{
+  position: relative;
+  width: calc(24.25% - 13px) !important;
+  height: 197px;
+  margin-top: 13px;
+  .hot-item-image{
+    height: 152px;
+  }
+  &:after{
+    content: " ";
+    position: absolute;
+    top: -14px;
+    left: 14px;
+    right: -14px;
+    bottom: 0px;
+    border-right: 5px solid #cfcfcf;
+    border-top: 5px solid #cfcfcf;
+  }
+  &:before{
+    content: " ";
+    position: absolute;
+    top: -7px;
+    left: 7px;
+    right: -7px;
+    bottom: 0px;
+    border-right: 5px solid #818181;
+    border-top: 5px solid #818181;
+  }
+}
+
+
 
 .newsletter{
   clear: both;
