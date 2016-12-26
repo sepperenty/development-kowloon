@@ -1,0 +1,28 @@
+@import "../../variables";
+
+
+.overlay-input{
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid black;
+  padding: 30px;
+  box-sizing: border-box;
+  &:focus{
+    outline: none;
+  }
+  font-family: $primary-font;
+  width: 100%;
+  padding: 25px;
+  font-size: 30px;
+  background-image: url(../images/search-icon.png), url("../images/break.png");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: 0px 25px, 330px 30px;
+  padding-left: 60px;
+}
+
+.input-background-type{
+  background-image: url(../images/search-icon.png);
+  background-position: 0px 25px;
+}

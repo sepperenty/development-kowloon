@@ -60,6 +60,7 @@
 }
 
 
+
 .hot-item
 {
   background-color: $hot-item-background-color;
@@ -131,7 +132,7 @@
   .hot-item-image{
     height: 152px;
   }
-  &:after{
+  &:before{
     content: " ";
     position: absolute;
     top: -14px;
@@ -141,7 +142,7 @@
     border-right: 5px solid #cfcfcf;
     border-top: 5px solid #cfcfcf;
   }
-  &:before{
+  &:after{
     content: " ";
     position: absolute;
     top: -7px;

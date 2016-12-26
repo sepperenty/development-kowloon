@@ -18,3 +18,49 @@
 .info-text{
   font-family: $primary-font;
 }
+
+
+.overlay-title{
+  font-family: $h1-font;
+  font-size: 40px;
+  color: #e27500;
+}
+
+.faq-customer-information{
+  margin-top: 55px;
+  color: #535353;
+  font-size: 14px;
+  font-family: $primary-font;
+  margin-bottom: 40px;
+  p{
+    margin:0;
+  }
+}
+
+.faq-h{
+  font-size: 20px;
+  font-family: $primary-font;
+  margin: 0;
+  font-weight: bold;
+}
+
+.faq-p{
+  font-size: 20px;
+  font-family: $primary-font;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.cookie-title{
+  font-family: $h1-font;
+  font-size: 40px;
+  color: #e27500;
+  margin-bottom:0px;
+  margin-top:40px;
+}
+.cookie-info{
+  line-height: 20px;
+  font-family: $primary-font;
+  font-size: 15px;
+  color: #454545;
+}

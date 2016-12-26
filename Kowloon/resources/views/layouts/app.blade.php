@@ -22,7 +22,29 @@
 </head>
 <body>
 <div id="app">
-            <div class="navigation-bar">
+
+    @if(  !empty($newCookie))
+
+        <div id="cookieAlert">
+
+            <div class="cookie-modal">
+                <div class="sprite-cookie sprite-cookieCrumble"></div>
+                <div class="sprite-cookie sprite-X"></div>
+                <p class="cookie-title">Cookies</p>
+                <p class="cookie-info">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna Duis
+                    voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur.</p>
+                <button>ok, verder surfen</button>
+            </div>
+
+        </div>
+    @endif
+
+
+
+    <div class="navigation-bar">
                 <div class="navigation-options">
                     <div class="nav-option" id="hamburger">
                         <div class="nav-icon">
@@ -37,7 +59,7 @@
                             <p>Search</p>
                         </div>
                     </div>
-                    <div class="nav-option">
+                    <div class="nav-option" id="FAQ">
                         <div class="nav-icon">
                             <div class="sprite sprite-PassiveFAQ"></div>
                         </div>
@@ -95,6 +117,60 @@
             </div>
 
         <div class="content">
+
+            <div class="FAQ-overlay">
+                <div class="faq-content">
+                    <div id="ecape-faq" class="faq-sprite sprite-escape"></div>
+                    <p class="overlay-title">FREQUENTLY ASKED QUESTIONS</p>
+                    <input class="overlay-input" type="text" placeholder="Search on keyword" id="faq-input">
+                    <a href="#" class="clear-button">clear</a>
+
+                    <div class="faq-customer-information">
+                        <p>Can't find what you're looking for ?</p>
+                        <p>You can always contact our customer service. We're happy to help you!</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <p class="faq-h">Dit is een vraag</p>
+                        <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <p class="faq-h">Dit is een vraag</p>
+                        <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <p class="faq-h">Dit is een vraag</p>
+                        <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <p class="faq-h">Dit is een vraag</p>
+                        <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat.</p>
+                    </div>
+                </div>
+            </div>
 
 
 

@@ -1,0 +1,31 @@
+.faq-sprite {
+  background-image: url(../images/faq-spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-break {
+  width: 42px;
+  height: 28px;
+  background-position: -5px -5px;
+}
+
+.sprite-clear {
+  width: 15px;
+  height: 15px;
+  background-position: -57px -5px;
+}
+
+.sprite-escape {
+  width: 28px;
+  height: 46px;
+  background-position: -82px -5px;
+}
+
+.sprite-search-icon {
+  width: 33px;
+  height: 33px;
+  background-position: -5px -61px;
+}
+
+

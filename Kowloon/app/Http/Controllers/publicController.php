@@ -10,10 +10,22 @@ use Symfony\Component\HttpFoundation\Cookie;
 
 class publicController extends Controller
 {
-    public function home(){
-        $cookie = new Cookie('test', 'test', time()+45000);
-        return response()
-            ->view('welcome')
-            ->withCookie($cookie);
+    public function home(Request $request){
+
+        $cookie = $request->cookie('KOWLOON');
+
+        if($cookie == 'active')
+        {
+            return view('welcome');
+        }
+        else
+        {
+            $newCookie = true;
+            $cookie = new Cookie('KOWLOON', 'active', time()+45000);
+            return response()
+                ->view('welcome', compact("newCookie"))
+                ->withCookie($cookie);
+        }
+
     }
 }

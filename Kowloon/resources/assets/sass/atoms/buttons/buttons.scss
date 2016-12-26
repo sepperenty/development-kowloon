@@ -1,18 +1,32 @@
-.headButton{
-  background-color: green;
+@import "../../variables";
+
+
+
+.clear-button{
+  margin-top: 10px;
+  float:right;
+  font-family: Arial;
+  color: #535353;
 }
 
-.ghostButton{
-  background-color: transparent;
-  border: 2px solid black;
-  color: black;
-  padding: 10px;
-  &:hover{
-    background-color: black;
-    border-radius: 10px;
+#ecape-faq{
+  position: absolute;
+  right:80px;
+  top: 20px;
+}
+
+.cookie-modal{
+  button{
+    background-color: #e27500;
     color:white;
+    font-family: $primary-font;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+    border: none;
+    font-size: 22px;
+    margin-top: 20px;
   }
-  transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
 }
-
-
