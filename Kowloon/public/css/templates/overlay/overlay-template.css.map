@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,UAGC,CAFC,WAAW,CAAE,SAAS,CACtB,GAAG,CAAE,wEAAwE,CAG/E,UAGC,CAFC,WAAW,CAAE,eAAe,CAC5B,GAAG,CAAE,8CAA8C,CCTrD,gBACA,CACE,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,CAClB,KAAK,CAAE,KAAK,CACZ,+BAAc,CACZ,UAAU,CAAE,KAAK,CAKrB,wBAAwB,CACtB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,KAAK,CACb,KAAK,CAAE,IAAI,CACX,kCAAS,CACP,UAAU,CAAE,UAAU,CACtB,OAAO,CAAC,IAAI,CACZ,KAAK,CAAC,GAAG,CACT,QAAQ,CAAE,MAAM",
+"sources": ["../../../../resources/assets/sass/_variables.scss","../../../../resources/assets/sass/templates/overlay/overlay-template.scss"],
+"names": [],
+"file": "overlay-template.css"
+}

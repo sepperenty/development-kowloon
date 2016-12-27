@@ -1,6 +1,7 @@
 const elixir = require('laravel-elixir');
 
 require('laravel-elixir-vue-2');
+require('laravel-elixir-sass-compass');
 
 /*
  |--------------------------------------------------------------------------
@@ -23,4 +24,18 @@ elixir(function(mix) {
 });
 
 
+
+// elixir(function(mix) {
+//
+//     mix.compass('*', "public/css", {
+//         style: "compressed",
+//         sass: "resources/assets/sass/",
+//         font: "public/fonts",
+//         image: "public/img",
+//         javascript: "public/js",
+//         sourcemap: true
+//     });
+//
+//
+// });
 

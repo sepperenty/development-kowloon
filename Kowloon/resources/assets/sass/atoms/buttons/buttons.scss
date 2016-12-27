@@ -3,17 +3,19 @@
 
 
 .clear-button{
-  margin-top: 10px;
+  margin-top: 16px;
   float:right;
   font-family: Arial;
   color: #535353;
 }
 
-#ecape-faq{
+#ecape-faq, #ecape-search{
   position: absolute;
   right:80px;
   top: 20px;
 }
+
+
 
 .cookie-modal{
   button{
@@ -29,4 +31,27 @@
     font-size: 22px;
     margin-top: 20px;
   }
+}
+
+.advanced-filter{
+  overflow: hidden;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.filterButton{
+  display: block;
+  margin:0px;
+  float:left;
+}
+
+.arrow-right {
+  margin-left: 10px;
+  margin-top : 10px;
+  float: left;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #9a9a9a;
 }

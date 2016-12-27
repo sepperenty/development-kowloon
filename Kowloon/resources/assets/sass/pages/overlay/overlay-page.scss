@@ -11,3 +11,23 @@
 .cookieAlert-none{
   display: none;
 }
+
+@import "../../variables";
+
+.white-overlay{
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: $page-height;
+  background-color: rgba(255,255,255, 0.9);
+  display: none;
+}
+
+
+.search-visible{
+  display:block;
+}
+
+.fAQ-visible{
+  display: block;
+}

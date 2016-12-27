@@ -12,6 +12,7 @@
 
     <! styles -->
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/nouislider.css">
 
     <!-- Scripts -->
     <script>
@@ -51,7 +52,7 @@
                             <div class="sprite sprite-Menu-hmburger-icon"></div>
                         </div>
                     </div>
-                    <div class="nav-option">
+                    <div class="nav-option" id="search-button">
                         <div class="nav-icon">
                             <div class="sprite sprite-PassiveSearchIcon"></div>
                         </div>
@@ -118,9 +119,83 @@
 
         <div class="content">
 
-            <div class="FAQ-overlay">
-                <div class="faq-content">
-                    <div id="ecape-faq" class="faq-sprite sprite-escape"></div>
+            <div class="white-overlay search-visible" id="search-overlay">
+                <div id="ecape-search" class="faq-sprite sprite-escape"></div>
+                <div class="overlay-content">
+                    <div class="advanced-filter">
+                        <div class="advanced-dropdown">
+                            <p class="filterButton">Advanced filter</p>
+                            <div class="arrow-right"></div>
+                        </div>
+                        <div class="advanced-filter-content">
+                            <div class="category">
+
+                                    <p>Category</p>
+                                    <form action="#">
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None" id="Dogs" name="check"  />
+                                            <label for="Dogs"></label>
+                                        </div><p>Dogs</p>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None"  id="Cats" name="check"  />
+                                            <label for="Cats"></label>
+                                        </div><p>Cats</p>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None"  id="Fish" name="check"  />
+                                            <label for="Fish"></label>
+                                        </div><p>Fish</p>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None" id="Birds"  name="check"  />
+                                            <label for="Birds"></label>
+                                        </div><p>Birds</p>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None"  id="other" name="check"  />
+                                            <label for="other"></label>
+
+                                        </div><p>other</p>
+                                    </form>
+
+                            </div>
+
+                            <div class="price-range">
+                                <div class="slider">
+                                    <p>Price range</p>
+                                    <div id="html5"></div>
+
+                                    <div class="slider-inputs">
+                                        <input type="number" id="input-number-left" class="slider-input">
+                                        <div class="slider-input-divider">-</div>
+                                        <input type="number" id="input-number" class="slider-input">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input  class="overlay-input"  type="text" placeholder="Just start typing and hit        to search">
+                    <a href="#" class="clear-button">clear</a>
+                    <p class="search-info">3 results for the word "crafted"</p>
+
+                    <div class="overlay-item">
+
+                    </div>
+                    <div class="overlay-item">
+
+                    </div>
+                    <div class="overlay-item">
+
+                    </div>
+                    <div class="overlay-item">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="white-overlay" id="FAQ-overlay">
+                <div id="ecape-faq" class="faq-sprite sprite-escape"></div>
+                <div class="overlay-content">
                     <p class="overlay-title">FREQUENTLY ASKED QUESTIONS</p>
                     <input class="overlay-input" type="text" placeholder="Search on keyword" id="faq-input">
                     <a href="#" class="clear-button">clear</a>
@@ -130,7 +205,7 @@
                         <p>You can always contact our customer service. We're happy to help you!</p>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="overlay-item">
                         <p class="faq-h">Dit is een vraag</p>
                         <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -140,7 +215,7 @@
                             pariatur. Excepteur sint occaecat.</p>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="overlay-item">
                         <p class="faq-h">Dit is een vraag</p>
                         <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -150,7 +225,7 @@
                             pariatur. Excepteur sint occaecat.</p>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="overlay-item">
                         <p class="faq-h">Dit is een vraag</p>
                         <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -160,7 +235,7 @@
                             pariatur. Excepteur sint occaecat.</p>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="overlay-item">
                         <p class="faq-h">Dit is een vraag</p>
                         <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -182,6 +257,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/navigation.js"></script>
+<script src="js/nouislider.js"></script>
 
 </body>
 </html>

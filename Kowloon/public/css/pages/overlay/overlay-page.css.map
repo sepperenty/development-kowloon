@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,YAAY,CACV,OAAO,CAAE,GAAG,CACZ,QAAQ,CAAE,KAAK,CACf,gBAAgB,CAAE,eAAe,CACjC,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CAGd,iBAAiB,CACf,OAAO,CAAE,IAAI,CCPf,UAGC,CAFC,WAAW,CAAE,SAAS,CACtB,GAAG,CAAE,wEAAwE,CAG/E,UAGC,CAFC,WAAW,CAAE,eAAe,CAC5B,GAAG,CAAE,8CAA8C,CDKrD,cAAc,CACZ,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,EAAE,CACX,KAAK,CAAE,IAAI,CACX,MAAM,CCCM,MAAM,CDAlB,gBAAgB,CAAE,qBAAsB,CACxC,OAAO,CAAE,IAAI,CAIf,eAAe,CACb,OAAO,CAAC,KAAK,CAGf,YAAY,CACV,OAAO,CAAE,KAAK",
+"sources": ["../../../../resources/assets/sass/pages/overlay/overlay-page.scss","../../../../resources/assets/sass/_variables.scss"],
+"names": [],
+"file": "overlay-page.css"
+}
