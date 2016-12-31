@@ -28,4 +28,8 @@ class publicController extends Controller
         }
 
     }
+
+    public function about(){
+        return view("about");
+    }
 }

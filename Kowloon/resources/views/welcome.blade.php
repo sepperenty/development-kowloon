@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="header-picture pictureA">
-        <img class="header-logo" src="assets/images/logo.png" alt="">
+        <a href="/"><img class="header-logo" src="assets/images/logo.png" alt=""></a>
         <img class="mySlides" src="assets/images/backgroundA.jpg">
         <img class="mySlides" src="assets/images/backgroundB.jpg">
         <img class="mySlides" src="assets/images/backgroundC.jpg">

@@ -113,3 +113,29 @@
   margin-top: 35px;
   margin-right: 20px;
 }
+
+.contact-email, .contact-message{
+  color:$third-font-color;
+  padding: 18px;
+  background-color:$fourth-background-color;
+  border: 3px solid $fifth-background-color;
+  font-family: $primary-font;
+  font-size: 16px;
+  margin-bottom: 30px;
+  &::-webkit-input-placeholder{
+    font-family: $primary-font;
+    font-size: 16px;
+  }
+
+}
+
+
+.contact-email{
+  width: 230px;
+}
+
+.contact-message{
+  box-sizing: border-box;
+  width: 76%;
+  height: 140px;
+}

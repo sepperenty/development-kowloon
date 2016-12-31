@@ -55,3 +55,33 @@
   border-bottom: 10px solid transparent;
   border-left: 10px solid #9a9a9a;
 }
+
+.arrow-down {
+  margin-left: 10px;
+  margin-top : 15px;
+  float: left;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #9a9a9a;
+}
+
+
+.advanced-dropdown{
+  user-select: none;
+  cursor: pointer;
+}
+
+.send-contact-form{
+  background-color: $contact-form-send;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color:$secondary-font-color;
+  width: 240px;
+  border: none;
+  font-family: $primary-font;
+  font-size: 19px;
+
+}

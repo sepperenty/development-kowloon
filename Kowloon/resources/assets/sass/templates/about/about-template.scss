@@ -1,0 +1,30 @@
+.kowloon-contact-info{
+  clear: both;
+  overflow: hidden;
+}
+
+.about-info{
+  width: 76%;
+  float: left;
+}
+
+.contact-info{
+  padding-left: 25px;
+  box-sizing: border-box;
+  width: 24%;
+  float:left;
+}
+
+.contact-form{
+  clear: both;
+  input, label{
+    display: block;
+  }
+  margin-top: 85px;
+}
+
+.page-faq{
+  margin-top: 70px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}

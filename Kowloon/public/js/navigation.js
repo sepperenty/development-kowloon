@@ -158,9 +158,28 @@ $(document).ready(function(){
             $("#cookieAlert").addClass("cookieAlert-none");
         });
 
-        //range slider
+        //Advanced filter dropdown
 
+        var advancedFilterOpen = false;
 
+        $(".advanced-dropdown").on("click", function(){
+
+            if(!advancedFilterOpen) {
+                $(".advanced-filter-content").addClass("advanced-filter-visible");
+                $("#triangle").removeClass("arrow-right");
+                $("#triangle").addClass("arrow-down");
+                advancedFilterOpen = true;
+            }
+            else {
+                $(".advanced-filter-content").removeClass("advanced-filter-visible");
+                $("#triangle").removeClass("arrow-down");
+                $("#triangle").addClass("arrow-right");
+                advancedFilterOpen = false;
+            }
+
+        });
+
+        //filter range slider
 
         var html5Slider = document.getElementById('html5');
 
@@ -196,6 +215,27 @@ $(document).ready(function(){
             html5Slider.noUiSlider.set([null, this.value]);
         });
 
+
+        //accordion
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function(){
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+                var element = $(this).find(".faq-arrow");
+                if(element.hasClass("arrow-down")){
+                    element.removeClass("arrow-down");
+                    element.addClass("arrow-right");
+                }else{
+                    element.removeClass("arrow-right");
+                    element.addClass("arrow-down");
+                }
+
+            }
+        }
 
     })();
 });

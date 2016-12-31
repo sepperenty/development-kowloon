@@ -5,19 +5,11 @@ body{
 }
 
 #app{
-  height: $page-height;
+  //height: $page-height;
+  overflow: hidden;
   background-color: $background-color;
 }
 
-.navigation-bar{
-  position: absolute;
-  left:0;
-  top:0;
-  z-index: 60;
-  height: 1700px;
-  float:left;
-
-}
 
 .content{
   margin-left:60px;

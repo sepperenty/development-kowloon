@@ -119,13 +119,13 @@
 
         <div class="content">
 
-            <div class="white-overlay search-visible" id="search-overlay">
+            <div class="white-overlay" id="search-overlay">
                 <div id="ecape-search" class="faq-sprite sprite-escape"></div>
                 <div class="overlay-content">
                     <div class="advanced-filter">
                         <div class="advanced-dropdown">
                             <p class="filterButton">Advanced filter</p>
-                            <div class="arrow-right"></div>
+                            <div id="triangle" class="arrow-right"></div>
                         </div>
                         <div class="advanced-filter-content">
                             <div class="category">

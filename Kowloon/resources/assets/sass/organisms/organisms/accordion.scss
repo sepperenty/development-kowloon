@@ -1,0 +1,46 @@
+@import "../../variables";
+
+button.accordion {
+  background-color: $sixth-background-color;
+  color: $secondary-font-color;
+  font-size: 20px;
+  font-family: $primary-font;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-top: 12px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active{
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.page-faq div.panel {
+  padding: 0 18px;
+  background-color: $sixth-background-color;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.16s ease-in-out;
+  opacity: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: $secondary-font-color;
+  font-family: $primary-font;
+  font-size: 14px;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+.page-faq div.panel.show {
+  opacity: 1;
+  max-height: 700px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+.faq-arrow{
+  float:right;
+  margin: 0px;
+}

@@ -58,6 +58,37 @@
   border-left: 10px solid #9a9a9a;
 }
 
+.arrow-down {
+  margin-left: 10px;
+  margin-top: 15px;
+  float: left;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #9a9a9a;
+}
+
+.advanced-dropdown {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.send-contact-form {
+  background-color: #ff6f9e;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ffffff;
+  width: 240px;
+  border: none;
+  font-family: Arial;
+  font-size: 19px;
+}
+
 .sprite-cookie {
   background-image: url("../images/cookie-spritesheet.png");
   background-repeat: no-repeat;
@@ -407,6 +438,31 @@
   margin-right: 20px;
 }
 
+.contact-email, .contact-message {
+  color: #000000;
+  padding: 18px;
+  background-color: #ffffff;
+  border: 3px solid #9a9a9a;
+  font-family: Arial;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.contact-email::-webkit-input-placeholder, .contact-message::-webkit-input-placeholder {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.contact-email {
+  width: 230px;
+}
+
+.contact-message {
+  box-sizing: border-box;
+  width: 76%;
+  height: 140px;
+}
+
 @font-face {
   font-family: "Choplin";
   src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
@@ -502,6 +558,75 @@
 
 .price-range p {
   margin-bottom: 20px;
+}
+
+.about-us-tag span {
+  font-family: Choplin-light;
+  color: #ffffff;
+  font-size: 23px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.bread-crum-tag {
+  height: 14px;
+  white-space: nowrap;
+  position: relative;
+  margin: 0 5px 0 10px;
+  displaY: inline-block;
+  height: 25px;
+  border-radius: 0 2px 2px 0;
+  padding: 0 25px 0 15px;
+  background: #323232;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  color: #cecece;
+  line-height: 23px;
+  font-size: 14px;
+}
+
+.bread-crum-tag:before {
+  position: absolute;
+  content: "";
+  color: white;
+  text-shadow: 0 0 1px #323232;
+  font-size: 11px;
+  line-height: 0px;
+  text-indent: 12px;
+  left: -15px;
+  width: 1px;
+  height: 0px;
+  border-right: 14px solid #323232;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+}
+
+.about-info, .contact-info {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.about-info p:first-child, .contact-info p:first-child {
+  font-size: 20px;
+  font-family: Choplin-light;
+}
+
+.about-info ul, .contact-info ul {
+  padding-left: 20px;
+}
+
+.contact-form label {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Choplin-light;
 }
 
 @font-face {
@@ -765,6 +890,26 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+.overlay-item {
+  color: #535353;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  box-shadow: 4px -4px 4px -4px rgba(0, 0, 0, 0.4);
+  min-height: 130px;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 .nav-option {
   width: 230px;
   height: 60px;
@@ -821,24 +966,18 @@
   font-family: Choplin-light;
 }
 
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
-.overlay-item {
-  color: #535353;
-  background-color: white;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  box-shadow: 4px -4px 4px -4px rgba(0, 0, 0, 0.4);
-  min-height: 130px;
+.navigation-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 60;
+  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 @font-face {
@@ -922,22 +1061,68 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+button.accordion {
+  background-color: #717171;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Arial;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 12px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Style the accordion panel. Note: hidden by default */
+.page-faq div.panel {
+  padding: 0 18px;
+  background-color: #717171;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.16s ease-in-out;
+  transition: 0.16s ease-in-out;
+  opacity: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+.page-faq div.panel.show {
+  opacity: 1;
+  max-height: 700px;
+  /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.faq-arrow {
+  float: right;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 body {
   margin: 0;
 }
 
 #app {
-  height: 1700px;
+  overflow: hidden;
   background-color: #454545;
-}
-
-.navigation-bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 60;
-  height: 1700px;
-  float: left;
 }
 
 .content {
@@ -990,6 +1175,38 @@ body {
   box-sizing: border-box;
 }
 
+.kowloon-contact-info {
+  clear: both;
+  overflow: hidden;
+}
+
+.about-info {
+  width: 76%;
+  float: left;
+}
+
+.contact-info {
+  padding-left: 25px;
+  box-sizing: border-box;
+  width: 24%;
+  float: left;
+}
+
+.contact-form {
+  clear: both;
+  margin-top: 85px;
+}
+
+.contact-form input, .contact-form label {
+  display: block;
+}
+
+.page-faq {
+  margin-top: 70px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
 @font-face {
   font-family: "Choplin";
   src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
@@ -1031,6 +1248,14 @@ body {
   min-height: 150px;
 }
 
+.advanced-filter-content {
+  display: none;
+}
+
+.advanced-filter-visible {
+  display: block;
+}
+
 #cookieAlert {
   z-index: 100;
   position: fixed;
@@ -1057,9 +1282,17 @@ body {
   position: absolute;
   z-index: 50;
   width: 100%;
-  height: 1700px;
+  height: 100%;
+  min-height: 100%;
+  bottom: 0px;
   background-color: rgba(255, 255, 255, 0.9);
   display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
 }
 
 .search-visible {
@@ -1068,6 +1301,17 @@ body {
 
 .fAQ-visible {
   display: block;
+}
+
+html {
+  min-height: 100%;
+  /* make sure it is at least as tall as the viewport */
+  position: relative;
+}
+
+body {
+  height: 100%;
+  /* force the BODY element to match the height of the HTML element */
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -89,3 +89,78 @@
   }
 }
 
+.about-us-tag{
+  span{
+    font-family: $h2-font;
+    color: $secondary-font-color;
+    font-size: 23px;
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+}
+
+.bread-crum-tag{
+  height: 14px;
+  white-space:nowrap;
+  position:relative;
+  margin:0 5px 0 10px;
+  displaY:inline-block;
+  height:25px;
+  border-radius: 0 2px 2px 0;
+  padding: 0 25px 0 15px;
+  background:$third-background-color;
+  border-top-width:1px;
+  border-bottom-width:1px;
+  color:$primary-font-color;
+  line-height:23px;
+  font-size: 14px;
+}
+.bread-crum-tag:before{
+  position:absolute;
+  content:"";
+  color:white;
+  text-shadow: 0 0 1px $third-background-color;
+  font-size:11px;
+  line-height:0px;
+  text-indent:12px;
+  left:-15px;
+  width: 1px;
+  height:0px;
+  border-right:14px solid $third-background-color;
+  border-top:  12.5px solid transparent;
+  border-bottom:  12.5px solid transparent;
+}
+
+.about-info, .contact-info{
+  color: $secondary-font-color;
+  font-size: 14px;
+  font-family: $primary-font;
+  p{
+    &:first-child{
+      font-size: 20px;
+      font-family: $h2-font;
+    }
+  }
+  ul{
+    padding-left: 20px;
+  }
+
+}
+
+
+.contact-form{
+  label{
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-family: $primary-font;
+    $font-size: 20px;
+    color: $secondary-font-color;
+  }
+}
+
+
+.subtitle{
+  color: $secondary-font-color;
+  font-size: 20px;
+  font-family: $h2-font;
+}
