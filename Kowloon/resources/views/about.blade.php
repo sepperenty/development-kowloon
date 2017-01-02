@@ -13,7 +13,7 @@
     <div class="content-store">
 
         <div class="about-us-tag">
-           <span>K</span>  <div class="bread-crum-tag">about us</div>
+           <p>K</p>  <div class="bread-crum-tag">about us</div>
         </div>
 
         <h1 class="title">ABOUT US</h1>

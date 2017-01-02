@@ -67,8 +67,28 @@
   border-top: 10px solid #9a9a9a;
 }
 
+#product-view-filter-arrow{
+  margin-top:3px;
 
-.advanced-dropdown{
+}
+#product-view-filter-arrow.arrow-down{
+  margin-top:6px;
+}
+
+#product-view-filter-arrow.arrow-down{
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #9a9a9a;
+}
+
+#product-view-filter-arrow.arrow-right{
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #9a9a9a;
+}
+
+
+.advanced-dropdown, .product-view-advanced-dropdown{
   user-select: none;
   cursor: pointer;
 }
@@ -83,5 +103,59 @@
   border: none;
   font-family: $primary-font;
   font-size: 19px;
+}
 
+.small-circle{
+  margin-bottom: 15px;
+  width:15px;
+  height:15px;
+  float:left;
+  border-radius: 100%;
+  border:1px solid $fourth-background-color;
+  margin-right:5px;
+}
+
+.small-circle.white{
+  background-color: $fourth-background-color;
+}
+.small-circle.black{
+  background-color: $eighth-background-color;
+}
+.small-circle.blue{
+  background-color: $blue-circle-background-color;
+}
+
+.product-detail-right .square, .product-detail-right .circle{
+  width:35px;
+  height: 35px;
+  float: left;
+  margin-right:10px;
+  background-color: $tenth-background-color;
+  border:1px solid $third-background-color;
+}
+
+.product-detail-right .circle{
+  border-radius: 100%;
+}
+
+.product-detail-right .triangle{
+  float: left;
+  margin-right:10px;
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 36px solid $third-background-color;
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    left:-18px;
+    top:0;
+    width: 0;
+    height: 0;
+    border-left: 17.5px solid transparent;
+    border-right: 17.5px solid transparent;
+    border-bottom: 35px solid $tenth-background-color;
+  }
 }

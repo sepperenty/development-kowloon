@@ -32,4 +32,12 @@ class publicController extends Controller
     public function about(){
         return view("about");
     }
+
+    public function productView(){
+        return view("productView");
+    }
+
+    public function productDetail(){
+        return view("productDetail");
+    }
 }

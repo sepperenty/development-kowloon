@@ -96,7 +96,7 @@
         </div>
 
 
-        <div class="hot_items">
+
             <div class="newsletter">
                 <div class="newsletter-image">
                     <p class="newsletter-title">discover amazing Kowloon deals!</p>
@@ -117,7 +117,7 @@
 
             </div>
 
-        </div>
+
 
     </div>
 

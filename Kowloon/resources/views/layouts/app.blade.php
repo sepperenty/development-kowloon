@@ -160,7 +160,7 @@
                             <div class="price-range">
                                 <div class="slider">
                                     <p>Price range</p>
-                                    <div id="html5"></div>
+                                    <div id="search-slider"></div>
 
                                     <div class="slider-inputs">
                                         <input type="number" id="input-number-left" class="slider-input">

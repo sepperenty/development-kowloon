@@ -1,0 +1,30 @@
+@import "../../variables";
+
+#category-productView, #product-view-slider-div{
+  width: 100%;
+}
+
+
+.product-view-slider-left, .product-view-slider-right{
+
+  float:left;
+}
+
+.product-view-slider-left{
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.product-view-slider-right{
+  width: 35%;
+  padding-top: 25px;
+}
+
+.product-view-products{
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid $secondary-color;
+  min-height: 420px;
+}

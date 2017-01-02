@@ -32,8 +32,6 @@ $(document).ready(function(){
 
         function carousel() {
 
-
-
             $( "#progressBar" ).animate({
                 width: "100%"
             }, 10000, "linear", function() {
@@ -43,12 +41,16 @@ $(document).ready(function(){
 
             var i;
             var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            if(x.length>0){
+                console.log(x);
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+
             }
-            slideIndex++;
-            if (slideIndex > x.length) {slideIndex = 1}
-            x[slideIndex-1].style.display = "block";
 
         }
 
@@ -179,9 +181,10 @@ $(document).ready(function(){
 
         });
 
+
         //filter range slider
 
-        var html5Slider = document.getElementById('html5');
+        var html5Slider = document.getElementById('search-slider');
 
         noUiSlider.create(html5Slider, {
             start: [ 8, 499 ],
@@ -201,9 +204,9 @@ $(document).ready(function(){
             var value = values[handle];
 
             if ( handle ) {
-                inputNumber.value = value;
+                inputNumber.value =value;
             } else {
-                inputNumberLeft.value = value;
+                inputNumberLeft.value =value;
             }
         });
 
@@ -236,6 +239,71 @@ $(document).ready(function(){
 
             }
         }
+
+
+
+
+        //Advanced filter dropwdown product view
+
+        var productViewFilterOpen = false;
+
+        $(".product-view-advanced-dropdown").on("click", function(){
+
+            if(!productViewFilterOpen) {
+                $(".product-view-advanced-filter-content").addClass("advanced-filter-visible");
+                $(".product-view-triangle").removeClass("arrow-right");
+                $(".product-view-triangle").addClass("arrow-down");
+                productViewFilterOpen = true;
+            }
+            else {
+                $(".product-view-advanced-filter-content").removeClass("advanced-filter-visible");
+                $(".product-view-triangle").removeClass("arrow-down");
+                $(".product-view-triangle").addClass("arrow-right");
+                productViewFilterOpen = false;
+            }
+
+        });
+
+
+        // advanced filter product view
+
+        var productViewSlider = document.getElementById('product-view-slider');
+
+        noUiSlider.create(productViewSlider, {
+            start: [ 8, 499 ],
+            connect: true,
+            range: {
+                'min': 8,
+                'max': 499
+            }
+        });
+
+        var inputNumber = document.getElementById('poduct-view-input-number');
+
+        var inputNumberLeft = document.getElementById('poduct-view-input-number-left');
+
+        productViewSlider.noUiSlider.on('update', function( values, handle ) {
+
+            var value = values[handle];
+
+            if ( handle ) {
+                inputNumber.value =value;
+            } else {
+                inputNumberLeft.value =value;
+            }
+        });
+
+        inputNumberLeft.addEventListener('change', function(){
+            productViewSlider.noUiSlider.set([this.value, null]);
+        });
+
+        inputNumber.addEventListener('change', function(){
+            productViewSlider.noUiSlider.set([null, this.value]);
+        });
+
+
+
+
 
     })();
 });

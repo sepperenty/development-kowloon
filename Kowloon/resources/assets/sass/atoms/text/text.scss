@@ -70,6 +70,14 @@
   font-size: 30px;
 }
 
+.product-view-advanced-dropdown{
+  .filterButton{
+    font-family: $primary-font;
+    font-size: 15px;
+    color: $secondary-font-color;
+  }
+}
+
 .search-info{
   font-family: $primary-font;
   color: #535353;
@@ -89,13 +97,43 @@
   }
 }
 
+
+.product-view-advanced-filter-content .category p, .price-range p{
+    font-family: $primary-font;
+    color: $secondary-font-color;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .price-range{
+    p{
+      margin-bottom: 20px;
+    }
+}
+
+  .product-view-advanced-filter-content{
+    .category{
+      form{
+        p{
+          color: white;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
+
+
+
 .about-us-tag{
-  span{
+  p{
+    display:inline-block;
     font-family: $h2-font;
     color: $secondary-font-color;
-    font-size: 23px;
+    font-size: 24px;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top:0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -163,4 +201,126 @@
   color: $secondary-font-color;
   font-size: 20px;
   font-family: $h2-font;
+}
+
+.product-view-products-right{
+  position: relative;
+  p{
+    &:first-child{
+      font-size:26px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    font-family: $primary-font;
+    color: $secondary-font-color;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .product-view-active-price{
+    margin: 0px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+  a{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 170px;
+    background-color: $fourth-color;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $secondary-font-color;
+    font-size: 14px;
+    font-family: $primary-font;
+    Text-decoration: none;
+  }
+}
+
+.items-amount{
+  float: right;
+  p{
+    color: $primary-font-color;
+    font-size: 14px;
+    font-family: $primary-font;
+    span{
+      color: $secondary-font-color;
+    }
+  }
+}
+
+.passive-product-detail-item{
+  p{
+    margin-top: 6px;
+    margin-bottom:6px;
+    color: $secondary-font-color ;
+    font-size: 12px;
+    font-family: $primary-font;
+  }
+}
+
+.product-detail-right{
+  h1{
+    font-size: 40px;
+  }
+}
+
+.product-detail-right{
+  font-family: $primary-font;
+  color: $secondary-font-color;
+  .product-detail-item-price{
+    font-family: $primary-font;
+    font-size: 26px;
+    margin-top: 0px;
+  }
+  .product-detail-item-colors-title, .product-detail-item-description-title{
+    font-size:20px;
+    margin-bottom: 15px;
+    clear:both;
+  }
+  .product-detail-item-description-title{
+    margin-top:15px;
+  }
+  .product-detail-item-description{
+    font-size: 14px;
+  }
+  .title{
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+
+.product-detail-specs{
+  color: $secondary-font-color;
+  font-family: $primary-font;
+  .specs-title{
+    font-size: 20px;
+  }
+  .dimension-title{
+    font-size:14px;
+  }
+  .dimensions-specs{
+    p{
+      float:left;
+      display:inline-block;
+      margin-left: 33px;
+    }
+  }
+  .tech-title{
+    clear:both;
+  }
+  .tech-info{
+    margin-left:33px;
+  }
+}
+
+
+.gerelateerde-producten{
+  p{
+    color: $secondary-font-color;
+    font-size:20px;
+    font-family: $h1-font;
+  }
 }
