@@ -91,7 +91,7 @@
             <div class="product-view-products-left">
                 <div class="hot-item">
                     <div class="hot-item-image">
-                        <img src="../assets/images/hotItem.png" alt="">
+                        <img src="../assets/images/image1.png" alt="">
                         <div class="hot-item-overlay"></div>
                     </div>
                     <div class="hot-item-info">
@@ -101,7 +101,7 @@
                 </div>
                 <div class="hot-item">
                     <div class="hot-item-image">
-                        <img src="../assets/images/hotItem.png" alt="">
+                        <img src="../assets/images/image2.png" alt="">
                         <div class="hot-item-overlay"></div>
                     </div>
                     <div class="hot-item-info">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="hot-item">
                     <div class="hot-item-image">
-                        <img src="../assets/images/hotItem.png" alt="">
+                        <img src="../assets/images/image3.png" alt="">
                         <div class="hot-item-overlay"></div>
                     </div>
                     <div class="hot-item-info">
@@ -121,7 +121,7 @@
                 </div>
                 <div class="hot-item multiple-borders">
                     <div class="hot-item-image">
-                        <img src="../assets/images/hotItem.png" alt="">
+                        <img src="../assets/images/image4.png" alt="">
                         <div class="hot-item-overlay"></div>
                     </div>
                     <div class="hot-item-info">
