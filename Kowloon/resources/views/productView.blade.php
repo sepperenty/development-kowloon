@@ -29,25 +29,26 @@
                     <p>By collection</p>
                     <form action="#">
                         <div class="squareOneProductView">
-                            <input type="checkbox" value="None" id="splash" name="check"  />
+                            <input type="checkbox" value="1" id="splash" name="splash" checked/>
                             <label for="splash"></label>
                         </div><p>Splash 'n Fun</p>
                         <div class="squareOneProductView">
-                            <input type="checkbox" value="None"  id="luxury" name="check"  />
+                            <input type="checkbox" value="2"  id="luxury" name="luxury" checked />
                             <label for="luxury"></label>
                         </div><p>Luxury</p>
                         <div class="squareOneProductView">
-                            <input type="checkbox" value="None"  id="new" name="check"  />
+                            <input type="checkbox" value="3"  id="new" name="new"checked  />
                             <label for="new"></label>
                         </div><p>New</p>
                         <div class="squareOneProductView">
-                            <input type="checkbox" value="None" id="onsale"  name="check"  />
+                            <input type="checkbox" value="4" id="onsale"  name="onsale" checked />
                             <label for="onsale"></label>
                         </div><p>on sale</p>
                         <div class="squareOneProductView">
-                            <input type="checkbox" value="None"  id="other-product" name="check"  />
-                            <label for="other-product"></label>
+                            <input type="checkbox" value="5" id="other-products"  name="other-products" checked />
+                            <label for="other-products"></label>
                         </div><p>other</p>
+
                     </form>
 
                 </div>
@@ -76,11 +77,11 @@
 
             <div class="product-view-products-header">
                 <select name="SortByrelevance" id="product-view-sort">
-                    <option class="product-view-sort-option" value="Sort by relevance">Sort by relevance</option>
-                    <option class="product-view-sort-option" value="Price: low to high">Price: low to high</option>
-                    <option class="product-view-sort-option" value="Price high to low">Price high to low</option>
-                    <option class="product-view-sort-option" value="Latest">Latest</option>
-                    <option class="product-view-sort-option" value="Oldest">Oldest</option>
+                    <option class="product-view-sort-option" value="0">Sort by relevance</option>
+                    <option class="product-view-sort-option" value="1">Price: low to high</option>
+                    <option class="product-view-sort-option" value="2">Price high to low</option>
+                    <option class="product-view-sort-option" value="3">Latest</option>
+                    <option class="product-view-sort-option" value="4">Oldest</option>
                 </select>
 
                 <div class="items-amount">
@@ -89,57 +90,59 @@
             </div>
 
             <div class="product-view-products-left">
-                <div class="hot-item">
-                    <div class="hot-item-image">
+                <div class="hot-item  product-view-item">
+                    <div class="hot-item-image product-view-image">
                         <img src="../assets/images/image1.png" alt="">
                         <div class="hot-item-overlay"></div>
                     </div>
                     <div class="hot-item-info">
-                        <p class="hot-item-name">Cooling Mat</p>
-                        <p class="hot-item-price">€5,40</p>
+                        <p class="hot-item-name product-view-name">Cooling Mat</p>
+                        <p class="hot-item-price product-view-price">€5,40</p>
                     </div>
                 </div>
-                <div class="hot-item">
-                    <div class="hot-item-image">
+                <div class="hot-item   product-view-item">
+                    <div class="hot-item-image product-view-image">
                         <img src="../assets/images/image2.png" alt="">
                         <div class="hot-item-overlay"></div>
                     </div>
                     <div class="hot-item-info">
-                        <p class="hot-item-name">Cooling Mat</p>
-                        <p class="hot-item-price">€5,40</p>
+                        <p class="hot-item-name product-view-name">Cooling Mat</p>
+                        <p class="hot-item-price product-view-price">€5,40</p>
                     </div>
                 </div>
-                <div class="hot-item">
-                    <div class="hot-item-image">
+                <div class="hot-item   product-view-item">
+                    <div class="hot-item-image product-view-image">
                         <img src="../assets/images/image3.png" alt="">
                         <div class="hot-item-overlay"></div>
                     </div>
                     <div class="hot-item-info">
-                        <p class="hot-item-name">Cooling Mat</p>
-                        <p class="hot-item-price">€5,40</p>
+                        <p class="hot-item-name product-view-name">Cooling Mat</p>
+                        <p class="hot-item-price product-view-price">€5,40</p>
                     </div>
                 </div>
-                <div class="hot-item multiple-borders">
-                    <div class="hot-item-image">
+                <div class="hot-item multiple-borders  product-view-item">
+                    <div class="hot-item-image product-view-image">
                         <img src="../assets/images/image4.png" alt="">
                         <div class="hot-item-overlay"></div>
                     </div>
                     <div class="hot-item-info">
-                        <p class="hot-item-name">Cooling Mat</p>
-                        <p class="hot-item-price">€5,40</p>
+                        <p class="hot-item-name product-view-name">Cooling Mat</p>
+                        <p class="hot-item-price product-view-price">€5,40</p>
                     </div>
                 </div>
             </div>
 
-            <div class="product-view-products-right">
-                <img src="../assets/images/product-view-active-foto.png" alt="">
+            <div class="product-view-products-right  product-view-item">
+                <div class="product-view-image">
+                    <img src="../assets/images/big/product-view-active-foto.png" alt="">
+                </div>
                 <div class="product-view-active-info">
-                    <p>Cooling mat</p>
+                    <p class="product-view-name">Cooling mat</p>
                     <p>Hier komt een deel van de beschrijvende tekst
                         die bij elk product hoort. Ook terug te vinden
                         in het product detail.Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit, sed do eius....</p>
-                    <p class="product-view-active-price">
+                    <p class="product-view-active-price product-view-price">
                         € 15,49
                     </p>
                     <a href="#">Want to know more?</a>
@@ -151,4 +154,8 @@
 
     </div>
 
+    @endsection
+
+@section("specialScripts")
+    <script src="js/filterProductView.js"></script>
     @endsection

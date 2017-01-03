@@ -2126,4 +2126,5 @@ function closure ( target, options, originalOptions ){
 		create: initialize
 	};
 
+
 }));

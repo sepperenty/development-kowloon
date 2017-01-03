@@ -122,6 +122,11 @@ class ApiController extends Controller
             }
         }
 
+        if($sort == 0)
+        {
+            return $allArticles;
+        }
+
 
     }
 

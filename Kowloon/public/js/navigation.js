@@ -42,7 +42,6 @@ $(document).ready(function(){
             var i;
             var x = document.getElementsByClassName("mySlides");
             if(x.length>0){
-                console.log(x);
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
@@ -281,6 +280,10 @@ $(document).ready(function(){
         var inputNumber = document.getElementById('poduct-view-input-number');
 
         var inputNumberLeft = document.getElementById('poduct-view-input-number-left');
+
+        productViewSlider.noUiSlider.on('set', function(){
+            $("#poduct-view-input-number-left").trigger("change");
+        });
 
         productViewSlider.noUiSlider.on('update', function( values, handle ) {
 
