@@ -85,70 +85,78 @@
                 </select>
 
                 <div class="items-amount">
-                    <p>Dog items: <span>5 of 56</span></p>
+                    <p>Dog items: <span class="scrollLoadNumber">5 of 56</span></p>
                 </div>
             </div>
 
-            <div class="product-view-products-left">
-                <div class="hot-item  product-view-item">
-                    <div class="hot-item-image product-view-image">
-                        <img src="../assets/images/image1.png" alt="">
-                        <div class="hot-item-overlay"></div>
+            <div class="first-item-block">
+
+                <div class="product-view-products-left">
+                    <div class="hot-item  product-view-item">
+                        <div class="hot-item-image product-view-image">
+                            <img src="../assets/images/image1.png" alt="">
+                            <div class="hot-item-overlay"></div>
+                        </div>
+                        <div class="hot-item-info">
+                            <p class="hot-item-name product-view-name">Cooling Mat</p>
+                            <p class="hot-item-price product-view-price">€5,40</p>
+                        </div>
                     </div>
-                    <div class="hot-item-info">
-                        <p class="hot-item-name product-view-name">Cooling Mat</p>
-                        <p class="hot-item-price product-view-price">€5,40</p>
+                    <div class="hot-item   product-view-item">
+                        <div class="hot-item-image product-view-image">
+                            <img src="../assets/images/image2.png" alt="">
+                            <div class="hot-item-overlay"></div>
+                        </div>
+                        <div class="hot-item-info">
+                            <p class="hot-item-name product-view-name">Cooling Mat</p>
+                            <p class="hot-item-price product-view-price">€5,40</p>
+                        </div>
+                    </div>
+                    <div class="hot-item   product-view-item">
+                        <div class="hot-item-image product-view-image">
+                            <img src="../assets/images/image3.png" alt="">
+                            <div class="hot-item-overlay"></div>
+                        </div>
+                        <div class="hot-item-info">
+                            <p class="hot-item-name product-view-name">Cooling Mat</p>
+                            <p class="hot-item-price product-view-price">€5,40</p>
+                        </div>
+                    </div>
+                    <div class="hot-item multiple-borders  product-view-item">
+                        <div class="hot-item-image product-view-image">
+                            <img src="../assets/images/image4.png" alt="">
+                            <div class="hot-item-overlay"></div>
+                        </div>
+                        <div class="hot-item-info">
+                            <p class="hot-item-name product-view-name">Cooling Mat</p>
+                            <p class="hot-item-price product-view-price">€5,40</p>
+                        </div>
                     </div>
                 </div>
-                <div class="hot-item   product-view-item">
-                    <div class="hot-item-image product-view-image">
-                        <img src="../assets/images/image2.png" alt="">
-                        <div class="hot-item-overlay"></div>
+
+                <div class="product-view-products-right  product-view-item">
+                    <div class="product-view-image">
+                        <img src="../assets/images/big/image1.png" alt="">
                     </div>
-                    <div class="hot-item-info">
-                        <p class="hot-item-name product-view-name">Cooling Mat</p>
-                        <p class="hot-item-price product-view-price">€5,40</p>
-                    </div>
-                </div>
-                <div class="hot-item   product-view-item">
-                    <div class="hot-item-image product-view-image">
-                        <img src="../assets/images/image3.png" alt="">
-                        <div class="hot-item-overlay"></div>
-                    </div>
-                    <div class="hot-item-info">
-                        <p class="hot-item-name product-view-name">Cooling Mat</p>
-                        <p class="hot-item-price product-view-price">€5,40</p>
+                    <div class="product-view-active-info">
+                        <p class="product-view-name">Cooling mat</p>
+                        <p>Hier komt een deel van de beschrijvende tekst
+                            die bij elk product hoort. Ook terug te vinden
+                            in het product detail.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eius....</p>
+                        <p class="product-view-active-price product-view-price">
+                            € 15,49
+                        </p>
+                        <a href="#">Want to know more?</a>
                     </div>
                 </div>
-                <div class="hot-item multiple-borders  product-view-item">
-                    <div class="hot-item-image product-view-image">
-                        <img src="../assets/images/image4.png" alt="">
-                        <div class="hot-item-overlay"></div>
-                    </div>
-                    <div class="hot-item-info">
-                        <p class="hot-item-name product-view-name">Cooling Mat</p>
-                        <p class="hot-item-price product-view-price">€5,40</p>
-                    </div>
-                </div>
+
             </div>
 
-            <div class="product-view-products-right  product-view-item">
-                <div class="product-view-image">
-                    <img src="../assets/images/big/product-view-active-foto.png" alt="">
-                </div>
-                <div class="product-view-active-info">
-                    <p class="product-view-name">Cooling mat</p>
-                    <p>Hier komt een deel van de beschrijvende tekst
-                        die bij elk product hoort. Ook terug te vinden
-                        in het product detail.Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eius....</p>
-                    <p class="product-view-active-price product-view-price">
-                        € 15,49
-                    </p>
-                    <a href="#">Want to know more?</a>
-                </div>
-            </div>
 
+        </div>
+
+        <div class="product-view-products-toload">
 
         </div>
 

@@ -8,6 +8,185 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+.overlay-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid black;
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: Arial;
+  width: 100%;
+  padding: 25px;
+  font-size: 30px;
+  background-image: url(../images/search-icon.png), url("../images/break.png");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: 0px 25px, 330px 30px;
+  padding-left: 60px;
+}
+
+.overlay-input:focus {
+  outline: none;
+}
+
+.input-background-type {
+  background-image: url(../images/search-icon.png);
+  background-position: 0px 25px;
+}
+
+#search-overlay .overlay-input {
+  color: #e27500;
+  font-size: 40px;
+  background-position: 0px 30px, 535px 40px;
+}
+
+#search-overlay .overlay-input::-webkit-input-placeholder {
+  color: #e27500;
+  font-weight: bold;
+}
+
+.category form {
+  font-family: Arial;
+  color: #2b2b2b;
+}
+
+.category form p {
+  font-size: 16px;
+  float: left;
+  margin: 0px;
+  margin-top: 3px;
+}
+
+.squaredOne, .squareOneProductView {
+  margin-left: 15px;
+  margin-right: 14px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  background: transparent;
+  border: 2px solid #9a9a9a;
+  float: left;
+}
+
+.squaredOne:first-child, .squareOneProductView:first-child {
+  margin-left: 0px;
+}
+
+.squaredOne label, .squareOneProductView label {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  cursor: pointer;
+  left: 0px;
+  top: 0px;
+}
+
+.squaredOne label:after, .squareOneProductView label:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: black;
+  opacity: 0;
+}
+
+.squaredOne input[type=checkbox], .squareOneProductView input[type=checkbox] {
+  visibility: hidden;
+}
+
+.squaredOne input[type=checkbox]:checked + label:after, .squareOneProductView input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+#input-select,
+.slider-input {
+  float: left;
+  box-sizing: border-box;
+  padding: 7px;
+  width: 70px;
+  width: 33.33%;
+}
+
+.slider-input-divider {
+  text-align: center;
+  float: left;
+  display: block;
+  width: 33.33%;
+  padding-top: 10px;
+}
+
+.slider {
+  margin-top: 35px;
+  margin-right: 20px;
+}
+
+.contact-email, .contact-message {
+  color: #000000;
+  padding: 18px;
+  background-color: #ffffff;
+  border: 3px solid #9a9a9a;
+  font-family: Arial;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.contact-email::-webkit-input-placeholder, .contact-message::-webkit-input-placeholder {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.contact-email {
+  width: 230px;
+}
+
+.contact-message {
+  box-sizing: border-box;
+  width: 76%;
+  height: 140px;
+}
+
+#product-view-sort {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  width: 180px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #616161;
+  font-family: Arial;
+  font-size: 14px;
+  color: #cecece;
+  border: none;
+  background-image: url("../images/productview-sort-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 150px 10px;
+}
+
+#product-view-sort .product-view-sort-option {
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 35px;
+  background-color: #ffffff;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 .clear-button {
   margin-top: 16px;
   float: right;
@@ -401,185 +580,6 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-.overlay-input {
-  width: 100%;
-  border: none;
-  background: transparent;
-  border-bottom: 2px solid black;
-  padding: 30px;
-  box-sizing: border-box;
-  font-family: Arial;
-  width: 100%;
-  padding: 25px;
-  font-size: 30px;
-  background-image: url(../images/search-icon.png), url("../images/break.png");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: 0px 25px, 330px 30px;
-  padding-left: 60px;
-}
-
-.overlay-input:focus {
-  outline: none;
-}
-
-.input-background-type {
-  background-image: url(../images/search-icon.png);
-  background-position: 0px 25px;
-}
-
-#search-overlay .overlay-input {
-  color: #e27500;
-  font-size: 40px;
-  background-position: 0px 30px, 535px 40px;
-}
-
-#search-overlay .overlay-input::-webkit-input-placeholder {
-  color: #e27500;
-  font-weight: bold;
-}
-
-.category form {
-  font-family: Arial;
-  color: #2b2b2b;
-}
-
-.category form p {
-  font-size: 16px;
-  float: left;
-  margin: 0px;
-  margin-top: 3px;
-}
-
-.squaredOne, .squareOneProductView {
-  margin-left: 15px;
-  margin-right: 14px;
-  width: 15px;
-  height: 15px;
-  position: relative;
-  background: transparent;
-  border: 2px solid #9a9a9a;
-  float: left;
-}
-
-.squaredOne:first-child, .squareOneProductView:first-child {
-  margin-left: 0px;
-}
-
-.squaredOne label, .squareOneProductView label {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  cursor: pointer;
-  left: 0px;
-  top: 0px;
-}
-
-.squaredOne label:after, .squareOneProductView label:after {
-  content: '';
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background: black;
-  opacity: 0;
-}
-
-.squaredOne input[type=checkbox], .squareOneProductView input[type=checkbox] {
-  visibility: hidden;
-}
-
-.squaredOne input[type=checkbox]:checked + label:after, .squareOneProductView input[type=checkbox]:checked + label:after {
-  opacity: 1;
-}
-
-#input-select,
-.slider-input {
-  float: left;
-  box-sizing: border-box;
-  padding: 7px;
-  width: 70px;
-  width: 33.33%;
-}
-
-.slider-input-divider {
-  text-align: center;
-  float: left;
-  display: block;
-  width: 33.33%;
-  padding-top: 10px;
-}
-
-.slider {
-  margin-top: 35px;
-  margin-right: 20px;
-}
-
-.contact-email, .contact-message {
-  color: #000000;
-  padding: 18px;
-  background-color: #ffffff;
-  border: 3px solid #9a9a9a;
-  font-family: Arial;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.contact-email::-webkit-input-placeholder, .contact-message::-webkit-input-placeholder {
-  font-family: Arial;
-  font-size: 16px;
-}
-
-.contact-email {
-  width: 230px;
-}
-
-.contact-message {
-  box-sizing: border-box;
-  width: 76%;
-  height: 140px;
-}
-
-#product-view-sort {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  appearance: none;
-  -moz-appearance: none;
-  /* Firefox */
-  -webkit-appearance: none;
-  width: 180px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #616161;
-  font-family: Arial;
-  font-size: 14px;
-  color: #cecece;
-  border: none;
-  background-image: url("../images/productview-sort-arrow.png");
-  background-repeat: no-repeat;
-  background-position: 150px 10px;
-}
-
-#product-view-sort .product-view-sort-option {
-  color: #000000;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 35px;
-  background-color: #ffffff;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
 .landingPageIntro {
   font-family: Arial;
   color: #cecece;
@@ -898,86 +898,6 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-.nav-option {
-  width: 230px;
-  height: 60px;
-  position: relative;
-  clear: both;
-}
-
-.nav-icon {
-  float: left;
-  width: 60px;
-  height: 100%;
-  position: relative;
-}
-
-.nav-icon .sprite {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
-
-.nav-info {
-  height: 100%;
-  float: left;
-  font-family: Arial;
-  font-size: 22px;
-  color: white;
-  padding-top: 20px;
-  padding-left: 15px;
-}
-
-.nav-info p {
-  margin: 0px;
-}
-
-#hamburger {
-  background-color: #252525;
-  margin: 0px;
-}
-
-.store-name {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-}
-
-.store-name p {
-  font-size: 30px;
-  color: #616161;
-  font-family: Choplin-light;
-}
-
-.navigation-bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  z-index: 60;
-  float: left;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
 .header-picture {
   display: block;
   width: 100%;
@@ -1218,6 +1138,86 @@
   width: 20%;
   font-size: 16px;
   border: none;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+.nav-option {
+  width: 230px;
+  height: 60px;
+  position: relative;
+  clear: both;
+}
+
+.nav-icon {
+  float: left;
+  width: 60px;
+  height: 100%;
+  position: relative;
+}
+
+.nav-icon .sprite {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.nav-info {
+  height: 100%;
+  float: left;
+  font-family: Arial;
+  font-size: 22px;
+  color: white;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.nav-info p {
+  margin: 0px;
+}
+
+#hamburger {
+  background-color: #252525;
+  margin: 0px;
+}
+
+.store-name {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.store-name p {
+  font-size: 30px;
+  color: #616161;
+  font-family: Choplin-light;
+}
+
+.navigation-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 60;
+  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 @font-face {
@@ -1722,7 +1722,21 @@ body {
   margin-top: 20px;
   width: 100%;
   border-top: 1px solid #616161;
+  overflow: hidden;
+}
+
+.first-item-block {
   min-height: 420px;
+}
+
+.product-view-products-toload .product-view-item {
+  margin-right: 1%;
+  width: 24.25%;
+  margin-bottom: 20px;
+}
+
+.product-view-products-toload .product-view-item:nth-child(4n) {
+  margin-right: 0px;
 }
 
 #cookieAlert {

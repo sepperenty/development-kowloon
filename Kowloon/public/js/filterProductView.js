@@ -7,36 +7,64 @@
 
     $(document).ready(function(){
 
+        $(window).scroll(function() {
+            if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                canload+=8;
+                filterProducts();
+            }
+        });
+
+        var canload = 5;
+
         var $allArticles = [];
         console.log("ingeladen");
 
         filterProducts();
 
         $("#splash").on("change", function(){
+            resetLoad();
             filterProducts();
         });
         $("#luxury").on("change", function(){
+            resetLoad();
             filterProducts();
         });
         $("#new").on("change", function(){
+            resetLoad();
             filterProducts();
         });
         $("#onsale").on("change", function(){
+            resetLoad();
             filterProducts();
         });
         $("#other-products").on("change", function(){
+            resetLoad();
             filterProducts();
         });
         $("#poduct-view-input-number").on("change", function(){
+            resetLoad();
             filterProducts();
         });
         $("#poduct-view-input-number-left").on("change", function(){
+            resetLoad();
             filterProducts();
         });
         $("#product-view-sort").on("change", function(){
             filterProducts();
         });
 
+        var template = '<div class="hot-item   product-view-item">'+
+           ' <div class="hot-item-image product-view-image">'+
+            '<img src="../assets/images/image3.png" alt="">'+
+           ' <div class="hot-item-overlay"></div>'+
+           ' </div>'+
+            '<div class="hot-item-info">'+
+            '<p class="hot-item-name product-view-name">Cooling Mat</p>'+
+        '<p class="hot-item-price product-view-price">€5,40</p>'+
+        '</div>'+
+        '</div>';
+
+        console.log(template);
 
 
         function filterProducts()
@@ -85,28 +113,60 @@
                 url: "/sort/"+tag1+"/"+tag2+"/"+tag3+"/"+tag4+"/"+tag5+"/"+minPrice+"/"+maxPrice+"/"+sort,
                 data: data,
                 success: success
-            }).done(function(result){
-               console.log(result);
+            }).done(function(results){
+                $(".product-view-products-toload").empty();
+                console.log(results.length);
 
-                $('.product-view-item').each(function(i, obj) {
-                    $(this).find(".product-view-name").html(result[i]["name"]);
-                    $(this).find(".product-view-price").html(result[i]["price"]);
+                if(results.length<=4) {
+                        $(".first-item-block").css("display","none");
+                        console.log("lest than 4");
 
-                    var activeFoto = $(this).find(".product-view-active-info");
+                        for(var result = 0; result<results.length; result++) {
+                            $(".product-view-products-toload").append(template);
+                        }
+                    }
+                else if(results.length >= 5){
+                    $(".first-item-block").css("display","block");
 
-                    if(activeFoto) {
-                        $(this).find(".product-view-image").find("img").attr("src", "../assets/images/big/" + result[i]["img"]);
-                    }else{
-                        $(this).find(".product-view-image").find("img").attr("src", "../assets/images/" + result[i]["img"]);
+                    if(canload>5){
+                        var maxload=0;
+                        if(results.length - 5 >= canload){
+                            maxload = canload-5;
+                        }else{
+                            maxload = results.length - 5;
+                        }
+                        for(var result = 0; result<maxload; result++) {
+                            $(".product-view-products-toload").append(template);
+                        }
+                    }
+                };
+
+
+                var elementsVisible = 0;
+                $('.product-view-item:visible').each(function(i, obj) {
+                    if(results[i]){
+                        elementsVisible+=1;
+                        $(this).find(".product-view-name").html(results[i]["name"]);
+                        $(this).find(".product-view-price").html("€ "+results[i]["price"]);
+
+                        var activeFoto = $(this).find(".product-view-active-info");
+
+                        if(activeFoto) {
+                            $(this).find(".product-view-image").find("img").attr("src", "../assets/images/big/" + results[i]["img"]);
+                        }else{
+                            $(this).find(".product-view-image").find("img").attr("src", "../assets/images/" + results[i]["img"]);
+                        }
                     }
                 });
 
-
+                $(".scrollLoadNumber").html(elementsVisible + " of " + results.length);
             });
-
-
-
         }
+
+        function resetLoad(){
+            canload = 5;
+        }
+
     });
 
 

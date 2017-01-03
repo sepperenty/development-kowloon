@@ -26,5 +26,20 @@
   margin-top: 20px;
   width: 100%;
   border-top: 1px solid $secondary-color;
+  overflow: hidden;
+}
+
+.first-item-block{
   min-height: 420px;
+}
+
+.product-view-products-toload{
+  .product-view-item{
+    margin-right: 1%;
+    width: 24.25%;
+    margin-bottom: 20px;
+    &:nth-child(4n){
+      margin-right: 0px;
+    }
+  }
 }
