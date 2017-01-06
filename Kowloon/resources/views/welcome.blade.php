@@ -13,13 +13,17 @@
     <div class="content-store">
 
         <div class="info-block">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            <p class="desktop-info-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                 occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
+            <p class="mobile-info-block">Hier komt een tekst, let wel deze is korter en bondiger dan
+                de desktop en tabletversie. dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qu deserunt mollit anim id est laborum.</p>
         </div>
 
         <div class="homepage-navigation">
@@ -99,7 +103,7 @@
 
             <div class="newsletter">
                 <div class="newsletter-image">
-                    <p class="newsletter-title">discover amazing Kowloon deals!</p>
+                    <p class="newsletter-title">Discover amazing Kowloon deals!</p>
                     <p class="newsletter-subtitle">Only in our newsletter</p>
                 </div>
                 <div class="newsletter-subscribe">

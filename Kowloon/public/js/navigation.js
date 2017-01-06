@@ -7,6 +7,38 @@ $(document).ready(function(){
 
     (function(){
 
+        //Hamburger mobile
+        //console.log($(window).width());
+
+
+            console.log($(window).width());
+            var mobileClicked = false;
+
+            $("#clickNavigation").on('click', function(){
+                if($(window).width() <= 1024) {
+                    if (!mobileClicked) {
+                        $("#clickNavigation").addClass("clickNavigationOpen");
+                        $(".navigation-bar").addClass("hiddenNavigationOpen");
+                        $(".navigation-bar").addClass("expand-navigation-bar");
+                        $(".content").addClass("openNavigation");
+                        $(".store-name p").html("KOWLOON");
+                        mobileClicked = true;
+                    } else {
+                        $("#clickNavigation").removeClass("clickNavigationOpen");
+                        $(".navigation-bar").removeClass("hiddenNavigationOpen");
+                        $(".navigation-bar").removeClass("expand-navigation-bar");
+                        $(".content").removeClass("openNavigation");
+                        $(".store-name p").html("K");
+                        mobileClicked = false;
+                    }
+                }
+
+
+            });
+
+
+
+
         //Hamburder menu werking
 
         var isClicked = false;
@@ -303,6 +335,8 @@ $(document).ready(function(){
         inputNumber.addEventListener('change', function(){
             productViewSlider.noUiSlider.set([null, this.value]);
         });
+
+
 
 
 

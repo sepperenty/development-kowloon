@@ -1,0 +1,290 @@
+@import "../../variables";
+
+
+.mobile-info-block{
+  display: none;
+}
+
+.openNavigation{
+  margin-left: 260px !important;
+}
+
+.clickNavigationOpen{
+  background-image: url(../images/faq-spritesheet.png) !important;
+  background-repeat: no-repeat;
+  display: block;
+  width: 28px  !important;
+  height: 46px  !important;
+  background-position: -82px -5px  !important;
+}
+
+
+  @media screen and (max-width: $tablet-landscape) {
+    #app
+    {
+
+      //navigation
+
+      #clickNavigation{
+        background-image: url("../images/navigation.png");
+        background-repeat: no-repeat;
+        display: block;
+        width: 28px;
+        height: 22px;
+        background-position: -5px -87px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 50;
+      }
+
+      .navigation-bar{
+        .sprite-Menu-hmburger-icon{
+          display: none;
+        }
+      }
+
+
+      body{
+        overflow-x: hidden;
+      }
+
+      .navigation-bar{
+        left: -100%;
+        position: absolute;
+      }
+
+      .navigation-bar{
+        position: fixed;
+      }
+
+      .content{
+        width: 100%;
+        transition: margin 0.2s
+      }
+
+      .navigation-options{
+        .nav-option{
+          &:first-child{
+            display: none;
+          }
+        }
+      }
+
+      .content{
+        margin: 0;
+      }
+
+      .hiddenNavigationOpen{
+        left: 0;
+      }
+
+      /////////////////////////////**********************************///////////////////////////////////
+      .content-store{
+
+        width: 765px;
+      }
+
+
+      .hot_items{
+
+        .hot-item{
+          margin-right: 1%;
+          width: 32.6%;
+          &:nth-child(3){
+          display:none;
+        }
+          &:last-child{
+            margin-right: 0px;
+          }
+        }
+
+        .multiple-borders{
+          width: calc(32.6% - 13px) !important;
+        }
+
+      }
+    }
+  }
+
+@media screen and (max-width: $tablet-portrait) {
+  #app
+  {
+    .content-store{
+
+      width: 613px;
+    }
+    .header-logo{
+      width:30%;
+    }
+
+
+    .home-button .sub-title {
+      font-size: 17px;
+    }
+
+    .hot_items{
+      margin-top: 40px;
+
+      .hot-item{
+          width:201px;
+        margin-right: 5px;
+        height: 173px;
+        padding-top: 5px;
+        &:last-child{
+          margin-right: 0px;
+        }
+
+       .hot-item-image{
+         height: 136px;
+         img{
+           width:100%;
+         }
+       }
+      }
+
+      .multiple-borders{
+        height: 160px;
+        .hot-item-image{
+          height:123px;
+        }
+        img{
+          height:100%;
+          width: auto;
+        }
+      }
+
+      .hot-item-info{
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+    }
+
+    .newsletter{
+      height: 135px;
+      margin-top: 30px;
+    }
+
+    .newsletter-image{
+      width: 45%;
+      .newsletter-title{
+        font-size: 28px;
+      }
+      .newsletter-subtitle{
+        font-size: 17px;
+        margin-top:10px;
+      }
+    }
+    .newsletter-subscribe{
+      padding:20px;
+      width: 55%;
+      p{
+        margin-bottom:10px;
+      }
+    }
+
+
+  }
+}
+
+
+
+@media screen and (max-width: $mobile-portrait) {
+
+
+
+  #app
+  {
+
+
+
+    //mobile
+
+    .mySlides{
+      height: 175px;
+      width: auto;
+    }
+
+    .content-store{
+      width: 290px;
+    }
+
+    .mobile-info-block{
+      display: inline;
+    }
+
+    .desktop-info-block{
+      display: none;
+    }
+
+    .header-logo{
+      width: 70%;
+      margin-top: 20px;
+    }
+
+    .info-block{
+      text-align: left;
+    }
+
+
+
+    .home-button{
+      width:50%;
+      margin-bottom: 20px;
+      border: none;
+    }
+
+    .homepage-navigation{
+      height: auto;
+      overflow: hidden;
+    }
+
+    .hot_items{
+      height: auto;
+      overflow: hidden;
+      margin-bottom: 40px;
+      .title{
+        font-size: 20px;
+      }
+      .hot-item{
+        margin-right: 0px;
+        width: 90px;
+        height:95px;
+        .hot-item-info{
+          display: none;
+        }
+        .hot-item-image{
+          height:100%;
+          img{
+            width: auto;
+            height: 100%;
+          }
+        }
+        &:nth-child(3){
+          display:block;
+        }
+      }
+      .multiple-borders{
+        display: none;
+      }
+      .hot-item-overlay{
+        display: none;
+      }
+    }
+    .newsletter{
+      height: auto;
+      overflow: hidden;
+    }
+
+    .newsletter-image{
+      height: 140px;
+      .newsletter-title{
+        margin-top: 10px;
+      }
+      width: 100%;
+    }
+    .newsletter-subscribe{
+      width: 100%;
+    }
+  }
+}

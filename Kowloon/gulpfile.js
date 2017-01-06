@@ -20,6 +20,7 @@ elixir(function(mix) {
         'organisms/**/*',
         'templates/**/*',
         'pages/**/*',
+        'responsive/**/*',
     ], 'public/assets/css');
 });
 

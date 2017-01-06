@@ -117,8 +117,9 @@
                 </div>
             </div>
 
-        <div class="content">
 
+        <div class="content">
+            <div id="clickNavigation"></div>
             <div class="white-overlay" id="search-overlay">
                 <div id="ecape-search" class="faq-sprite sprite-escape"></div>
                 <div class="overlay-content">
