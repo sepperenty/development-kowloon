@@ -230,43 +230,118 @@
 .sprite-bird {
   width: 42px;
   height: 67px;
-  background-position: -5px -5px;
+  background-position: -89px -5px;
+}
+
+.sprite-bird-active {
+  width: 42px;
+  height: 67px;
+  background-position: -141px -5px;
 }
 
 .sprite-cat {
   width: 53px;
   height: 61px;
-  background-position: -57px -5px;
+  background-position: -5px -82px;
+}
+
+.sprite-cat-active {
+  width: 53px;
+  height: 61px;
+  background-position: -68px -82px;
 }
 
 .sprite-dog {
   width: 60px;
   height: 64px;
-  background-position: -57px -76px;
+  background-position: -131px -82px;
+}
+
+.sprite-dog-active {
+  width: 60px;
+  height: 64px;
+  background-position: -193px -5px;
 }
 
 .sprite-fish {
   width: 59px;
   height: 59px;
-  background-position: -120px -5px;
+  background-position: -201px -79px;
+}
+
+.sprite-fish-active {
+  width: 59px;
+  height: 59px;
+  background-position: -201px -148px;
 }
 
 .sprite-hamster {
   width: 47px;
   height: 51px;
-  background-position: -127px -74px;
+  background-position: -5px -217px;
+}
+
+.sprite-hamster-active {
+  width: 47px;
+  height: 51px;
+  background-position: -62px -217px;
 }
 
 .sprite-plus {
   width: 32px;
   height: 32px;
-  background-position: -184px -74px;
+  background-position: -5px -5px;
+}
+
+.sprite-plus-active {
+  width: 32px;
+  height: 32px;
+  background-position: -47px -5px;
+}
+
+#homeBird:hover .iconSprite {
+  background-position: -141px -5px;
+}
+
+#homeCat:hover .iconSprite {
+  background-position: -68px -82px;
+}
+
+#homeDog:hover .iconSprite {
+  background-position: -193px -5px;
+}
+
+#homeFish:hover .iconSprite {
+  background-position: -201px -148px;
+}
+
+#homeHamster:hover .iconSprite {
+  background-position: -62px -217px;
+}
+
+#homePlus:hover .iconSprite {
+  background-position: -47px -5px;
 }
 
 .sprite {
   background-image: url("../images/navigation.png");
   background-repeat: no-repeat;
   display: block;
+}
+
+.sprite-about {
+  background-image: url("../images/homepagenavigation/mail.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 27px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .sprite-ActiveBird {
@@ -323,18 +398,10 @@
   background-position: -43px -87px;
 }
 
-.sprite-PassiveFAQ:hover {
-  background-position: -113px -5px;
-}
-
 .sprite-PassiveSearchIcon {
   width: 29px;
   height: 29px;
   background-position: -114px -87px;
-}
-
-.sprite-PassiveSearchIcon:hover {
-  background-position: -114px -48px;
 }
 
 .sprite-passiveBird {
@@ -344,6 +411,10 @@
 }
 
 .sprite-passiveBird:hover {
+  background-position: -5px -5px;
+}
+
+#bird:hover .sprite {
   background-position: -5px -5px;
 }
 
@@ -357,6 +428,10 @@
   background-position: -39px -5px;
 }
 
+#cat:hover .sprite {
+  background-position: -39px -5px;
+}
+
 .sprite-passiveDog {
   width: 27px;
   height: 29px;
@@ -364,6 +439,10 @@
 }
 
 .sprite-passiveDog:hover {
+  background-position: -76px -5px;
+}
+
+#dog:hover .sprite {
   background-position: -76px -5px;
 }
 
@@ -377,6 +456,10 @@
   background-position: -39px -48px;
 }
 
+#fish:hover .sprite {
+  background-position: -39px -48px;
+}
+
 .sprite-passiveHamster {
   width: 27px;
   height: 30px;
@@ -385,6 +468,22 @@
 
 .sprite-passiveHamster:hover {
   background-position: -77px -48px;
+}
+
+#hamster:hover .sprite {
+  background-position: -77px -48px;
+}
+
+#search-button, #FAQ, #about {
+  cursor: pointer;
+}
+
+#search-button:hover, #FAQ:hover, #about:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#hamburger {
+  cursor: pointer;
 }
 
 .activeFAQ {
@@ -568,6 +667,16 @@
   padding-bottom: 10px;
   height: 35px;
   background-color: #ffffff;
+}
+
+#emailValidationError, #messageValidationError {
+  height: 18px;
+  color: #ca0000;
+  font-family: Arial;
+}
+
+#messageValidationError {
+  margin-bottom: 20px;
 }
 
 @font-face {
@@ -918,6 +1027,44 @@
   width: 20%;
 }
 
+.pictureCircles {
+  position: absolute;
+  width: 78px;
+  height: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  bottom: 0px;
+  z-index: 30;
+}
+
+.pictureCircles div {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 8px;
+  margin-right: 8px;
+  top: 20px;
+}
+
+.pictureCircles .circle1 {
+  left: 0px;
+}
+
+.pictureCircles .circle2 {
+  left: 26px;
+}
+
+.pictureCircles .circle3 {
+  left: 52px;
+}
+
+.pictureCircles .activeCircle {
+  background-color: white;
+}
+
 #progressBar {
   background-color: white;
   height: 3px;
@@ -1156,6 +1303,7 @@
   height: 60px;
   position: relative;
   clear: both;
+  cursor: pointer;
 }
 
 .nav-icon {
@@ -1269,16 +1417,12 @@
   border-bottom: 1px solid #616161;
 }
 
-.navigation-options .nav-option:first-child .nav-icon {
-  background-color: #252525;
-}
-
 .navigation-options .nav-option:first-child .nav-icon:hover {
   background: none;
 }
 
 .navigation-options p {
-  color: #616161;
+  color: #a2a2a2;
 }
 
 .navigation-animals {
@@ -1382,60 +1526,6 @@ button.accordion {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-.product-view-products-left, .product-view-products-right {
-  width: 50%;
-  float: left;
-  min-height: 100px;
-}
-
-.product-view-products-left .hot-item {
-  width: 49%;
-  margin-bottom: 20px;
-  margin-right: 1%;
-}
-
-.product-view-products-left .multiple-borders {
-  width: calc(49% - 13px) !important;
-}
-
-.product-view-products-right {
-  background-color: #565656;
-  border: 1px solid #717171;
-  box-sizing: border-box;
-  padding: 5px;
-  height: 440px;
-}
-
-.product-view-products-right img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.product-view-products-right .product-view-active-info {
-  padding-right: 15px;
-  padding-left: 15px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.product-view-products {
-  width: 100%;
-}
-
-.product-view-products-header {
-  clear: both;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
 .passive-product-detail-item {
   width: 32.6%;
   float: left;
@@ -1487,6 +1577,60 @@ button.accordion {
 
 .geralateerde-producten-items .hot-item:last-child {
   margin: 0;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+.product-view-products-left, .product-view-products-right {
+  width: 50%;
+  float: left;
+  min-height: 100px;
+}
+
+.product-view-products-left .hot-item {
+  width: 49%;
+  margin-bottom: 20px;
+  margin-right: 1%;
+}
+
+.product-view-products-left .multiple-borders {
+  width: calc(49% - 13px) !important;
+}
+
+.product-view-products-right {
+  background-color: #565656;
+  border: 1px solid #717171;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 440px;
+}
+
+.product-view-products-right img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-view-products-right .product-view-active-info {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.product-view-products {
+  width: 100%;
+}
+
+.product-view-products-header {
+  clear: both;
 }
 
 .kowloon-contact-info {

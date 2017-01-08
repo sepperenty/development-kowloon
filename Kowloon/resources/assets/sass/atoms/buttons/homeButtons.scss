@@ -7,35 +7,121 @@
 .sprite-bird {
   width: 42px;
   height: 67px;
-  background-position: -5px -5px;
+  background-position: -89px -5px;
+}
+
+.sprite-bird-active{
+  width: 42px;
+  height: 67px;
+  background-position: -141px -5px;
 }
 
 .sprite-cat {
   width: 53px;
   height: 61px;
-  background-position: -57px -5px;
+  background-position: -5px -82px;
+}
+
+.sprite-cat-active{
+  width: 53px;
+  height: 61px;
+  background-position: -68px -82px;
 }
 
 .sprite-dog {
   width: 60px;
   height: 64px;
-  background-position: -57px -76px;
+  background-position: -131px -82px;
+}
+
+.sprite-dog-active{
+  width: 60px;
+  height: 64px;
+  background-position: -193px -5px;
 }
 
 .sprite-fish {
   width: 59px;
   height: 59px;
-  background-position: -120px -5px;
+  background-position: -201px -79px;
+}
+
+.sprite-fish-active{
+  width: 59px;
+  height: 59px;
+  background-position: -201px -148px;
 }
 
 .sprite-hamster {
   width: 47px;
   height: 51px;
-  background-position: -127px -74px;
+  background-position: -5px -217px;
+}
+
+.sprite-hamster-active{
+  width: 47px;
+  height: 51px;
+  background-position: -62px -217px;
 }
 
 .sprite-plus {
   width: 32px;
   height: 32px;
-  background-position: -184px -74px;
+  background-position: -5px -5px;
 }
+
+.sprite-plus-active{
+  width: 32px;
+  height: 32px;
+  background-position: -47px -5px;
+}
+
+#homeBird{
+  &:hover{
+    .iconSprite{
+      background-position: -141px -5px;
+    }
+  }
+}
+
+#homeCat{
+  &:hover{
+    .iconSprite{
+      background-position: -68px -82px;
+    }
+  }
+}
+
+#homeDog{
+  &:hover{
+    .iconSprite{
+      background-position: -193px -5px;
+    }
+  }
+}
+
+#homeFish{
+  &:hover{
+    .iconSprite{
+      background-position: -201px -148px;
+    }
+  }
+}
+
+#homeHamster{
+  &:hover{
+    .iconSprite{
+      background-position: -62px -217px;
+    }
+  }
+}
+
+#homePlus{
+  &:hover{
+    .iconSprite{
+      background-position: -47px -5px;
+    }
+  }
+}
+
+

@@ -68,9 +68,19 @@
                             <p>FAQ</p>
                         </div>
                     </div>
+                    <a href="/about">
+                        <div class="nav-option" id="about">
+                            <div class="nav-icon">
+                                <div class="sprite-about"></div>
+                            </div>
+                            <div class="nav-info">
+                                <p>About</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="navigation-animals">
-                    <div class="nav-option">
+                    <div class="nav-option" id="dog">
                         <div class="nav-icon">
                             <div class="sprite sprite-passiveDog"></div>
                         </div>
@@ -78,7 +88,7 @@
                             <p>Dogs</p>
                         </div>
                     </div>
-                    <div class="nav-option">
+                    <div class="nav-option" id="cat">
                         <div class="nav-icon">
                             <div class="sprite sprite-passiveCat"></div>
                         </div>
@@ -86,7 +96,7 @@
                             <p>Cats</p>
                         </div>
                     </div>
-                    <div class="nav-option">
+                    <div class="nav-option" id="fish">
                         <div class="nav-icon">
                             <div class="sprite sprite-passiveFish"></div>
                         </div>
@@ -94,7 +104,7 @@
                             <p>Fish</p>
                         </div>
                     </div>
-                    <div class="nav-option">
+                    <div class="nav-option" id="bird">
                         <div class="nav-icon">
                             <div class="sprite sprite-passiveBird"></div>
                         </div>
@@ -102,7 +112,7 @@
                             <p>Birds</p>
                         </div>
                     </div>
-                    <div class="nav-option">
+                    <div class="nav-option" id="hamster">
                         <div class="nav-icon">
                             <div class="sprite sprite-passiveHamster"></div>
                         </div>
@@ -110,6 +120,7 @@
                             <p>Smal Animals</p>
                         </div>
                     </div>
+
                     <div class="store-name">
                         <p>K</p>
                     </div>

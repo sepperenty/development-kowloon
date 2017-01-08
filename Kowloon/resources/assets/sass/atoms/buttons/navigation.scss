@@ -4,6 +4,21 @@
   display: block;
 }
 
+.sprite-about{
+  background-image: url("../images/homepagenavigation/mail.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 27px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
 .sprite-ActiveBird {
   width: 24px;
   height: 38px;
@@ -56,18 +71,12 @@
   width: 20px;
   height: 33px;
   background-position: -43px -87px;
-  &:hover{
-    background-position: -113px -5px;
-  }
 }
 
 .sprite-PassiveSearchIcon {
   width: 29px;
   height: 29px;
   background-position: -114px -87px;
-  &:hover{
-    background-position: -114px -48px;
-  }
 }
 
 .sprite-passiveBird {
@@ -76,6 +85,14 @@
   background-position: -153px -5px;
   &:hover{
     background-position: -5px -5px;
+  }
+}
+
+#bird{
+  &:hover{
+    .sprite{
+      background-position: -5px -5px;
+    }
   }
 }
 
@@ -88,12 +105,28 @@
   }
 }
 
+#cat{
+  &:hover{
+    .sprite{
+      background-position: -39px -5px;
+    }
+  }
+}
+
 .sprite-passiveDog {
   width: 27px;
   height: 29px;
   background-position: -73px -126px;
   &:hover{
     background-position: -76px -5px;
+  }
+}
+
+#dog{
+  &:hover{
+    .sprite{
+      background-position: -76px -5px;
+    }
   }
 }
 
@@ -106,6 +139,14 @@
   }
 }
 
+#fish{
+  &:hover{
+    .sprite{
+      background-position:  -39px -48px;
+    }
+  }
+}
+
 .sprite-passiveHamster {
   width: 27px;
   height: 30px;
@@ -113,6 +154,26 @@
   &:hover{
     background-position:  -77px -48px;
   }
+}
+
+#hamster{
+  &:hover{
+    .sprite{
+      background-position:  -77px -48px;
+    }
+  }
+}
+
+#search-button, #FAQ, #about{
+  cursor: pointer;
+  &:hover{
+    background-color: rgba(255,255,255, 0.9);
+  }
+}
+
+
+#hamburger{
+  cursor: pointer;
 }
 
 .activeFAQ{

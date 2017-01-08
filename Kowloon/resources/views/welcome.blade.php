@@ -7,6 +7,11 @@
         <img class="mySlides" src="assets/images/backgroundA.jpg">
         <img class="mySlides" src="assets/images/backgroundB.jpg">
         <img class="mySlides" src="assets/images/backgroundC.jpg">
+        <div class="pictureCircles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+        </div>
         <div id="progressBar"></div>
     </div>
 
@@ -27,27 +32,27 @@
         </div>
 
         <div class="homepage-navigation">
-            <div class="home-button">
+            <div class="home-button" id="homeBird">
                 <div class="iconSprite sprite-bird"></div>
                 <p class="sub-title">BIRD</p>
             </div>
-            <div class="home-button">
+            <div class="home-button"  id="homeCat">
                 <div class="iconSprite sprite-cat"></div>
                 <p class="sub-title">CATS</p>
             </div>
-            <div class="home-button">
+            <div class="home-button"  id="homeDog">
                 <div class="iconSprite sprite-dog"></div>
                 <p class="sub-title">DOG</p>
             </div>
-            <div class="home-button">
+            <div class="home-button"  id="homeFish">
                 <div class="iconSprite sprite-fish"></div>
                 <p class="sub-title">FISH</p>
             </div>
-            <div class="home-button">
+            <div class="home-button"  id="homeHamster">
                 <div class="iconSprite sprite-hamster"></div>
                 <p class="sub-title">SMAL ANIMALS</p>
             </div>
-            <div class="home-button">
+            <div class="home-button"  id="homePlus">
                 <div class="iconSprite sprite-plus"></div>
                 <p class="sub-title">OTHER</p>
             </div>

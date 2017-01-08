@@ -171,3 +171,13 @@
     }
   }
 }
+
+#emailValidationError, #messageValidationError{
+  height: 18px;
+  color: $validation-error-color;
+  font-family: $primary-font;
+}
+
+#messageValidationError{
+  margin-bottom: 20px;
+}

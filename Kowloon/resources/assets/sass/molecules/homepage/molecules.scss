@@ -18,6 +18,40 @@
   width: 20%;
 }
 
+.pictureCircles{
+  position: absolute;
+  width: 78px;
+  height:50px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0px;
+  z-index: 30;
+  div{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 8px;
+    margin-right: 8px;
+    top: 20px;
+  }
+  .circle1{
+    left: 0px;
+  }
+  .circle2{
+    left: 26px;
+  }
+  .circle3{
+    left: 52px;
+  }
+
+  .activeCircle{
+    background-color: white;
+  }
+}
+
+
 #progressBar{
   background-color: white;
   height:3px;

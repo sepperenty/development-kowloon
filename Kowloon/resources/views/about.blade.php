@@ -43,9 +43,11 @@
             <form action="#">
                 <label for="email">E-mail</label>
                 <input  class="contact-email" type="email" placeholder="name@domain.com">
+                <div id="emailValidationError"></div>
                 <label for="message">Your message</label>
                 <textarea class="contact-message" name="message" id="" cols="30" rows="10" placeholder="Write your message here."></textarea>
-                <input class="send-contact-form" type="submit" value="Send">
+                <div id="messageValidationError"></div>
+                <input class="send-contact-form" type="submit" value="Send" disabled>
             </form>
         </div>
 
@@ -105,3 +107,7 @@
 
     </div>
     @endsection
+
+@section('specialScripts')
+<script src="js/aboutValidation.js"></script>
+@endsection

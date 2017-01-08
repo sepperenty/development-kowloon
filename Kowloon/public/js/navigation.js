@@ -79,9 +79,28 @@ $(document).ready(function(){
                 }
                 slideIndex++;
                 if (slideIndex > x.length) {slideIndex = 1}
+                switch(slideIndex) {
+                    case 1:
+                        $(".circle2").removeClass("activeCircle");
+                        $(".circle3").removeClass("activeCircle");
+                        $(".circle1").addClass("activeCircle");
+                        break;
+                    case 2:
+                        $(".circle2").addClass("activeCircle");
+                        break;
+                    case 3:
+                        $(".circle3").addClass("activeCircle");
+                        break;
+                    default:
+                        $(".circle2").removeClass("activeCircle");
+                        $(".circle3").removeClass("activeCircle");
+                        $(".circle1").removeClass("activeCircle");
+                }
                 x[slideIndex-1].style.display = "block";
 
             }
+
+
 
         }
 
