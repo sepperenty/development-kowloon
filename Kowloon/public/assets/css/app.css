@@ -8,6 +8,352 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+.landingPageIntro {
+  font-family: Arial;
+  color: #cecece;
+}
+
+.title {
+  font-family: Choplin;
+  color: #ffffff;
+}
+
+.sub-title {
+  font-family: Choplin-light;
+}
+
+.info-text {
+  font-family: Arial;
+}
+
+.overlay-title {
+  font-family: Choplin;
+  font-size: 40px;
+  color: #e27500;
+}
+
+.faq-customer-information {
+  margin-top: 55px;
+  color: #535353;
+  font-size: 14px;
+  font-family: Arial;
+  margin-bottom: 40px;
+}
+
+.faq-customer-information p {
+  margin: 0;
+}
+
+.faq-h {
+  font-size: 20px;
+  font-family: Arial;
+  margin: 0;
+  font-weight: bold;
+}
+
+.faq-p {
+  font-size: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.cookie-title {
+  font-family: Choplin;
+  font-size: 40px;
+  color: #e27500;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+.cookie-info {
+  line-height: 20px;
+  font-family: Arial;
+  font-size: 15px;
+  color: #454545;
+}
+
+.filterButton {
+  font-family: Arial;
+  font-size: 30px;
+}
+
+.product-view-advanced-dropdown .filterButton {
+  font-family: Arial;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.search-info {
+  font-family: Arial;
+  color: #535353;
+  font-size: 16px;
+}
+
+.category p, .price-range p {
+  font-family: Arial;
+  color: #2b2b2b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price-range p {
+  margin-bottom: 20px;
+}
+
+.product-view-advanced-filter-content .category p, .price-range p {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price-range p {
+  margin-bottom: 20px;
+}
+
+.product-view-advanced-filter-content .category form p {
+  color: white;
+  font-size: 16px;
+}
+
+.about-us-tag p {
+  display: inline-block;
+  font-family: Choplin-light;
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bread-crum-tag {
+  height: 14px;
+  white-space: nowrap;
+  position: relative;
+  margin: 0 5px 0 10px;
+  displaY: inline-block;
+  height: 25px;
+  border-radius: 0 2px 2px 0;
+  padding: 0 25px 0 15px;
+  background: #323232;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  color: #cecece;
+  line-height: 23px;
+  font-size: 14px;
+}
+
+.tag {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.dogs-tag {
+  background-color: #ff6f9e;
+}
+
+.cats-tag {
+  background-color: #8787ff;
+}
+
+.fish-tag {
+  background-color: #ffb93f;
+}
+
+.birds-tag {
+  background-color: #7bff81;
+}
+
+.small-animals-tag {
+  background-color: #7be5ff;
+}
+
+.bread-crum-tag:before {
+  position: absolute;
+  content: "";
+  color: white;
+  text-shadow: 0 0 1px #323232;
+  font-size: 11px;
+  line-height: 0px;
+  text-indent: 12px;
+  left: -15px;
+  width: 1px;
+  height: 0px;
+  border-right: 14px solid #323232;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+}
+
+.about-info, .contact-info {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.about-info p:first-child, .contact-info p:first-child {
+  font-size: 20px;
+  font-family: Choplin-light;
+}
+
+.about-info ul, .contact-info ul {
+  padding-left: 20px;
+}
+
+.contact-form label {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Choplin-light;
+}
+
+.product-view-products-right {
+  position: relative;
+}
+
+.product-view-products-right p {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.product-view-products-right p:first-child {
+  font-size: 26px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.product-view-products-right .product-view-active-price {
+  margin: 0px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.product-view-products-right a {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 170px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial;
+  Text-decoration: none;
+}
+
+.items-amount {
+  float: right;
+}
+
+.items-amount p {
+  color: #cecece;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.items-amount p span {
+  color: #ffffff;
+}
+
+.passive-product-detail-item p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.product-detail-right h1 {
+  font-size: 40px;
+}
+
+.product-detail-right {
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.product-detail-right .product-detail-item-price {
+  font-family: Arial;
+  font-size: 26px;
+  margin-top: 0px;
+}
+
+.product-detail-right .product-detail-item-colors-title, .product-detail-right .product-detail-item-description-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  clear: both;
+}
+
+.product-detail-right .product-detail-item-description-title {
+  margin-top: 15px;
+}
+
+.product-detail-right .product-detail-item-description {
+  font-size: 14px;
+}
+
+.product-detail-right .title {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.product-detail-specs {
+  color: #ffffff;
+  font-family: Arial;
+}
+
+.product-detail-specs .specs-title {
+  font-size: 20px;
+}
+
+.product-detail-specs .dimension-title {
+  font-size: 14px;
+}
+
+.product-detail-specs .dimensions-specs p {
+  float: left;
+  display: inline-block;
+  margin-left: 33px;
+}
+
+.product-detail-specs .tech-title {
+  clear: both;
+}
+
+.product-detail-specs .tech-info {
+  margin-left: 33px;
+}
+
+.gerelateerde-producten p {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Choplin;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 .clear-button {
   margin-top: 16px;
   float: right;
@@ -165,6 +511,53 @@
   border-left: 17.5px solid transparent;
   border-right: 17.5px solid transparent;
   border-bottom: 35px solid #828282;
+}
+
+.dogs-button {
+  background-color: #ff6f9e;
+}
+
+.cats-button {
+  background-color: #8787ff;
+}
+
+.fish-button {
+  background-color: #ffb93f;
+}
+
+.birds-button {
+  background-color: #ffb93f;
+}
+
+.small-animals-button {
+  background-color: #7be5ff;
+}
+
+.scroll-button {
+  position: absolute;
+  background-image: url(../images/arrows.png);
+  background-repeat: no-repeat;
+  display: block;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 30;
+  cursor: pointer;
+}
+
+#scroll-left {
+  right: 5px;
+  width: 45px;
+  height: 45px;
+  background-position: -60px -5px;
+}
+
+#scroll-right {
+  position: absolute;
+  left: 5px;
+  width: 45px;
+  height: 45px;
+  background-position: -5px -5px;
 }
 
 .sprite-cookie {
@@ -689,324 +1082,6 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-.landingPageIntro {
-  font-family: Arial;
-  color: #cecece;
-}
-
-.title {
-  font-family: Choplin;
-  color: #ffffff;
-}
-
-.sub-title {
-  font-family: Choplin-light;
-}
-
-.info-text {
-  font-family: Arial;
-}
-
-.overlay-title {
-  font-family: Choplin;
-  font-size: 40px;
-  color: #e27500;
-}
-
-.faq-customer-information {
-  margin-top: 55px;
-  color: #535353;
-  font-size: 14px;
-  font-family: Arial;
-  margin-bottom: 40px;
-}
-
-.faq-customer-information p {
-  margin: 0;
-}
-
-.faq-h {
-  font-size: 20px;
-  font-family: Arial;
-  margin: 0;
-  font-weight: bold;
-}
-
-.faq-p {
-  font-size: 20px;
-  font-family: Arial;
-  font-size: 14px;
-  margin-left: 20px;
-}
-
-.cookie-title {
-  font-family: Choplin;
-  font-size: 40px;
-  color: #e27500;
-  margin-bottom: 0px;
-  margin-top: 40px;
-}
-
-.cookie-info {
-  line-height: 20px;
-  font-family: Arial;
-  font-size: 15px;
-  color: #454545;
-}
-
-.filterButton {
-  font-family: Arial;
-  font-size: 30px;
-}
-
-.product-view-advanced-dropdown .filterButton {
-  font-family: Arial;
-  font-size: 15px;
-  color: #ffffff;
-}
-
-.search-info {
-  font-family: Arial;
-  color: #535353;
-  font-size: 16px;
-}
-
-.category p, .price-range p {
-  font-family: Arial;
-  color: #2b2b2b;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.price-range p {
-  margin-bottom: 20px;
-}
-
-.product-view-advanced-filter-content .category p, .price-range p {
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.price-range p {
-  margin-bottom: 20px;
-}
-
-.product-view-advanced-filter-content .category form p {
-  color: white;
-  font-size: 16px;
-}
-
-.about-us-tag p {
-  display: inline-block;
-  font-family: Choplin-light;
-  color: #ffffff;
-  font-size: 24px;
-  margin-right: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.bread-crum-tag {
-  height: 14px;
-  white-space: nowrap;
-  position: relative;
-  margin: 0 5px 0 10px;
-  displaY: inline-block;
-  height: 25px;
-  border-radius: 0 2px 2px 0;
-  padding: 0 25px 0 15px;
-  background: #323232;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  color: #cecece;
-  line-height: 23px;
-  font-size: 14px;
-}
-
-.bread-crum-tag:before {
-  position: absolute;
-  content: "";
-  color: white;
-  text-shadow: 0 0 1px #323232;
-  font-size: 11px;
-  line-height: 0px;
-  text-indent: 12px;
-  left: -15px;
-  width: 1px;
-  height: 0px;
-  border-right: 14px solid #323232;
-  border-top: 12.5px solid transparent;
-  border-bottom: 12.5px solid transparent;
-}
-
-.about-info, .contact-info {
-  color: #ffffff;
-  font-size: 14px;
-  font-family: Arial;
-}
-
-.about-info p:first-child, .contact-info p:first-child {
-  font-size: 20px;
-  font-family: Choplin-light;
-}
-
-.about-info ul, .contact-info ul {
-  padding-left: 20px;
-}
-
-.contact-form label {
-  margin-top: 17px;
-  margin-bottom: 17px;
-  font-family: Arial;
-  color: #ffffff;
-}
-
-.subtitle {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: Choplin-light;
-}
-
-.product-view-products-right {
-  position: relative;
-}
-
-.product-view-products-right p {
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.product-view-products-right p:first-child {
-  font-size: 26px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.product-view-products-right .product-view-active-price {
-  margin: 0px;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-
-.product-view-products-right a {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  width: 170px;
-  background-color: #ff6f9e;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #ffffff;
-  font-size: 14px;
-  font-family: Arial;
-  Text-decoration: none;
-}
-
-.items-amount {
-  float: right;
-}
-
-.items-amount p {
-  color: #cecece;
-  font-size: 14px;
-  font-family: Arial;
-}
-
-.items-amount p span {
-  color: #ffffff;
-}
-
-.passive-product-detail-item p {
-  margin-top: 6px;
-  margin-bottom: 6px;
-  color: #ffffff;
-  font-size: 12px;
-  font-family: Arial;
-}
-
-.product-detail-right h1 {
-  font-size: 40px;
-}
-
-.product-detail-right {
-  font-family: Arial;
-  color: #ffffff;
-}
-
-.product-detail-right .product-detail-item-price {
-  font-family: Arial;
-  font-size: 26px;
-  margin-top: 0px;
-}
-
-.product-detail-right .product-detail-item-colors-title, .product-detail-right .product-detail-item-description-title {
-  font-size: 20px;
-  margin-bottom: 15px;
-  clear: both;
-}
-
-.product-detail-right .product-detail-item-description-title {
-  margin-top: 15px;
-}
-
-.product-detail-right .product-detail-item-description {
-  font-size: 14px;
-}
-
-.product-detail-right .title {
-  margin-top: 15px;
-  margin-bottom: 0px;
-}
-
-.product-detail-specs {
-  color: #ffffff;
-  font-family: Arial;
-}
-
-.product-detail-specs .specs-title {
-  font-size: 20px;
-}
-
-.product-detail-specs .dimension-title {
-  font-size: 14px;
-}
-
-.product-detail-specs .dimensions-specs p {
-  float: left;
-  display: inline-block;
-  margin-left: 33px;
-}
-
-.product-detail-specs .tech-title {
-  clear: both;
-}
-
-.product-detail-specs .tech-info {
-  margin-left: 33px;
-}
-
-.gerelateerde-producten p {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: Choplin;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
 .header-picture {
   display: block;
   width: 100%;
@@ -1135,7 +1210,6 @@
 .hot-item .hot-item-image .hot-item-overlay {
   position: absolute;
   z-index: 10;
-  background-color: rgba(255, 111, 158, 0.7);
   width: 100%;
   height: 160px;
   top: 50%;
@@ -1146,6 +1220,26 @@
   background-repeat: no-repeat;
   background-position: center;
   visibility: hidden;
+}
+
+.hot-item .hot-item-image .dogs-overlay {
+  background-color: rgba(255, 111, 158, 0.7);
+}
+
+.hot-item .hot-item-image .cats-overlay {
+  background-color: rgba(135, 135, 225, 0.7);
+}
+
+.hot-item .hot-item-image .fish-overlay {
+  background-color: rgba(255, 185, 63, 0.7);
+}
+
+.hot-item .hot-item-image .small-animals-overlay {
+  background-color: rgba(123, 229, 255, 0.7);
+}
+
+.hot-item .hot-item-image .birds-overlay {
+  background-color: rgba(123, 255, 129, 0.7);
 }
 
 .hot-item .hot-item-image img {
@@ -1286,6 +1380,23 @@
   width: 20%;
   font-size: 16px;
   border: none;
+}
+
+.message {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  width: 300px;
+  right: 0;
+  background-color: rgba(135, 135, 225, 0.8);
+  padding: 5px;
+  text-align: center;
+  font-family: Arial;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #ffffff;
 }
 
 @font-face {
@@ -1565,10 +1676,6 @@ button.accordion {
   box-sizing: border-box;
 }
 
-.geralateerde-producten-items {
-  width: 100%;
-}
-
 .geralateerde-producten-items .hot-item {
   margin-right: 1%;
   width: 24.25%;
@@ -1577,6 +1684,26 @@ button.accordion {
 
 .geralateerde-producten-items .hot-item:last-child {
   margin: 0;
+}
+
+.geralateerde-producten-items {
+  width: 100%;
+  overflow-x: hidden;
+  height: 172px;
+  display: inline-block;
+  position: relative;
+}
+
+.geralateerde-producten-items .overflow-scroll {
+  width: 1840px;
+  height: 100%;
+  position: absolute;
+}
+
+.geralateerde-producten-items .hot-item {
+  margin-right: 5px;
+  width: 200px;
+  position: relative;
 }
 
 @font-face {
@@ -1747,55 +1874,6 @@ body {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-.overlay-content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-}
-
-.overlay-content .overlay-title {
-  margin-top: 250px;
-}
-
-.advanced-filter-content, .product-view-advanced-filter-content {
-  clear: both;
-  min-height: 280px;
-  width: 100%;
-}
-
-.advanced-filter-content .category, .product-view-advanced-filter-content .category {
-  box-sizing: border-box;
-  padding: 35px;
-  width: 50%;
-  overflow: hidden;
-  float: left;
-}
-
-.price-range {
-  float: left;
-  box-sizing: border-box;
-  width: 50%;
-  min-height: 150px;
-}
-
-.advanced-filter-content, .product-view-advanced-filter-content {
-  display: none;
-}
-
-.advanced-filter-visible {
-  display: block;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
 .product-detail-item {
   overflow: hidden;
   margin-top: 140px;
@@ -1884,6 +1962,66 @@ body {
   margin-right: 0px;
 }
 
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+.overlay-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.overlay-content .overlay-title {
+  margin-top: 250px;
+}
+
+.advanced-filter-content, .product-view-advanced-filter-content {
+  clear: both;
+  min-height: 280px;
+  width: 100%;
+}
+
+.advanced-filter-content .category, .product-view-advanced-filter-content .category {
+  box-sizing: border-box;
+  padding: 35px;
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+
+.price-range {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  min-height: 150px;
+}
+
+.advanced-filter-content, .product-view-advanced-filter-content {
+  display: none;
+}
+
+.advanced-filter-visible {
+  display: block;
+}
+
+html {
+  min-height: 100%;
+  /* make sure it is at least as tall as the viewport */
+  position: relative;
+}
+
+body {
+  height: 100%;
+  /* force the BODY element to match the height of the HTML element */
+}
+
 #cookieAlert {
   z-index: 100;
   position: fixed;
@@ -1929,17 +2067,6 @@ body {
 
 .fAQ-visible {
   display: block;
-}
-
-html {
-  min-height: 100%;
-  /* make sure it is at least as tall as the viewport */
-  position: relative;
-}
-
-body {
-  height: 100%;
-  /* force the BODY element to match the height of the HTML element */
 }
 
 @font-face {

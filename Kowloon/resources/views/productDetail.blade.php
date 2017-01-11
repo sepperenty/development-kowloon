@@ -7,22 +7,22 @@
         <div class="product-detail-item">
 
             <div class="product-detail-left">
-                <img class="active-product-detail-item" src="../assets/images/productDetailFoto.png" alt="">
+                <img class="active-product-detail-item" src="/assets/images/productDetailFoto.png" alt="">
                 <div class="passive-product-detail-item active">
                     <div class="passive-product-detail-image">
-                        <img  src="../assets/images/productDetailFoto.png" alt="">
+                        <img  src="/assets/images/productDetailFoto.png" alt="">
                     </div>
                     <p>woordje tekst</p>
                 </div>
                 <div class="passive-product-detail-item passive">
                     <div class="passive-product-detail-image">
-                        <img  src="../assets/images/productDetailFoto.png" alt="">
+                        <img  src="/assets/images/productDetailFoto.png" alt="">
                     </div>
                     <p>woordje tekst</p>
                 </div>
                 <div class="passive-product-detail-item passive">
                     <div class="passive-product-detail-image">
-                        <img  src="../assets/images/productDetailFoto.png" alt="">
+                        <img  src="/assets/images/productDetailFoto.png" alt="">
                     </div>
                     <p>woordje tekst</p>
                 </div>
@@ -30,7 +30,7 @@
 
             <div class="product-detail-right">
                 <div class="about-us-tag">
-                    <p>K</p>  <div class="bread-crum-tag">Dogs</div>  <div class="bread-crum-tag">Splash 'n Fun</div>
+                    <p>K</p>   <div class="bread-crum-tag"><div class="{{$category}}-tag tag"></div>{{$category}}</div>    <div class="bread-crum-tag">Splash 'n Fun</div>
                 </div>
                 <h1 class="title">COOLING MAT</h1>
                 <p class="product-detail-item-price">€ 15,49</p>
@@ -66,31 +66,86 @@
         <div class="gerelateerde-producten">
             <p>GERELATEERDE PRODUCTEN</p>
                     <div class="geralateerde-producten-items">
+                        <div class="overflow-scroll">
                             <div class="hot-item">
-                                <div class="hot-item-image">
-                                    <img src="../assets/images/hotItem.png" alt="">
-                                    <div class="hot-item-overlay"></div>
-                                </div>
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="hot-item">
-                                <div class="hot-item-image">
-                                    <img src="../assets/images/hotItem.png" alt="">
-                                    <div class="hot-item-overlay"></div>
-                                </div>
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="hot-item">
-                                <div class="hot-item-image">
-                                    <img src="../assets/images/hotItem.png" alt="">
-                                    <div class="hot-item-overlay"></div>
-                                </div>
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="hot-item">
-                                <div class="hot-item-image">
-                                    <img src="../assets/images/hotItem.png" alt="">
-                                    <div class="hot-item-overlay"></div>
-                                </div>
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
                             </div>
+                            <div class="hot-item">
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hot-item">
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hot-item">
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hot-item">
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hot-item">
+                                <a href="/products/{{$category}}/product">
+                                    <div class="hot-item-image">
+                                        <img src="/assets/images/hotItem.png" alt="">
+                                        <div class="hot-item-overlay {{$category}}-overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="scroll-right" class="scroll-button"></div>
+
+                        <div id="scroll-left" class="scroll-button"></div>
                     </div>
+
+
         </div>
 
         <div class="page-faq">
@@ -140,3 +195,7 @@
     </div>
 
 @endsection
+
+@section("specialScripts")
+    <script src="/js/sideScroller.js"></script>
+    @endsection

@@ -19,10 +19,12 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/makeArticles', 'HomeController@makeArticles');
 
-Route::get('/sort/{tag1}/{tag2}/{tag3}/{tag4}/{tag5}/{minPrice}/{maxPrice}/{sort}', 'ApiController@sort');
-
 Route::get("/about", "publicController@about");
 
-Route::get("/productView", "publicController@productView");
+Route::get("/products/{category}", "publicController@productView");
 
-Route::get("/productDetail", "publicController@productDetail");
+Route::get("/products/{category}/product", "publicController@productDetail");
+
+Route::post("/store/email", "publicController@storeEmail");
+
+Route::get('/sort/{tag1}/{tag2}/{tag3}/{tag4}/{tag5}/{minPrice}/{maxPrice}/{sort}', 'ApiController@sort');

@@ -53,11 +53,17 @@
             filterProducts();
         });
 
+        var location =  window.location.href;
+        var res = location.split("/");
+        var category = (res[res.length-1]);
+
         var template = '<div class="hot-item   product-view-item">'+
+                '<a href="/products/'+category+'/product">'+
            ' <div class="hot-item-image product-view-image">'+
             '<img src="../assets/images/image3.png" alt="">'+
-           ' <div class="hot-item-overlay"></div>'+
+           ' <div class="hot-item-overlay '+category+'-overlay"></div>'+
            ' </div>'+
+                '</a>'+
             '<div class="hot-item-info">'+
             '<p class="hot-item-name product-view-name">Cooling Mat</p>'+
         '<p class="hot-item-price product-view-price">€5,40</p>'+

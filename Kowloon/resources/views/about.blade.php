@@ -7,6 +7,11 @@
         <img class="mySlides" src="assets/images/backgroundA.jpg">
         <img class="mySlides" src="assets/images/backgroundB.jpg">
         <img class="mySlides" src="assets/images/backgroundC.jpg">
+        <div class="pictureCircles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+        </div>
         <div id="progressBar"></div>
     </div>
 

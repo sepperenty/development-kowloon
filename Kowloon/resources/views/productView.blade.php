@@ -3,20 +3,26 @@
 @section('content')
 
     <div class="header-picture pictureA">
-        <a href="/"><img class="header-logo" src="assets/images/logo.png" alt=""></a>
-        <img class="mySlides" src="assets/images/backgroundA.jpg">
-        <img class="mySlides" src="assets/images/backgroundB.jpg">
-        <img class="mySlides" src="assets/images/backgroundC.jpg">
+        <a href="/"><img class="header-logo" src="/assets/images/logo.png" alt=""></a>
+        <a href="/"><img class="header-logo" src="/assets/images/logo.png" alt=""></a>
+        <img class="mySlides" src="/assets/images/backgroundA.jpg">
+        <img class="mySlides" src="/assets/images/backgroundB.jpg">
+        <img class="mySlides" src="/assets/images/backgroundC.jpg">
+        <div class="pictureCircles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+        </div>
         <div id="progressBar"></div>
     </div>
 
     <div class="content-store">
 
         <div class="about-us-tag">
-            <p>K</p>  <div class="bread-crum-tag">Dogs</div>  <div class="bread-crum-tag">Splash 'n Fun</div>
+            <p>K</p>  <div class="bread-crum-tag"><div class="{{$category}}-tag tag"></div>{{$category}}</div>  <div class="bread-crum-tag">Splash 'n Fun</div>
         </div>
 
-        <h1 class="title">DOG ARTICLES.</h1>
+        <h1 class="title">{{$title}} ARTICLES.</h1>
 
         <div class="advanced-filter">
             <div class="product-view-advanced-dropdown">
@@ -93,40 +99,48 @@
 
                 <div class="product-view-products-left">
                     <div class="hot-item  product-view-item">
-                        <div class="hot-item-image product-view-image">
-                            <img src="../assets/images/image1.png" alt="">
-                            <div class="hot-item-overlay"></div>
-                        </div>
+                        <a href="/products/{{$category}}/product">
+                            <div class="hot-item-image product-view-image">
+                                <img src="/assets/images/image1.png" alt="">
+                                <div class="hot-item-overlay {{$category}}-overlay"></div>
+                            </div>
+                        </a>
                         <div class="hot-item-info">
                             <p class="hot-item-name product-view-name">Cooling Mat</p>
                             <p class="hot-item-price product-view-price">€5,40</p>
                         </div>
                     </div>
                     <div class="hot-item   product-view-item">
-                        <div class="hot-item-image product-view-image">
-                            <img src="../assets/images/image2.png" alt="">
-                            <div class="hot-item-overlay"></div>
-                        </div>
+                        <a href="/products/{{$category}}/product">
+                            <div class="hot-item-image product-view-image">
+                                <img src="/assets/images/image2.png" alt="">
+                                <div class="hot-item-overlay {{$category}}-overlay"></div>
+                            </div>
+                        </a>
                         <div class="hot-item-info">
                             <p class="hot-item-name product-view-name">Cooling Mat</p>
                             <p class="hot-item-price product-view-price">€5,40</p>
                         </div>
                     </div>
                     <div class="hot-item   product-view-item">
-                        <div class="hot-item-image product-view-image">
-                            <img src="../assets/images/image3.png" alt="">
-                            <div class="hot-item-overlay"></div>
-                        </div>
+                        <a href="/products/{{$category}}/product">
+                            <div class="hot-item-image product-view-image">
+                                <img src="/assets/images/image3.png" alt="">
+                                <div class="hot-item-overlay {{$category}}-overlay"></div>
+                            </div>
+                        </a>
                         <div class="hot-item-info">
                             <p class="hot-item-name product-view-name">Cooling Mat</p>
                             <p class="hot-item-price product-view-price">€5,40</p>
                         </div>
                     </div>
                     <div class="hot-item multiple-borders  product-view-item">
-                        <div class="hot-item-image product-view-image">
-                            <img src="../assets/images/image4.png" alt="">
-                            <div class="hot-item-overlay"></div>
-                        </div>
+                        <a href="/products/{{$category}}/product">
+                            <div class="hot-item-image product-view-image">
+                                <img src="/assets/images/image4.png" alt="">
+                                <div class="hot-item-overlay {{$category}}-overlay"></div>
+                            </div>
+                        </a>
                         <div class="hot-item-info">
                             <p class="hot-item-name product-view-name">Cooling Mat</p>
                             <p class="hot-item-price product-view-price">€5,40</p>
@@ -136,7 +150,7 @@
 
                 <div class="product-view-products-right  product-view-item">
                     <div class="product-view-image">
-                        <img src="../assets/images/big/image1.png" alt="">
+                        <img src="/assets/images/big/image1.png" alt="">
                     </div>
                     <div class="product-view-active-info">
                         <p class="product-view-name">Cooling mat</p>
@@ -147,7 +161,7 @@
                         <p class="product-view-active-price product-view-price">
                             € 15,49
                         </p>
-                        <a href="#">Want to know more?</a>
+                        <a href="/products/{{$category}}/product" class="{{$category}}-button">Want to know more?</a>
                     </div>
                 </div>
 
@@ -165,5 +179,5 @@
     @endsection
 
 @section("specialScripts")
-    <script src="js/filterProductView.js"></script>
+    <script src="/js/filterProductView.js"></script>
     @endsection

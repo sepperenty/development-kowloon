@@ -153,6 +153,32 @@
   line-height:23px;
   font-size: 14px;
 }
+
+.tag{
+    width: 10px;
+    height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.dogs-tag{
+  background-color: $dog-color;
+}
+.cats-tag{
+  background-color: $cat-color;
+}
+.fish-tag{
+  background-color: $fish-color;
+}
+.birds-tag{
+  background-color: $bird-color;
+}
+.small-animals-tag{
+  background-color: $small-animal-color;
+}
+
 .bread-crum-tag:before{
   position:absolute;
   content:"";
@@ -228,7 +254,6 @@
     right: 5px;
     bottom: 5px;
     width: 170px;
-    background-color: $fourth-color;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;

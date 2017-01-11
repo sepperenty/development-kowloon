@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+    @if( $message != "")
+        <div class="message">
+            <p>{{$message}}</p>
+        </div>
+    @endif
+
+    @if ($errors->has('email'))
+        <div class="message">
+            <p>{{ $errors->first('email')}}</p>
+        </div>
+    @endif
 
     <div class="header-picture pictureA">
         <a href="/"><img class="header-logo" src="assets/images/logo.png" alt=""></a>
@@ -118,7 +129,8 @@
                     <p class="subscribe-subtitle">
                         Lorum ipsum dolor sit amet..
                     </p>
-                    <form action="#" class="newsletter-form" method="POST">
+                    <form action="/store/email" class="newsletter-form" method="POST">
+                        {{ csrf_field() }}
                         <input type="email" name="email" class="newsletter-email-input" placeholder="Domain@name.com">
                         <input type="submit" class="newsletter-submit" value="OK">
                     </form>

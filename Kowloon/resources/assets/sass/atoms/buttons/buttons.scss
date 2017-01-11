@@ -159,3 +159,47 @@
     border-bottom: 35px solid $tenth-background-color;
   }
 }
+
+
+.dogs-button{
+  background-color: $dog-color;
+}
+.cats-button{
+  background-color: $cat-color;
+}
+.fish-button{
+  background-color: $fish-color;
+}
+.birds-button{
+  background-color: $fish-color;
+}
+.small-animals-button{
+  background-color: $small-animal-color;
+}
+
+.scroll-button{
+  position: absolute;
+  background-image: url(../images/arrows.png);
+  background-repeat: no-repeat;
+  display: block;
+  top:50%;
+  transform: translate(0,-50%);
+  z-index: 30;
+  cursor: pointer;
+}
+
+#scroll-left{
+  right:5px;
+  width: 45px;
+  height: 45px;
+  background-position: -60px -5px;
+}
+
+#scroll-right{
+  position: absolute;
+  left:5px;
+  width: 45px;
+  height: 45px;
+  background-position: -5px -5px;
+
+}
