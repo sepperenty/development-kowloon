@@ -83,7 +83,11 @@
                     <a href="/products/dogs">
                         <div class="nav-option" id="dog">
                             <div class="nav-icon">
-                                <div class="sprite sprite-passiveDog"></div>
+                                @if(!empty($category) && $category == "dogs")
+                                    <div class="sprite sprite-ActiveDog"></div>
+                                    @else
+                                    <div class="sprite sprite-passiveDog"></div>
+                                    @endif
                             </div>
                             <div class="nav-info">
                                 <p>Dogs</p>
@@ -93,7 +97,11 @@
                     <a href="/products/cats">
                         <div class="nav-option" id="cat">
                             <div class="nav-icon">
-                                <div class="sprite sprite-passiveCat"></div>
+                                @if(!empty($category) && $category == "cats")
+                                    <div class="sprite sprite-ActiveCat"></div>
+                                @else
+                                    <div class="sprite sprite-passiveCat"></div>
+                                @endif
                             </div>
                             <div class="nav-info">
                                 <p>Cats</p>
@@ -103,7 +111,11 @@
                     <a href="/products/fish">
                         <div class="nav-option" id="fish">
                             <div class="nav-icon">
-                                <div class="sprite sprite-passiveFish"></div>
+                                @if(!empty($category) && $category == "fish")
+                                    <div class="sprite sprite-ActiveFish"></div>
+                                @else
+                                    <div class="sprite sprite-passiveFish"></div>
+                                @endif
                             </div>
                             <div class="nav-info">
                                 <p>Fish</p>
@@ -113,7 +125,11 @@
                     <a href="/products/birds">
                         <div class="nav-option" id="bird">
                             <div class="nav-icon">
-                                <div class="sprite sprite-passiveBird"></div>
+                                @if(!empty($category) && $category == "birds")
+                                    <div class="sprite sprite-ActiveBird"></div>
+                                @else
+                                    <div class="sprite sprite-passiveBird"></div>
+                                @endif
                             </div>
                             <div class="nav-info">
                                 <p>Birds</p>
@@ -123,7 +139,11 @@
                     <a href="/products/small-animals">
                         <div class="nav-option" id="hamster">
                             <div class="nav-icon">
-                                <div class="sprite sprite-passiveHamster"></div>
+                                @if(!empty($category) && $category == "small-animals")
+                                    <div class="sprite sprite-ActiveHamster"></div>
+                                @else
+                                    <div class="sprite sprite-passiveHamster"></div>
+                                @endif
                             </div>
                             <div class="nav-info">
                                 <p>Smal Animals</p>

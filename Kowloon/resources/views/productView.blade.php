@@ -34,26 +34,36 @@
 
                     <p>By collection</p>
                     <form action="#">
-                        <div class="squareOneProductView">
-                            <input type="checkbox" value="1" id="splash" name="splash" checked/>
-                            <label for="splash"></label>
-                        </div><p>Splash 'n Fun</p>
-                        <div class="squareOneProductView">
-                            <input type="checkbox" value="2"  id="luxury" name="luxury" checked />
-                            <label for="luxury"></label>
-                        </div><p>Luxury</p>
-                        <div class="squareOneProductView">
-                            <input type="checkbox" value="3"  id="new" name="new"checked  />
-                            <label for="new"></label>
-                        </div><p>New</p>
-                        <div class="squareOneProductView">
-                            <input type="checkbox" value="4" id="onsale"  name="onsale" checked />
-                            <label for="onsale"></label>
-                        </div><p>on sale</p>
-                        <div class="squareOneProductView">
-                            <input type="checkbox" value="5" id="other-products"  name="other-products" checked />
-                            <label for="other-products"></label>
-                        </div><p>other</p>
+                        <div class="productsCheckFilter">
+                            <div class="squareOneProductView">
+                                <input type="checkbox" value="1" id="splash" name="splash" checked/>
+                                <label for="splash"></label>
+                            </div><p>Splash 'n Fun</p>
+                         </div>
+                        <div class="productsCheckFilter">
+                            <div class="squareOneProductView">
+                                <input type="checkbox" value="2"  id="luxury" name="luxury" checked />
+                                <label for="luxury"></label>
+                            </div><p>Luxury</p>
+                        </div>
+                        <div class="productsCheckFilter">
+                            <div class="squareOneProductView">
+                                <input type="checkbox" value="3"  id="new" name="new"checked  />
+                                <label for="new"></label>
+                            </div><p>New</p>
+                         </div>
+                        <div class="productsCheckFilter">
+                            <div class="squareOneProductView">
+                                <input type="checkbox" value="4" id="onsale"  name="onsale" checked />
+                                <label for="onsale"></label>
+                            </div><p>on sale</p>
+                         </div>
+                        <div class="productsCheckFilter">
+                            <div class="squareOneProductView">
+                                <input type="checkbox" value="5" id="other-products"  name="other-products" checked />
+                                <label for="other-products"></label>
+                            </div><p>other</p>
+                        </div>
 
                     </form>
 
@@ -171,12 +181,18 @@
         </div>
 
         <div class="product-view-products-toload">
+          </div>
 
+        <div class="loadBar">
+            <div class="loader"></div>
         </div>
+
 
     </div>
 
-    @endsection
+
+
+@endsection
 
 @section("specialScripts")
     <script src="/js/filterProductView.js"></script>

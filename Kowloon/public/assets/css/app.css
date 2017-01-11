@@ -1,347 +1,123 @@
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
-.landingPageIntro {
-  font-family: Arial;
-  color: #cecece;
-}
-
-.title {
-  font-family: Choplin;
-  color: #ffffff;
-}
-
-.sub-title {
-  font-family: Choplin-light;
-}
-
-.info-text {
-  font-family: Arial;
-}
-
-.overlay-title {
-  font-family: Choplin;
-  font-size: 40px;
-  color: #e27500;
-}
-
-.faq-customer-information {
-  margin-top: 55px;
-  color: #535353;
-  font-size: 14px;
-  font-family: Arial;
-  margin-bottom: 40px;
-}
-
-.faq-customer-information p {
-  margin: 0;
-}
-
-.faq-h {
-  font-size: 20px;
-  font-family: Arial;
-  margin: 0;
-  font-weight: bold;
-}
-
-.faq-p {
-  font-size: 20px;
-  font-family: Arial;
-  font-size: 14px;
-  margin-left: 20px;
-}
-
-.cookie-title {
-  font-family: Choplin;
-  font-size: 40px;
-  color: #e27500;
-  margin-bottom: 0px;
-  margin-top: 40px;
-}
-
-.cookie-info {
-  line-height: 20px;
-  font-family: Arial;
-  font-size: 15px;
-  color: #454545;
-}
-
-.filterButton {
-  font-family: Arial;
-  font-size: 30px;
-}
-
-.product-view-advanced-dropdown .filterButton {
-  font-family: Arial;
-  font-size: 15px;
-  color: #ffffff;
-}
-
-.search-info {
-  font-family: Arial;
-  color: #535353;
-  font-size: 16px;
-}
-
-.category p, .price-range p {
-  font-family: Arial;
-  color: #2b2b2b;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.price-range p {
-  margin-bottom: 20px;
-}
-
-.product-view-advanced-filter-content .category p, .price-range p {
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.price-range p {
-  margin-bottom: 20px;
-}
-
-.product-view-advanced-filter-content .category form p {
-  color: white;
-  font-size: 16px;
-}
-
-.about-us-tag p {
-  display: inline-block;
-  font-family: Choplin-light;
-  color: #ffffff;
-  font-size: 24px;
-  margin-right: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.bread-crum-tag {
-  height: 14px;
-  white-space: nowrap;
+.loadBar {
+  width: 100%;
   position: relative;
-  margin: 0 5px 0 10px;
-  displaY: inline-block;
-  height: 25px;
-  border-radius: 0 2px 2px 0;
-  padding: 0 25px 0 15px;
-  background: #323232;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  color: #cecece;
-  line-height: 23px;
-  font-size: 14px;
+  height: 50px;
+  margin-top: 20px;
 }
 
-.tag {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+.loader {
+  width: 48px;
+  height: 48px;
+  background: url("../images/loadingCircle.png");
+  -webkit-animation: play 1s steps(1) infinite;
+  animation: play 1s steps(1) infinite;
   position: absolute;
+  z-index: 100;
+  margin: 0 auto;
   left: 0;
-  top: 7px;
+  right: 0;
 }
 
-.dogs-tag {
-  background-color: #ff6f9e;
+@-webkit-keyframes play {
+  0% {
+    background-position: -5px -5px;
+  }
+  6.25% {
+    background-position: -5px -121px;
+  }
+  12.5% {
+    background-position: -63px -121px;
+  }
+  18.75% {
+    background-position: -121px -121px;
+  }
+  25% {
+    background-position: -179px -121px;
+  }
+  32.25% {
+    background-position: -5px -179px;
+  }
+  37.5% {
+    background-position: -63px -179px;
+  }
+  43.75% {
+    background-position: -121px -179px;
+  }
+  50% {
+    background-position: -179px -179px;
+  }
+  56.25% {
+    background-position: -63px -5px;
+  }
+  62.5% {
+    background-position: -121px -5px;
+  }
+  68.75% {
+    background-position: -179px -5px;
+  }
+  75% {
+    background-position: -5px -63px;
+  }
+  81.25% {
+    background-position: -63px -63px;
+  }
+  87.5% {
+    background-position: -121px -63px;
+  }
+  93.75% {
+    background-position: -179px -63px;
+  }
 }
 
-.cats-tag {
-  background-color: #8787ff;
-}
-
-.fish-tag {
-  background-color: #ffb93f;
-}
-
-.birds-tag {
-  background-color: #7bff81;
-}
-
-.small-animals-tag {
-  background-color: #7be5ff;
-}
-
-.bread-crum-tag:before {
-  position: absolute;
-  content: "";
-  color: white;
-  text-shadow: 0 0 1px #323232;
-  font-size: 11px;
-  line-height: 0px;
-  text-indent: 12px;
-  left: -15px;
-  width: 1px;
-  height: 0px;
-  border-right: 14px solid #323232;
-  border-top: 12.5px solid transparent;
-  border-bottom: 12.5px solid transparent;
-}
-
-.about-info, .contact-info {
-  color: #ffffff;
-  font-size: 14px;
-  font-family: Arial;
-}
-
-.about-info p:first-child, .contact-info p:first-child {
-  font-size: 20px;
-  font-family: Choplin-light;
-}
-
-.about-info ul, .contact-info ul {
-  padding-left: 20px;
-}
-
-.contact-form label {
-  margin-top: 17px;
-  margin-bottom: 17px;
-  font-family: Arial;
-  color: #ffffff;
-}
-
-.subtitle {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: Choplin-light;
-}
-
-.product-view-products-right {
-  position: relative;
-}
-
-.product-view-products-right p {
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.product-view-products-right p:first-child {
-  font-size: 26px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.product-view-products-right .product-view-active-price {
-  margin: 0px;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-
-.product-view-products-right a {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  width: 170px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #ffffff;
-  font-size: 14px;
-  font-family: Arial;
-  Text-decoration: none;
-}
-
-.items-amount {
-  float: right;
-}
-
-.items-amount p {
-  color: #cecece;
-  font-size: 14px;
-  font-family: Arial;
-}
-
-.items-amount p span {
-  color: #ffffff;
-}
-
-.passive-product-detail-item p {
-  margin-top: 6px;
-  margin-bottom: 6px;
-  color: #ffffff;
-  font-size: 12px;
-  font-family: Arial;
-}
-
-.product-detail-right h1 {
-  font-size: 40px;
-}
-
-.product-detail-right {
-  font-family: Arial;
-  color: #ffffff;
-}
-
-.product-detail-right .product-detail-item-price {
-  font-family: Arial;
-  font-size: 26px;
-  margin-top: 0px;
-}
-
-.product-detail-right .product-detail-item-colors-title, .product-detail-right .product-detail-item-description-title {
-  font-size: 20px;
-  margin-bottom: 15px;
-  clear: both;
-}
-
-.product-detail-right .product-detail-item-description-title {
-  margin-top: 15px;
-}
-
-.product-detail-right .product-detail-item-description {
-  font-size: 14px;
-}
-
-.product-detail-right .title {
-  margin-top: 15px;
-  margin-bottom: 0px;
-}
-
-.product-detail-specs {
-  color: #ffffff;
-  font-family: Arial;
-}
-
-.product-detail-specs .specs-title {
-  font-size: 20px;
-}
-
-.product-detail-specs .dimension-title {
-  font-size: 14px;
-}
-
-.product-detail-specs .dimensions-specs p {
-  float: left;
-  display: inline-block;
-  margin-left: 33px;
-}
-
-.product-detail-specs .tech-title {
-  clear: both;
-}
-
-.product-detail-specs .tech-info {
-  margin-left: 33px;
-}
-
-.gerelateerde-producten p {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: Choplin;
+@keyframes play {
+  0% {
+    background-position: -5px -5px;
+  }
+  6.25% {
+    background-position: -5px -121px;
+  }
+  12.5% {
+    background-position: -63px -121px;
+  }
+  18.75% {
+    background-position: -121px -121px;
+  }
+  25% {
+    background-position: -179px -121px;
+  }
+  32.25% {
+    background-position: -5px -179px;
+  }
+  37.5% {
+    background-position: -63px -179px;
+  }
+  43.75% {
+    background-position: -121px -179px;
+  }
+  50% {
+    background-position: -179px -179px;
+  }
+  56.25% {
+    background-position: -63px -5px;
+  }
+  62.5% {
+    background-position: -121px -5px;
+  }
+  68.75% {
+    background-position: -179px -5px;
+  }
+  75% {
+    background-position: -5px -63px;
+  }
+  81.25% {
+    background-position: -63px -63px;
+  }
+  87.5% {
+    background-position: -121px -63px;
+  }
+  93.75% {
+    background-position: -179px -63px;
+  }
 }
 
 @font-face {
@@ -558,6 +334,12 @@
   width: 45px;
   height: 45px;
   background-position: -5px -5px;
+}
+
+.productsCheckFilter {
+  margin-right: 20px;
+  overflow: hidden;
+  float: left;
 }
 
 .sprite-cookie {
@@ -1070,6 +852,352 @@
 
 #messageValidationError {
   margin-bottom: 20px;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+.landingPageIntro {
+  font-family: Arial;
+  color: #cecece;
+}
+
+.title {
+  font-family: Choplin;
+  color: #ffffff;
+}
+
+.sub-title {
+  font-family: Choplin-light;
+}
+
+.info-text {
+  font-family: Arial;
+}
+
+.overlay-title {
+  font-family: Choplin;
+  font-size: 40px;
+  color: #e27500;
+}
+
+.faq-customer-information {
+  margin-top: 55px;
+  color: #535353;
+  font-size: 14px;
+  font-family: Arial;
+  margin-bottom: 40px;
+}
+
+.faq-customer-information p {
+  margin: 0;
+}
+
+.faq-h {
+  font-size: 20px;
+  font-family: Arial;
+  margin: 0;
+  font-weight: bold;
+}
+
+.faq-p {
+  font-size: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.cookie-title {
+  font-family: Choplin;
+  font-size: 40px;
+  color: #e27500;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+.cookie-info {
+  line-height: 20px;
+  font-family: Arial;
+  font-size: 15px;
+  color: #454545;
+}
+
+.filterButton {
+  font-family: Arial;
+  font-size: 30px;
+}
+
+.product-view-advanced-dropdown .filterButton {
+  font-family: Arial;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.search-info {
+  font-family: Arial;
+  color: #535353;
+  font-size: 16px;
+}
+
+.category p, .price-range p {
+  font-family: Arial;
+  color: #2b2b2b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price-range p {
+  margin-bottom: 20px;
+}
+
+.product-view-advanced-filter-content .category p, .price-range p {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price-range p {
+  margin-bottom: 20px;
+}
+
+.product-view-advanced-filter-content .category form p {
+  color: white;
+  font-size: 16px;
+}
+
+.about-us-tag p {
+  display: inline-block;
+  font-family: Choplin-light;
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bread-crum-tag {
+  height: 14px;
+  white-space: nowrap;
+  position: relative;
+  margin: 0 5px 0 10px;
+  displaY: inline-block;
+  height: 25px;
+  border-radius: 0 2px 2px 0;
+  padding: 0 25px 0 15px;
+  background: #323232;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  color: #cecece;
+  line-height: 23px;
+  font-size: 14px;
+}
+
+.tag {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.dogs-tag {
+  background-color: #ff6f9e;
+}
+
+.cats-tag {
+  background-color: #8787ff;
+}
+
+.fish-tag {
+  background-color: #ffb93f;
+}
+
+.birds-tag {
+  background-color: #7bff81;
+}
+
+.small-animals-tag {
+  background-color: #7be5ff;
+}
+
+.bread-crum-tag:before {
+  position: absolute;
+  content: "";
+  color: white;
+  text-shadow: 0 0 1px #323232;
+  font-size: 11px;
+  line-height: 0px;
+  text-indent: 12px;
+  left: -15px;
+  width: 1px;
+  height: 0px;
+  border-right: 14px solid #323232;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+}
+
+.about-info, .contact-info {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.about-info p:first-child, .contact-info p:first-child {
+  font-size: 20px;
+  font-family: Choplin-light;
+}
+
+.about-info ul, .contact-info ul {
+  padding-left: 20px;
+}
+
+.contact-form label {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Choplin-light;
+}
+
+.product-view-products-right {
+  position: relative;
+}
+
+.product-view-products-right p {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.product-view-products-right p:first-child {
+  font-size: 26px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.product-view-products-right .product-view-active-price {
+  margin: 0px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.product-view-products-right a {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 170px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial;
+  Text-decoration: none;
+}
+
+.items-amount {
+  float: right;
+}
+
+.items-amount p {
+  color: #cecece;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.items-amount p span {
+  color: #ffffff;
+}
+
+.passive-product-detail-item p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.product-detail-right h1 {
+  font-size: 40px;
+}
+
+.product-detail-right {
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.product-detail-right .product-detail-item-price {
+  font-family: Arial;
+  font-size: 26px;
+  margin-top: 0px;
+}
+
+.product-detail-right .product-detail-item-colors-title, .product-detail-right .product-detail-item-description-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  clear: both;
+}
+
+.product-detail-right .product-detail-item-description-title {
+  margin-top: 15px;
+}
+
+.product-detail-right .product-detail-item-description {
+  font-size: 14px;
+}
+
+.product-detail-right .title {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.product-detail-specs {
+  color: #ffffff;
+  font-family: Arial;
+}
+
+.product-detail-specs .specs-title {
+  font-size: 20px;
+}
+
+.product-detail-specs .dimension-title {
+  font-size: 14px;
+}
+
+.product-detail-specs .dimensions-specs p {
+  float: left;
+  display: inline-block;
+  margin-left: 33px;
+}
+
+.product-detail-specs .tech-title {
+  clear: both;
+}
+
+.product-detail-specs .tech-info {
+  margin-left: 33px;
+}
+
+.gerelateerde-producten p {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Choplin;
 }
 
 @font-face {
@@ -1637,6 +1765,60 @@ button.accordion {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+.product-view-products-left, .product-view-products-right {
+  width: 50%;
+  float: left;
+  min-height: 100px;
+}
+
+.product-view-products-left .hot-item {
+  width: 49%;
+  margin-bottom: 20px;
+  margin-right: 1%;
+}
+
+.product-view-products-left .multiple-borders {
+  width: calc(49% - 13px) !important;
+}
+
+.product-view-products-right {
+  background-color: #565656;
+  border: 1px solid #717171;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 440px;
+}
+
+.product-view-products-right img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-view-products-right .product-view-active-info {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.product-view-products {
+  width: 100%;
+}
+
+.product-view-products-header {
+  clear: both;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 .passive-product-detail-item {
   width: 32.6%;
   float: left;
@@ -1704,60 +1886,6 @@ button.accordion {
   margin-right: 5px;
   width: 200px;
   position: relative;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
-.product-view-products-left, .product-view-products-right {
-  width: 50%;
-  float: left;
-  min-height: 100px;
-}
-
-.product-view-products-left .hot-item {
-  width: 49%;
-  margin-bottom: 20px;
-  margin-right: 1%;
-}
-
-.product-view-products-left .multiple-borders {
-  width: calc(49% - 13px) !important;
-}
-
-.product-view-products-right {
-  background-color: #565656;
-  border: 1px solid #717171;
-  box-sizing: border-box;
-  padding: 5px;
-  height: 440px;
-}
-
-.product-view-products-right img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.product-view-products-right .product-view-active-info {
-  padding-right: 15px;
-  padding-left: 15px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.product-view-products {
-  width: 100%;
-}
-
-.product-view-products-header {
-  clear: both;
 }
 
 .kowloon-contact-info {
@@ -1874,6 +2002,55 @@ body {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+.overlay-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.overlay-content .overlay-title {
+  margin-top: 250px;
+}
+
+.advanced-filter-content, .product-view-advanced-filter-content {
+  clear: both;
+  min-height: 280px;
+  width: 100%;
+}
+
+.advanced-filter-content .category, .product-view-advanced-filter-content .category {
+  box-sizing: border-box;
+  padding: 35px;
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+
+.price-range {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  min-height: 150px;
+}
+
+.advanced-filter-content, .product-view-advanced-filter-content {
+  display: none;
+}
+
+.advanced-filter-visible {
+  display: block;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 .product-detail-item {
   overflow: hidden;
   margin-top: 140px;
@@ -1952,6 +2129,10 @@ body {
   min-height: 420px;
 }
 
+.product-view-products-toload {
+  overflow: hidden;
+}
+
 .product-view-products-toload .product-view-item {
   margin-right: 1%;
   width: 24.25%;
@@ -1960,66 +2141,6 @@ body {
 
 .product-view-products-toload .product-view-item:nth-child(4n) {
   margin-right: 0px;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
-.overlay-content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-}
-
-.overlay-content .overlay-title {
-  margin-top: 250px;
-}
-
-.advanced-filter-content, .product-view-advanced-filter-content {
-  clear: both;
-  min-height: 280px;
-  width: 100%;
-}
-
-.advanced-filter-content .category, .product-view-advanced-filter-content .category {
-  box-sizing: border-box;
-  padding: 35px;
-  width: 50%;
-  overflow: hidden;
-  float: left;
-}
-
-.price-range {
-  float: left;
-  box-sizing: border-box;
-  width: 50%;
-  min-height: 150px;
-}
-
-.advanced-filter-content, .product-view-advanced-filter-content {
-  display: none;
-}
-
-.advanced-filter-visible {
-  display: block;
-}
-
-html {
-  min-height: 100%;
-  /* make sure it is at least as tall as the viewport */
-  position: relative;
-}
-
-body {
-  height: 100%;
-  /* force the BODY element to match the height of the HTML element */
 }
 
 #cookieAlert {
@@ -2067,6 +2188,17 @@ body {
 
 .fAQ-visible {
   display: block;
+}
+
+html {
+  min-height: 100%;
+  /* make sure it is at least as tall as the viewport */
+  position: relative;
+}
+
+body {
+  height: 100%;
+  /* force the BODY element to match the height of the HTML element */
 }
 
 @font-face {
@@ -2127,7 +2259,7 @@ body {
     -webkit-transition: margin 0.2s;
     transition: margin 0.2s;
   }
-  #app .navigation-options .nav-option:first-child {
+  #app .navigation-options #hamburger {
     display: none;
   }
   #app .content {
@@ -2294,6 +2426,176 @@ body {
   }
   #app .newsletter-subscribe {
     width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+@media screen and (max-width: 768px) {
+  #app .contact-message {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  #app .about-info {
+    clear: both;
+    width: 100%;
+  }
+  #app .contact-info {
+    clear: both;
+    width: 100%;
+  }
+  #app .contact-email {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #app .send-contact-form {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+@media screen and (max-width: 1024px) {
+  #app .product-view-slider-right {
+    width: 50%;
+  }
+  #app .hot-item {
+    height: 160px;
+  }
+  #app .hot-item .hot-item-image {
+    height: 120px;
+  }
+  #app .hot-item .hot-item-image img {
+    height: 102px;
+  }
+  #app .hot-item .hot-item-image .hot-item-overlay {
+    height: 102px;
+  }
+  #app .hot-item .hot-item-info {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+  }
+  #app .multiple-borders {
+    height: 147px;
+  }
+  #app .multiple-borders a .hot-item-image {
+    height: 98px;
+  }
+  #app .product-view-products-right {
+    height: 338px;
+  }
+  #app .product-view-products-right img {
+    width: 100%;
+  }
+  #app .product-view-products-right p {
+    margin-top: 0px;
+    font-size: 12px;
+  }
+  #app .product-view-products-right .product-view-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 26px;
+  }
+  #app .product-view-products-right a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #app .product-view-products-left, #app .product-view-products-right {
+    display: none;
+  }
+  #app .product-view-products {
+    height: 70px;
+  }
+  #app .product-view-products-toload {
+    min-height: 350px;
+  }
+  #app .hot-item {
+    width: 32.66%;
+  }
+  #app .hot-item .hot-item-image {
+    height: 130px;
+  }
+  #app .product-view-slider-left {
+    width: 390px;
+    clear: both;
+    padding-right: 0px;
+  }
+  #app .product-view-slider-right {
+    width: 390px;
+    clear: both;
+    padding-left: 35px;
+  }
+  #app .product-view-products-toload .hot-item {
+    margin-right: 1%;
+  }
+  #app .product-view-products-toload .hot-item:nth-child(4) {
+    margin-right: 1%;
+  }
+  #app .product-view-products-toload .hot-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  #app #product-view-sort {
+    width: 100%;
+  }
+  #app .title {
+    font-size: 25px;
+  }
+  #app .productsCheckFilter {
+    width: 130px;
+  }
+  #app .product-view-slider-left {
+    padding-right: 11px;
+    padding-left: 11px;
+    width: 100%;
+  }
+  #app .product-view-slider-right {
+    padding: 0;
+    width: 100%;
+  }
+  #app .product-view-products-toload .hot-item {
+    padding-top: 5px;
+    width: 100%;
+    height: 250px;
+    clear: both;
+  }
+  #app .product-view-products-toload .hot-item .product-view-image {
+    height: 210px;
+  }
+  #app .product-view-products-toload .hot-item .product-view-image img {
+    height: 212px;
+    max-height: 212px;
+  }
+  #app .product-view-products-toload .hot-item .product-view-image .hot-item-overlay {
+    height: 212px;
+  }
+  #app .product-view-products-toload .hot-item .hot-item-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

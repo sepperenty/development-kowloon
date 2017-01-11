@@ -64,11 +64,11 @@
       }
 
       .navigation-options{
-        .nav-option{
-          &:first-child{
+
+          #hamburger{
             display: none;
           }
-        }
+
       }
 
       .content{
@@ -191,13 +191,8 @@
 
 @media screen and (max-width: $mobile-portrait) {
 
-
-
   #app
   {
-
-
-
     //mobile
 
     .mySlides{

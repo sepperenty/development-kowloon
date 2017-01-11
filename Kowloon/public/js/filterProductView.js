@@ -8,7 +8,7 @@
     $(document).ready(function(){
 
         $(window).scroll(function() {
-            if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            if($(window).scrollTop() + $(window).height() >= ($(document).height()-1)) {
                 canload+=8;
                 filterProducts();
             }
@@ -113,6 +113,9 @@
 
             var data;
             var success;
+            var screenwidth = $(window).width();
+            console.log(screenwidth);
+
 
             $.ajax({
                 dataType: "json",
@@ -122,30 +125,49 @@
             }).done(function(results){
                 $(".product-view-products-toload").empty();
                 console.log(results.length);
-
-                if(results.length<=4) {
-                        $(".first-item-block").css("display","none");
+                if(screenwidth >= 768){
+                    if (results.length <= 4) {
+                        $(".first-item-block").css("display", "none");
                         console.log("lest than 4");
 
-                        for(var result = 0; result<results.length; result++) {
+                        for (var result = 0; result < results.length; result++) {
                             $(".product-view-products-toload").append(template);
                         }
                     }
-                else if(results.length >= 5){
-                    $(".first-item-block").css("display","block");
+                    else if (results.length >= 5) {
+                        $(".first-item-block").css("display", "block");
 
-                    if(canload>5){
-                        var maxload=0;
-                        if(results.length - 5 >= canload){
-                            maxload = canload-5;
-                        }else{
-                            maxload = results.length - 5;
+                        if (canload > 5) {
+                            var maxload = 0;
+                            if (results.length - 5 >= canload) {
+                                maxload = canload - 5;
+                            } else {
+                                maxload = results.length - 5;
+                            }
+                            for (var result = 0; result < maxload; result++) {
+                                $(".product-view-products-toload").append(template);
+                            }
                         }
-                        for(var result = 0; result<maxload; result++) {
+                    }
+                }else{
+                    if (results.length <= 9) {
+                        for (var result = 0; result < results.length; result++) {
                             $(".product-view-products-toload").append(template);
                         }
                     }
-                };
+                    else {
+                        if(canload>=results.length){
+                            maxload = results.length;
+                        }else{
+                            var maxload = canload;
+                        }
+                            for (var result = 0; result < maxload; result++) {
+                                $(".product-view-products-toload").append(template);
+                            }
+
+                    }
+                }
+
 
 
                 var elementsVisible = 0;
@@ -166,6 +188,9 @@
                 });
 
                 $(".scrollLoadNumber").html(elementsVisible + " of " + results.length);
+                if(elementsVisible == results.length){
+                    $(".loadBar").css("display", "none");
+                }else {}
             });
         }
 

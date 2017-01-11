@@ -76,7 +76,7 @@
             <div class="hot-item">
                 <div class="hot-item-image">
                     <img src="../assets/images/hotItem.png" alt="">
-                    <div class="hot-item-overlay"></div>
+                    <div class="hot-item-overlay dogs-overlay"></div>
                 </div>
                 <div class="hot-item-info">
                     <p class="hot-item-name">Cooling Mat</p>
@@ -86,7 +86,7 @@
             <div class="hot-item">
                 <div class="hot-item-image">
                     <img src="../assets/images/hotItem.png" alt="">
-                    <div class="hot-item-overlay"></div>
+                    <div class="hot-item-overlay dogs-overlay"></div>
                 </div>
                 <div class="hot-item-info">
                     <p class="hot-item-name">Cooling Mat</p>
@@ -96,7 +96,7 @@
             <div class="hot-item">
                 <div class="hot-item-image">
                     <img src="../assets/images/hotItem.png" alt="">
-                    <div class="hot-item-overlay"></div>
+                    <div class="hot-item-overlay dogs-overlay"></div>
                 </div>
                 <div class="hot-item-info">
                     <p class="hot-item-name">Cooling Mat</p>
@@ -106,7 +106,7 @@
             <div class="hot-item multiple-borders">
                 <div class="hot-item-image">
                     <img src="../assets/images/hotItem.png" alt="">
-                    <div class="hot-item-overlay"></div>
+                    <div class="hot-item-overlay dogs-overlay"></div>
                 </div>
                 <div class="hot-item-info">
                     <p class="hot-item-name">Cooling Mat</p>
@@ -140,6 +140,7 @@
 
 
 
+        </div>
     </div>
 
 

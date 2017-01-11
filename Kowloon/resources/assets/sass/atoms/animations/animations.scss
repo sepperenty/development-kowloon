@@ -1,0 +1,39 @@
+.loadBar{
+  width: 100%;
+  position: relative;
+  height:50px;
+  margin-top: 20px;
+}
+
+.loader{
+  width: 48px;
+  height: 48px;
+  background: url('../images/loadingCircle.png');
+  animation: play 1s steps(1) infinite;
+  position: absolute;
+  z-index: 100;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+}
+
+@keyframes play {
+    0%      {background-position: -5px -5px; }
+    6.25%   {background-position: -5px -121px;}
+    12.5%   {background-position: -63px -121px;}
+    18.75%  {background-position: -121px -121px;}
+    25%     {background-position: -179px -121px;}
+    32.25%  {background-position: -5px -179px;}
+    37.5%   {background-position: -63px -179px;}
+    43.75%  {background-position: -121px -179px;}
+    50%     {background-position: -179px -179px;}
+    56.25%  {background-position: -63px -5px;}
+    62.5%   {background-position: -121px -5px;}
+    68.75%  {background-position: -179px -5px;}
+    75%     {background-position: -5px -63px;}
+    81.25%  {background-position: -63px -63px;}
+    87.5%   {background-position: -121px -63px;}
+    93.75%  {background-position: -179px -63px;}
+
+}

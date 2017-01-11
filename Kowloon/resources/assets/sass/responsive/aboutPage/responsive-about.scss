@@ -1,0 +1,34 @@
+@import "../../variables";
+
+#app{
+
+  @media screen and (max-width: $tablet-portrait) {
+
+    .contact-message{
+      width:100%;
+    }
+
+  };
+
+  @media screen and (max-width: $mobile-portrait) {
+
+    .about-info{
+      clear: both;
+      width: 100%;
+    }
+    .contact-info{
+      clear: both;
+      width: 100%;
+    }
+    .contact-email{
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .send-contact-form{
+      width:100%;
+    }
+
+  };
+
+}
+
