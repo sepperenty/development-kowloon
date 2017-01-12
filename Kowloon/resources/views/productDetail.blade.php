@@ -5,39 +5,52 @@
     <div class="content-store">
 
         <div class="product-detail-item">
+            <div class="about-us-tag responsiveKtag">
+                <p>K</p>   <div class="bread-crum-tag"><div class="{{$category}}-tag tag"></div>{{$category}}</div>    <div class="bread-crum-tag">Splash 'n Fun</div>
+            </div>
+            <div class="titleAndPrice mobileTitleAndPrice">
+                <h1 class="title">COOLING MAT</h1>
+                <p class="product-detail-item-price">€ 15,49</p>
+            </div>
 
             <div class="product-detail-left">
                 <img class="active-product-detail-item" src="/assets/images/productDetailFoto.png" alt="">
-                <div class="passive-product-detail-item active">
-                    <div class="passive-product-detail-image">
-                        <img  src="/assets/images/productDetailFoto.png" alt="">
+                <div class="passiveItems">
+                        <div class="passive-product-detail-item active">
+                        <div class="passive-product-detail-image">
+                            <img  src="/assets/images/productDetailFoto.png" alt="">
+                        </div>
+                        <p>woordje tekst</p>
                     </div>
-                    <p>woordje tekst</p>
-                </div>
-                <div class="passive-product-detail-item passive">
-                    <div class="passive-product-detail-image">
-                        <img  src="/assets/images/productDetailFoto.png" alt="">
+                    <div class="passive-product-detail-item passive">
+                        <div class="passive-product-detail-image">
+                            <img  src="/assets/images/productDetailFoto.png" alt="">
+                        </div>
+                        <p>woordje tekst</p>
                     </div>
-                    <p>woordje tekst</p>
-                </div>
-                <div class="passive-product-detail-item passive">
-                    <div class="passive-product-detail-image">
-                        <img  src="/assets/images/productDetailFoto.png" alt="">
+                    <div class="passive-product-detail-item passive">
+                        <div class="passive-product-detail-image">
+                            <img  src="/assets/images/productDetailFoto.png" alt="">
+                        </div>
+                        <p>woordje tekst</p>
                     </div>
-                    <p>woordje tekst</p>
                 </div>
             </div>
 
             <div class="product-detail-right">
-                <div class="about-us-tag">
+                <div class="about-us-tag desktopKtag">
                     <p>K</p>   <div class="bread-crum-tag"><div class="{{$category}}-tag tag"></div>{{$category}}</div>    <div class="bread-crum-tag">Splash 'n Fun</div>
                 </div>
-                <h1 class="title">COOLING MAT</h1>
-                <p class="product-detail-item-price">€ 15,49</p>
-                <p class="product-detail-item-colors-title">Colors</p>
-                <div class="small-circle white"></div>
-                <div class="small-circle black"></div>
-                <div class="small-circle blue"></div>
+                <div class="titleAndPrice notMobileTitleAndPrice">
+                    <h1 class="title">COOLING MAT</h1>
+                    <p class="product-detail-item-price">€ 15,49</p>
+                </div>
+                <div class="colorOptions">
+                    <p class="product-detail-item-colors-title">Colors</p>
+                    <div class="small-circle white"></div>
+                    <div class="small-circle black"></div>
+                    <div class="small-circle blue"></div>
+                </div>
                 <p class="product-detail-item-description-title">Description</p>
                 <p class="product-detail-item-description">Hier komt een de volledige beschrijvende tekst met een max.
                     aantal karakters. Lorem ipsum dolor sit amet, consectetur adipisicing

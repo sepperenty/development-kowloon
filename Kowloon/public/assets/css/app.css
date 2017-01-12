@@ -1888,39 +1888,6 @@ button.accordion {
   position: relative;
 }
 
-.kowloon-contact-info {
-  clear: both;
-  overflow: hidden;
-}
-
-.about-info {
-  width: 76%;
-  float: left;
-}
-
-.contact-info {
-  padding-left: 25px;
-  box-sizing: border-box;
-  width: 24%;
-  float: left;
-}
-
-.contact-form {
-  clear: both;
-  margin-top: 85px;
-}
-
-.contact-form input, .contact-form label {
-  display: block;
-}
-
-.page-faq {
-  margin-top: 70px;
-  overflow: hidden;
-  margin-bottom: 70px;
-  clear: both;
-}
-
 @font-face {
   font-family: "Choplin";
   src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
@@ -1990,6 +1957,39 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   box-sizing: border-box;
+}
+
+.kowloon-contact-info {
+  clear: both;
+  overflow: hidden;
+}
+
+.about-info {
+  width: 76%;
+  float: left;
+}
+
+.contact-info {
+  padding-left: 25px;
+  box-sizing: border-box;
+  width: 24%;
+  float: left;
+}
+
+.contact-form {
+  clear: both;
+  margin-top: 85px;
+}
+
+.contact-form input, .contact-form label {
+  display: block;
+}
+
+.page-faq {
+  margin-top: 70px;
+  overflow: hidden;
+  margin-bottom: 70px;
+  clear: both;
 }
 
 @font-face {
@@ -2211,6 +2211,40 @@ body {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+@media screen and (max-width: 768px) {
+  #app .contact-message {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  #app .about-info {
+    clear: both;
+    width: 100%;
+  }
+  #app .contact-info {
+    clear: both;
+    width: 100%;
+  }
+  #app .contact-email {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #app .send-contact-form {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 .mobile-info-block {
   display: none;
 }
@@ -2239,7 +2273,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    z-index: 50;
+    z-index: 100;
   }
   #app .navigation-bar .sprite-Menu-hmburger-icon {
     display: none;
@@ -2439,27 +2473,218 @@ body {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-@media screen and (max-width: 768px) {
-  #app .contact-message {
-    width: 100%;
+@media screen and (max-width: 1024px) {
+  #app .product-detail-right h1 {
+    font-size: 30px;
+  }
+  #app .product-detail-right .product-detail-item-price {
+    margin-bottom: 10px;
+  }
+  #app .product-detail-right .product-detail-item-colors-title {
+    margin-top: 10px;
+  }
+  #app .product-detail-right .square, #app .product-detail-right .circle, #app .product-detail-right .triangle {
+    display: none;
   }
 }
 
+#app .responsiveKtag {
+  display: none;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #app .responsiveKtag {
+    display: block;
+    margin-bottom: 20px;
+  }
+  #app .desktopKtag {
+    display: none;
+  }
+  #app .product-detail-left {
+    width: 100%;
+    clear: both;
+    height: 280px;
+  }
+  #app .product-detail-left .active-product-detail-item {
+    width: 80%;
+    margin-left: 0;
+    display: block;
+    float: left;
+    height: 100%;
+  }
+  #app .product-detail-left .passiveItems {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 19%;
+    margin-left: 1%;
+  }
+  #app .product-detail-left .passive-product-detail-item {
+    width: 100%;
+    float: left;
+    height: 33.33%;
+    overflow: hidden;
+    margin-bottom: 3px;
+  }
+  #app .product-detail-left .passive-product-detail-item .passive-product-detail-image {
+    height: 70px;
+  }
+  #app .product-detail-left .passive-product-detail-item .passive-product-detail-image img {
+    height: 100%;
+  }
+  #app .product-detail-left .passive-product-detail-item p {
+    margin-bottom: 0px;
+  }
+  #app .product-detail-right {
+    width: 100%;
+    clear: both;
+    padding-left: 0px;
+  }
+  #app .titleAndPrice {
+    overflow: hidden;
+    width: 80%;
+    float: left;
+  }
+  #app .colorOptions {
+    display: block;
+    float: right;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+}
+
+#app .mobileTitleAndPrice {
+  display: none;
+}
+
 @media screen and (max-width: 412px) {
-  #app .about-info {
+  #app .mobileTitleAndPrice {
+    display: block;
+  }
+  #app .mobileTitleAndPrice h1 {
+    margin-bottom: 5px;
+  }
+  #app .mobileTitleAndPrice p {
+    font-family: Arial;
+    font-size: 26px;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  #app .notMobileTitleAndPrice {
+    display: none;
+  }
+  #app .product-detail-item {
+    overflow-x: hidden;
+  }
+  #app .product-detail-item .product-detail-left {
+    height: auto;
+  }
+  #app .product-detail-item .product-detail-left .active-product-detail-item, #app .product-detail-item .product-detail-left .passiveItems {
+    width: 100%;
+  }
+  #app .product-detail-item .product-detail-left .active-product-detail-item {
+    margin-bottom: 5px;
+  }
+  #app .product-detail-item .product-detail-left .passiveItems {
+    margin: 0px;
+  }
+  #app .product-detail-item .product-detail-left .passive-product-detail-item {
+    width: 32.6%;
+    float: left;
+    margin-right: 1%;
+    position: relative;
+  }
+  #app .product-detail-item .product-detail-left .passive-product-detail-item:nth-child(3) {
+    margin-right: 0px;
+  }
+  #app .product-detail-item .product-detail-left .passive-product-detail-item p {
+    display: none;
+  }
+  #app .product-detail-item .product-detail-left .passive-product-detail-item .passive-product-detail-image {
+    height: auto;
+  }
+  #app .product-detail-item .product-detail-left .passive-product-detail-item .passive-product-detail-image img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  #app .product-detail-right .colorOptions {
+    float: left;
+  }
+  #app .dimensions-specs {
+    overflow: hidden;
+    padding-left: 30px;
+  }
+  #app .tech-info {
+    padding-left: 30px;
+  }
+  #app .product-detail-specs p {
+    margin: 5px;
     clear: both;
-    width: 100%;
+    font-size: 14px;
   }
-  #app .contact-info {
+  #app .product-detail-specs .specs-title {
+    font-size: 20px;
+  }
+  #app .panel.show {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+@media screen and (max-width: 1024px) {
+  #app .overlay-content {
+    width: 765px;
+  }
+  #app #search-overlay .overlay-input {
+    font-size: 30px;
+    background-position: 0px 28px, 410px 30px;
+  }
+  #app #search-overlay .category {
+    padding-bottom: 10px;
+  }
+  #app #search-overlay .category, #app #search-overlay .price-range {
+    width: 65%;
     clear: both;
-    width: 100%;
   }
-  #app .contact-email {
-    width: 100%;
-    box-sizing: border-box;
+  #app #search-overlay .category .slider, #app #search-overlay .price-range .slider {
+    float: none;
+    padding-left: 35px;
+    margin-top: 0px;
   }
-  #app .send-contact-form {
-    width: 100%;
+  #app #search-overlay .category .slider p, #app #search-overlay .price-range .slider p {
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #app .overlay-content {
+    width: 613px;
+  }
+  #app #ecape-search, #app #ecape-faq {
+    right: 20px;
+  }
+  #app #search-overlay .category, #app #search-overlay .price-range {
+    width: 80%;
+  }
+  #app #search-overlay .overlay-input {
+    margin-top: 40px;
+    font-size: 25px;
+    background-position: 0px 8px, 350px 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -2477,27 +2702,27 @@ body {
   #app .product-view-slider-right {
     width: 50%;
   }
-  #app .hot-item {
+  #app .product-view-products-toload .hot-item, #app .product-view-products-left .hot-item {
     height: 160px;
   }
-  #app .hot-item .hot-item-image {
+  #app .product-view-products-toload .hot-item .hot-item-image, #app .product-view-products-left .hot-item .hot-item-image {
     height: 120px;
   }
-  #app .hot-item .hot-item-image img {
+  #app .product-view-products-toload .hot-item .hot-item-image img, #app .product-view-products-left .hot-item .hot-item-image img {
     height: 102px;
   }
-  #app .hot-item .hot-item-image .hot-item-overlay {
+  #app .product-view-products-toload .hot-item .hot-item-image .hot-item-overlay, #app .product-view-products-left .hot-item .hot-item-image .hot-item-overlay {
     height: 102px;
   }
-  #app .hot-item .hot-item-info {
+  #app .product-view-products-toload .hot-item .hot-item-info, #app .product-view-products-left .hot-item .hot-item-info {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 15px;
   }
-  #app .multiple-borders {
+  #app .product-view-products-toload .multiple-borders, #app .product-view-products-left .multiple-borders {
     height: 147px;
   }
-  #app .multiple-borders a .hot-item-image {
+  #app .product-view-products-toload .multiple-borders a .hot-item-image, #app .product-view-products-left .multiple-borders a .hot-item-image {
     height: 98px;
   }
   #app .product-view-products-right {
@@ -2531,10 +2756,10 @@ body {
   #app .product-view-products-toload {
     min-height: 350px;
   }
-  #app .hot-item {
+  #app .product-view-products-toload .hot-item {
     width: 32.66%;
   }
-  #app .hot-item .hot-item-image {
+  #app .product-view-products-toload .hot-item .hot-item-image {
     height: 130px;
   }
   #app .product-view-slider-left {

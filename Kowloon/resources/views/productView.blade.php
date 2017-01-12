@@ -18,7 +18,7 @@
 
     <div class="content-store">
 
-        <div class="about-us-tag">
+        <div class="about-us-tag ">
             <p>K</p>  <div class="bread-crum-tag"><div class="{{$category}}-tag tag"></div>{{$category}}</div>  <div class="bread-crum-tag">Splash 'n Fun</div>
         </div>
 

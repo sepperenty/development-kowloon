@@ -1,0 +1,59 @@
+@import "../../variables";
+
+#app{
+  @media screen and (max-width: $tablet-landscape) {
+
+      .overlay-content{
+          width: 765px;
+      }
+
+      #search-overlay{
+        .overlay-input{
+          font-size: 30px;
+          background-position: 0px 28px, 410px 30px;
+        }
+        .category{
+          padding-bottom: 10px;
+        }
+        .category, .price-range{
+          width:65%;
+          clear: both;
+          .slider{
+            float: none;
+            padding-left: 35px;
+            margin-top: 0px;
+            p{
+              color: $third-font-color;
+            }
+          }
+        }
+      }
+
+  }
+
+  @media screen and (max-width: $tablet-portrait) {
+    .overlay-content{
+      width: 613px;
+
+    }
+
+    #ecape-search, #ecape-faq{
+      right:20px;
+    }
+
+    #search-overlay{
+      .category, .price-range{
+        width:80%;
+      }
+      .overlay-input{
+        margin-top: 40px;
+        font-size: 25px;
+        background-position: 0px 8px, 350px 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+
+
+  }
+}

@@ -1,7 +1,9 @@
 (function(){
 
     var left = 0;
-    var maxScroll = -(1840-960);
+    var scrollViewWidth = $(".geralateerde-producten-items").width();
+    var maxScroll = -(1840-scrollViewWidth);
+    var interval = $(".geralateerde-producten-items .hot-item").width()+5;
 
     $("#scroll-left").on('click', function(){
 
