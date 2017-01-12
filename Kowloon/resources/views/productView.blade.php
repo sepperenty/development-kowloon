@@ -77,9 +77,15 @@
                         </div>
                         <div class="product-view-slider-right">
                             <div class="slider-inputs">
-                                <input type="number" id="poduct-view-input-number-left" class="slider-input">
+                                <div class="currencyText">
+                                    <span>€</span>
+                                    <input type="number" id="poduct-view-input-number-left" class="slider-input">
+                                </div>
                                 <div class="slider-input-divider">-</div>
-                                <input type="number" id="poduct-view-input-number" class="slider-input">
+                                <div class="currencyText">
+                                    <span>€</span>
+                                    <input type="number" id="poduct-view-input-number" class="slider-input">
+                                </div>
                             </div>
                         </div>
 

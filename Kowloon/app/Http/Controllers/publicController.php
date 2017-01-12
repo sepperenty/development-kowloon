@@ -49,13 +49,14 @@ class publicController extends Controller
         }
     }
 
-    public function productDetail($category){
+    public function productDetail($category, Request $request){
+        $message = $request->session()->pull('message');
         if( ($category == "dogs") || ($category == "cats") || ($category == "fish") || ($category == "birds") || ($category == "small-animals") ){
             $title = Str::upper($category);
             if($category == "small-animals"){
                 $title = "SMALL ANIMALS";
             }
-            return view("productDetail", compact('category', 'title'));
+            return view("productDetail", compact('category', 'title', 'message'));
         }else{
             return redirect("/");
         }

@@ -195,6 +195,7 @@
         }
 
         function resetLoad(){
+            $(".loadBar").css("display", "block");
             canload = 5;
         }
 

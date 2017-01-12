@@ -38,3 +38,20 @@
 .advanced-filter-visible{
   display: block;
 }
+
+.faq-item-load{
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#FAQ-overlay{
+  .loadBar{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    .loader{
+      background: url("../images/loadingCirlceGray.png");
+    }
+  }
+}

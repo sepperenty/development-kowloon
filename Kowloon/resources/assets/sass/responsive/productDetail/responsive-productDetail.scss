@@ -4,6 +4,11 @@
 
 #app {
   @media screen and (max-width: $tablet-landscape) {
+
+
+    #productDetailLogo{
+      width: 25%;
+    }
       .product-detail-right{
         h1{
           font-size: 30px;
@@ -13,11 +18,28 @@
         }
         .product-detail-item-colors-title{
           margin-top: 10px;
+          margin-bottom: 5px;
         }
         .square, .circle, .triangle{
           display: none;
         }
       }
+     .passive-product-detail-image{
+       height: 70px;
+     }
+    .passive-product-detail-item{
+      p{
+        margin-bottom: 0px;
+      }
+    }
+
+    .product-detail-item-description-title{
+      margin-bottom: 10px;
+    }
+    .product-detail-item-description{
+      font-size: 13px;
+      margin-top: 5px;
+    }
   }
 
   .responsiveKtag{
@@ -101,6 +123,10 @@
 
   @media screen and (max-width: $mobile-portrait) {
 
+    #productDetailLogo{
+      width: 50%;
+    }
+
     .mobileTitleAndPrice{
       display: block;
       h1{
@@ -134,6 +160,7 @@
           margin:0px;
         }
         .passive-product-detail-item{
+          margin-bottom: 0px;
           width: 32.6%;
           float: left;
           margin-right: 1%;

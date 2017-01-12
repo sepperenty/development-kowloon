@@ -8,7 +8,6 @@ body{
   //height: $page-height;
   overflow: hidden;
   background-color: $background-color;
-  padding-bottom: 50px;
 }
 
 
@@ -21,6 +20,7 @@ body{
 
   .content-store{
     padding-top:50px;
+    padding-bottom: 50px;
     width:960px;
     margin-left: auto;
     margin-right: auto;

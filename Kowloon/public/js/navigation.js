@@ -17,26 +17,47 @@ $(document).ready(function(){
             $("#clickNavigation").on('click', function(){
                 if($(window).width() <= 1024) {
                     if (!mobileClicked) {
-                        $("#clickNavigation").addClass("clickNavigationOpen");
-                        $(".navigation-bar").addClass("hiddenNavigationOpen");
-                        $(".navigation-bar").addClass("expand-navigation-bar");
-                        $(".content").addClass("openNavigation");
-                        $(".store-name p").html("KOWLOON");
-                        mobileClicked = true;
+                        openMobileNav();
                     } else {
-                        $("#clickNavigation").removeClass("clickNavigationOpen");
-                        $(".navigation-bar").removeClass("hiddenNavigationOpen");
-                        $(".navigation-bar").removeClass("expand-navigation-bar");
-                        $(".content").removeClass("openNavigation");
-                        $(".store-name p").html("K");
-                        mobileClicked = false;
+                        shutMobileNavDown();
                     }
                 }
-
-
             });
 
+        $(".nav-option").on("click", function(){
+            if($(window).width() <= 1024) {
+                shutMobileNavDown();
+            }
+        });
 
+        function shutMobileNavDown(){
+            $("#clickNavigation").removeClass("clickNavigationOpen");
+            $(".navigation-bar").removeClass("hiddenNavigationOpen");
+            $(".navigation-bar").removeClass("expand-navigation-bar");
+            $(".content").removeClass("openNavigation");
+            $(".store-name p").html("K");
+            mobileClicked = false;
+        }
+        function openMobileNav(){
+            $("#clickNavigation").addClass("clickNavigationOpen");
+            $(".navigation-bar").addClass("hiddenNavigationOpen");
+            $(".navigation-bar").addClass("expand-navigation-bar");
+            $(".content").addClass("openNavigation");
+            $(".store-name p").html("KOWLOON");
+            mobileClicked = true;
+        }
+
+        //message verwijderen
+
+            $(".message").on('click', function(){
+               $(this).fadeOut(200);
+            });
+
+            setTimeout(removeMessage, 5000);
+
+            function removeMessage() {
+                $(".message").fadeOut(200);
+            }
 
 
         //Hamburder menu werking
@@ -55,6 +76,14 @@ $(document).ready(function(){
                 isClicked = false;
             }
         });
+
+
+        //placeholder search veranderen
+
+        if($(window).width() <= 412){
+            console.log("ja is kleiner" + "   " + $(window).width());
+            $("#search-overlay .overlay-input").attr('placeholder', 'Type to search');
+        }
 
 
         //Cassousel werking
@@ -354,12 +383,6 @@ $(document).ready(function(){
         inputNumber.addEventListener('change', function(){
             productViewSlider.noUiSlider.set([null, this.value]);
         });
-
-
-
-
-
-
 
     })();
 });

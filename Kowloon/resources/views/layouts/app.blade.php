@@ -174,27 +174,36 @@
 
                                     <p>Category</p>
                                     <form action="#">
-                                        <div class="squaredOne">
-                                            <input type="checkbox" value="None" id="Dogs" name="check"  />
-                                            <label for="Dogs"></label>
-                                        </div><p>Dogs</p>
+                                        <div class="searchCheckFilter">
+                                            <div class="squaredOne">
+                                                <input type="checkbox" value="None" id="Dogs" name="check"  />
+                                                <label for="Dogs"></label>
+                                            </div><p>Dogs</p>
+                                        </div>
+                                        <div class="searchCheckFilter">
                                         <div class="squaredOne">
                                             <input type="checkbox" value="None"  id="Cats" name="check"  />
                                             <label for="Cats"></label>
                                         </div><p>Cats</p>
+                                            </div>
+                                        <div class="searchCheckFilter">
                                         <div class="squaredOne">
                                             <input type="checkbox" value="None"  id="Fish" name="check"  />
                                             <label for="Fish"></label>
                                         </div><p>Fish</p>
+                                            </div>
+                                        <div class="searchCheckFilter">
                                         <div class="squaredOne">
                                             <input type="checkbox" value="None" id="Birds"  name="check"  />
                                             <label for="Birds"></label>
                                         </div><p>Birds</p>
+                                            </div>
+                                        <div class="searchCheckFilter">
                                         <div class="squaredOne">
                                             <input type="checkbox" value="None"  id="other" name="check"  />
                                             <label for="other"></label>
-
                                         </div><p>other</p>
+                                            </div>
                                     </form>
 
                             </div>
@@ -205,9 +214,15 @@
                                     <div id="search-slider"></div>
 
                                     <div class="slider-inputs">
-                                        <input type="number" id="input-number-left" class="slider-input">
+                                        <div class="currencyText">
+                                            <span>€</span>
+                                            <input type="number" id="input-number-left" class="slider-input">
+                                        </div>
                                         <div class="slider-input-divider">-</div>
+                                        <div class="currencyText">
+                                            <span>€</span>
                                         <input type="number" id="input-number" class="slider-input">
+                                            </div>
                                     </div>
 
                                 </div>
@@ -238,7 +253,8 @@
             <div class="white-overlay" id="FAQ-overlay">
                 <div id="ecape-faq" class="faq-sprite sprite-escape"></div>
                 <div class="overlay-content">
-                    <p class="overlay-title">FREQUENTLY ASKED QUESTIONS</p>
+                    <p class="overlay-title" id="notMobileFAQTitle">FREQUENTLY ASKED QUESTIONS</p>
+                    <p class="overlay-title" id="mobileFAQTile">FAQ</p>
                     <input class="overlay-input" type="text" placeholder="Search on keyword" id="faq-input">
                     <a href="#" class="clear-button">clear</a>
 
@@ -247,45 +263,52 @@
                         <p>You can always contact our customer service. We're happy to help you!</p>
                     </div>
 
-                    <div class="overlay-item">
-                        <p class="faq-h">Dit is een vraag</p>
-                        <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat.</p>
+                    <div class="faq-item-load">
+                        <div class="overlay-item">
+                            <p class="faq-h">Dit is een vraag</p>
+                            <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat.</p>
+                        </div>
+
+                        <div class="overlay-item">
+                            <p class="faq-h">Dit is een vraag</p>
+                            <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat.</p>
+                        </div>
+
+                        <div class="overlay-item">
+                            <p class="faq-h">Dit is een vraag</p>
+                            <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat.</p>
+                        </div>
+
+                        <div class="overlay-item">
+                            <p class="faq-h">Dit is een vraag</p>
+                            <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat.</p>
+                        </div>
+
+                    </div>
+                    <div class="loadBar">
+                        <div class="loader"></div>
                     </div>
 
-                    <div class="overlay-item">
-                        <p class="faq-h">Dit is een vraag</p>
-                        <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat.</p>
-                    </div>
-
-                    <div class="overlay-item">
-                        <p class="faq-h">Dit is een vraag</p>
-                        <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat.</p>
-                    </div>
-
-                    <div class="overlay-item">
-                        <p class="faq-h">Dit is een vraag</p>
-                        <p class="faq-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercittation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat.</p>
-                    </div>
                 </div>
             </div>
 
@@ -300,6 +323,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="/js/navigation.js"></script>
 <script src="/js/nouislider.js"></script>
+<script src="/js/faqScroller.js"></script>
 @yield('specialScripts')
 
 </body>

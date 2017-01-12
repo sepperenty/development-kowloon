@@ -43,26 +43,45 @@
         </div>
 
         <div class="homepage-navigation">
-            <div class="home-button" id="homeBird">
-                <div class="iconSprite sprite-bird"></div>
-                <p class="sub-title">BIRD</p>
-            </div>
+
+                <div class="home-button" id="homeBird">
+                    <a href="/products/birds">
+                    <div class="iconSprite sprite-bird"></div>
+                    <p class="sub-title">BIRD</p>
+                    </a>
+                </div>
+
+
             <div class="home-button"  id="homeCat">
+                <a href="/products/cats">
                 <div class="iconSprite sprite-cat"></div>
                 <p class="sub-title">CATS</p>
+                </a>
             </div>
+
+
             <div class="home-button"  id="homeDog">
+                <a href="/products/dogs">
                 <div class="iconSprite sprite-dog"></div>
                 <p class="sub-title">DOG</p>
+                </a>
             </div>
+
+
             <div class="home-button"  id="homeFish">
+                <a href="/products/fish">
                 <div class="iconSprite sprite-fish"></div>
                 <p class="sub-title">FISH</p>
+                </a>
             </div>
+
             <div class="home-button"  id="homeHamster">
+                <a href="/products/small-animals">
                 <div class="iconSprite sprite-hamster"></div>
                 <p class="sub-title">SMAL ANIMALS</p>
+                </a>
             </div>
+
             <div class="home-button"  id="homePlus">
                 <div class="iconSprite sprite-plus"></div>
                 <p class="sub-title">OTHER</p>
@@ -115,6 +134,92 @@
             </div>
         </div>
 
+        <div class="gerelateerde-producten mobile-hotItems-homePage">
+            <p>HOT ITEMS</p>
+            <div class="geralateerde-producten-items">
+                <div class="overflow-scroll">
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-item">
+                        <a href="/products/dogs/product">
+                            <div class="hot-item-image">
+                                <img src="/assets/images/hotItem.png" alt="">
+                                <div class="hot-item-overlay dogs-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="scroll-right" class="scroll-button"></div>
+
+                <div id="scroll-left" class="scroll-button"></div>
+            </div>
+
+
+        </div>
+
+        <a href="#" class="visitStoreLink">Visit the store</a>
 
 
             <div class="newsletter">
@@ -144,4 +249,8 @@
     </div>
 
 
+@endsection
+
+@section("specialScripts")
+    <script src="/js/sideScroller.js"></script>
 @endsection

@@ -342,6 +342,19 @@
   float: left;
 }
 
+.visitStoreLink {
+  font-family: Choplin;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 20px;
+  float: right;
+}
+
+#productDetailLogo {
+  top: 0px;
+  width: 15%;
+}
+
 .sprite-cookie {
   background-image: url("../images/cookie-spritesheet.png");
   background-repeat: no-repeat;
@@ -768,15 +781,6 @@
   opacity: 1;
 }
 
-#input-select,
-.slider-input {
-  float: left;
-  box-sizing: border-box;
-  padding: 7px;
-  width: 70px;
-  width: 33.33%;
-}
-
 .slider-input-divider {
   text-align: center;
   float: left;
@@ -852,6 +856,34 @@
 
 #messageValidationError {
   margin-bottom: 20px;
+}
+
+.currencyText {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box;
+  width: 33.33%;
+  height: 40px;
+}
+
+.currencyText input {
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+.currencyText span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: 15px;
+}
+
+#input-number, #input-number-left, #poduct-view-input-number-left, #poduct-view-input-number {
+  text-align: right;
 }
 
 @font-face {
@@ -1146,12 +1178,14 @@
   font-family: Arial;
   font-size: 26px;
   margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .product-detail-right .product-detail-item-colors-title, .product-detail-right .product-detail-item-description-title {
   font-size: 20px;
   margin-bottom: 15px;
   clear: both;
+  margin-top: 10px;
 }
 
 .product-detail-right .product-detail-item-description-title {
@@ -1710,6 +1744,116 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+.passive-product-detail-item {
+  width: 32.6%;
+  float: left;
+  margin-right: 1%;
+  position: relative;
+}
+
+.passive-product-detail-item:last-child {
+  margin: 0px;
+}
+
+.passive-product-detail-item img {
+  width: 100%;
+}
+
+.passive-product-detail-item .passive-product-detail-image {
+  height: 90px;
+}
+
+.passive-product-detail-item.passive .passive-product-detail-image {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.passive-product-detail-item.passive .passive-product-detail-image:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.passive-product-detail-item.active .passive-product-detail-image {
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.geralateerde-producten-items .hot-item {
+  margin-right: 1%;
+  width: 24.25%;
+  height: auto;
+}
+
+.geralateerde-producten-items .hot-item:last-child {
+  margin: 0;
+}
+
+.bigImage {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.bigImage img {
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+.bigImage #plusTriangle {
+  position: absolute;
+  z-index: 30;
+  top: -5px;
+  right: -19px;
+  width: 0px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bigImage span {
+  position: absolute;
+  top: -5px;
+  right: 3px;
+  font-size: 30px;
+  z-index: 40;
+}
+
+.geralateerde-producten-items {
+  width: 100%;
+  overflow-x: hidden;
+  height: 172px;
+  display: inline-block;
+  position: relative;
+}
+
+.geralateerde-producten-items .overflow-scroll {
+  width: 1840px;
+  height: 100%;
+  position: absolute;
+}
+
+.geralateerde-producten-items .hot-item {
+  margin-right: 5px;
+  width: 200px;
+  position: relative;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 button.accordion {
   background-color: #717171;
   color: #ffffff;
@@ -1809,156 +1953,6 @@ button.accordion {
   clear: both;
 }
 
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
-.passive-product-detail-item {
-  width: 32.6%;
-  float: left;
-  margin-right: 1%;
-  position: relative;
-}
-
-.passive-product-detail-item:last-child {
-  margin: 0px;
-}
-
-.passive-product-detail-item img {
-  width: 100%;
-}
-
-.passive-product-detail-item .passive-product-detail-image {
-  height: 90px;
-}
-
-.passive-product-detail-item.passive .passive-product-detail-image {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.passive-product-detail-item.passive .passive-product-detail-image:after {
-  content: "";
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.passive-product-detail-item.active .passive-product-detail-image {
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-}
-
-.geralateerde-producten-items .hot-item {
-  margin-right: 1%;
-  width: 24.25%;
-  height: auto;
-}
-
-.geralateerde-producten-items .hot-item:last-child {
-  margin: 0;
-}
-
-.geralateerde-producten-items {
-  width: 100%;
-  overflow-x: hidden;
-  height: 172px;
-  display: inline-block;
-  position: relative;
-}
-
-.geralateerde-producten-items .overflow-scroll {
-  width: 1840px;
-  height: 100%;
-  position: absolute;
-}
-
-.geralateerde-producten-items .hot-item {
-  margin-right: 5px;
-  width: 200px;
-  position: relative;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
-body {
-  margin: 0;
-}
-
-#app {
-  overflow: hidden;
-  background-color: #454545;
-  padding-bottom: 50px;
-}
-
-.content {
-  margin-left: 60px;
-  z-index: 10;
-  overflow: hidden;
-  height: 100%;
-  position: relative;
-}
-
-.content .content-store {
-  padding-top: 50px;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content .content-store .info-block {
-  width: 100%;
-  text-align: center;
-}
-
-.content .content-store .info-block p {
-  font-family: Arial;
-  font-size: 14px;
-  color: #cecece;
-  margin-top: 0px;
-}
-
-.content .content-store .homepage-navigation {
-  margin-top: 50px;
-  height: 120px;
-}
-
-.content .content-store .hot_items {
-  margin-top: 70px;
-  height: 260px;
-}
-
-.cookie-modal {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #f7eade;
-  width: 430px;
-  margin-top: 220px;
-  padding-right: 80px;
-  padding-left: 80px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  box-sizing: border-box;
-}
-
 .kowloon-contact-info {
   clear: both;
   overflow: hidden;
@@ -2041,6 +2035,93 @@ body {
   display: block;
 }
 
+.faq-item-load {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#FAQ-overlay .loadBar {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+#FAQ-overlay .loadBar .loader {
+  background: url("../images/loadingCirlceGray.png");
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  overflow: hidden;
+  background-color: #454545;
+}
+
+.content {
+  margin-left: 60px;
+  z-index: 10;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.content .content-store {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .content-store .info-block {
+  width: 100%;
+  text-align: center;
+}
+
+.content .content-store .info-block p {
+  font-family: Arial;
+  font-size: 14px;
+  color: #cecece;
+  margin-top: 0px;
+}
+
+.content .content-store .homepage-navigation {
+  margin-top: 50px;
+  height: 120px;
+}
+
+.content .content-store .hot_items {
+  margin-top: 70px;
+  height: 260px;
+}
+
+.cookie-modal {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7eade;
+  width: 430px;
+  margin-top: 220px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Choplin";
   src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
@@ -2069,7 +2150,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-bottom: 10px;
 }
 
 .product-detail-right {
@@ -2199,40 +2279,6 @@ html {
 body {
   height: 100%;
   /* force the BODY element to match the height of the HTML element */
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
-@media screen and (max-width: 768px) {
-  #app .contact-message {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 412px) {
-  #app .about-info {
-    clear: both;
-    width: 100%;
-  }
-  #app .contact-info {
-    clear: both;
-    width: 100%;
-  }
-  #app .contact-email {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  #app .send-contact-form {
-    width: 100%;
-  }
 }
 
 @font-face {
@@ -2385,7 +2431,20 @@ body {
   }
 }
 
+.mobile-hotItems-homePage {
+  display: none;
+}
+
 @media screen and (max-width: 412px) {
+  .hot_items {
+    display: none;
+  }
+  .mobile-hotItems-homePage {
+    display: block;
+  }
+  .visitStoreLink {
+    margin-bottom: 30px;
+  }
   #app .mySlides {
     height: 175px;
     width: auto;
@@ -2473,7 +2532,162 @@ body {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+@media screen and (max-width: 768px) {
+  #app .contact-message {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  #app .about-info {
+    clear: both;
+    width: 100%;
+  }
+  #app .contact-info {
+    clear: both;
+    width: 100%;
+  }
+  #app .contact-email {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #app .send-contact-form {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 @media screen and (max-width: 1024px) {
+  #app .overlay-content {
+    width: 765px;
+  }
+  #app #search-overlay .overlay-input {
+    font-size: 30px;
+    background-position: 0px 28px, 410px 30px;
+  }
+  #app #search-overlay .category {
+    padding-bottom: 10px;
+  }
+  #app #search-overlay .category, #app #search-overlay .price-range {
+    width: 65%;
+    clear: both;
+  }
+  #app #search-overlay .category .slider, #app #search-overlay .price-range .slider {
+    float: none;
+    padding-left: 35px;
+    margin-top: 0px;
+  }
+  #app #search-overlay .category .slider p, #app #search-overlay .price-range .slider p {
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #app .overlay-content {
+    width: 613px;
+  }
+  #app #ecape-search, #app #ecape-faq {
+    right: 20px;
+  }
+  #app #search-overlay .category, #app #search-overlay .price-range {
+    width: 80%;
+  }
+  #app #search-overlay .overlay-input {
+    margin-top: 40px;
+    font-size: 25px;
+    background-position: 0px 8px, 350px 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #app #search-overlay .filterButton {
+    padding-left: 40px;
+  }
+}
+
+#app #mobileFAQTile {
+  display: none;
+}
+
+@media screen and (max-width: 412px) {
+  #app .overlay-content {
+    width: 290px;
+  }
+  #app #notMobileFAQTitle {
+    display: none;
+  }
+  #app #mobileFAQTile {
+    display: block;
+    margin-top: 50px;
+  }
+  #app #FAQ-overlay .overlay-content .overlay-input {
+    font-size: 22px;
+  }
+  #app #FAQ-overlay .overlay-content .overlay-item {
+    padding: 5px;
+  }
+  #app #FAQ-overlay .overlay-content .overlay-item .faq-p {
+    margin-left: 5px;
+  }
+  #app #search-overlay .filterButton {
+    font-size: 20px;
+    padding-left: 0px;
+  }
+  #app #search-overlay .advanced-dropdown {
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  #app #search-overlay .advanced-dropdown #triangle {
+    margin-top: 3px;
+  }
+  #app #search-overlay .advanced-dropdown #triangle.arrow-down {
+    margin-top: 6px;
+  }
+  #app #search-overlay .category {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 0px;
+  }
+  #app #search-overlay .price-range {
+    width: 100%;
+  }
+  #app #search-overlay .price-range .slider {
+    width: 100%;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+  #app #search-overlay .searchCheckFilter {
+    width: 130px;
+    margin-right: 20px;
+    overflow: hidden;
+    float: left;
+  }
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+@media screen and (max-width: 1024px) {
+  #app #productDetailLogo {
+    width: 25%;
+  }
   #app .product-detail-right h1 {
     font-size: 30px;
   }
@@ -2482,9 +2696,23 @@ body {
   }
   #app .product-detail-right .product-detail-item-colors-title {
     margin-top: 10px;
+    margin-bottom: 5px;
   }
   #app .product-detail-right .square, #app .product-detail-right .circle, #app .product-detail-right .triangle {
     display: none;
+  }
+  #app .passive-product-detail-image {
+    height: 70px;
+  }
+  #app .passive-product-detail-item p {
+    margin-bottom: 0px;
+  }
+  #app .product-detail-item-description-title {
+    margin-bottom: 10px;
+  }
+  #app .product-detail-item-description {
+    font-size: 13px;
+    margin-top: 5px;
   }
 }
 
@@ -2559,6 +2787,9 @@ body {
 }
 
 @media screen and (max-width: 412px) {
+  #app #productDetailLogo {
+    width: 50%;
+  }
   #app .mobileTitleAndPrice {
     display: block;
   }
@@ -2591,6 +2822,7 @@ body {
     margin: 0px;
   }
   #app .product-detail-item .product-detail-left .passive-product-detail-item {
+    margin-bottom: 0px;
     width: 32.6%;
     float: left;
     margin-right: 1%;
@@ -2631,60 +2863,6 @@ body {
   #app .panel.show {
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
-@media screen and (max-width: 1024px) {
-  #app .overlay-content {
-    width: 765px;
-  }
-  #app #search-overlay .overlay-input {
-    font-size: 30px;
-    background-position: 0px 28px, 410px 30px;
-  }
-  #app #search-overlay .category {
-    padding-bottom: 10px;
-  }
-  #app #search-overlay .category, #app #search-overlay .price-range {
-    width: 65%;
-    clear: both;
-  }
-  #app #search-overlay .category .slider, #app #search-overlay .price-range .slider {
-    float: none;
-    padding-left: 35px;
-    margin-top: 0px;
-  }
-  #app #search-overlay .category .slider p, #app #search-overlay .price-range .slider p {
-    color: #000000;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #app .overlay-content {
-    width: 613px;
-  }
-  #app #ecape-search, #app #ecape-faq {
-    right: 20px;
-  }
-  #app #search-overlay .category, #app #search-overlay .price-range {
-    width: 80%;
-  }
-  #app #search-overlay .overlay-input {
-    margin-top: 40px;
-    font-size: 25px;
-    background-position: 0px 8px, 350px 12px;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
@@ -2791,7 +2969,7 @@ body {
     font-size: 25px;
   }
   #app .productsCheckFilter {
-    width: 130px;
+    width: 100%;
   }
   #app .product-view-slider-left {
     padding-right: 11px;

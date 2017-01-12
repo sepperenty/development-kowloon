@@ -2,7 +2,20 @@
 
 @section('content')
 
+    @if( $message != "")
+        <div class="message">
+            <p>{{$message}}</p>
+        </div>
+    @endif
+
+    @if ($errors->has('email'))
+        <div class="message">
+            <p>{{ $errors->first('email')}}</p>
+        </div>
+    @endif
+
     <div class="content-store">
+        <a href="/"><img class="header-logo" id="productDetailLogo" src="/assets/images/logo.png" alt=""></a>
 
         <div class="product-detail-item">
             <div class="about-us-tag responsiveKtag">
@@ -14,7 +27,11 @@
             </div>
 
             <div class="product-detail-left">
-                <img class="active-product-detail-item" src="/assets/images/productDetailFoto.png" alt="">
+                <div class="bigImage active-product-detail-item">
+                    <img  src="/assets/images/productDetailFoto.png" alt="">
+                    <div id="plusTriangle"></div>
+                    <span>+</span>
+                </div>
                 <div class="passiveItems">
                         <div class="passive-product-detail-item active">
                         <div class="passive-product-detail-image">
@@ -161,6 +178,8 @@
 
         </div>
 
+        <a href="#" class="visitStoreLink">Visit the store</a>
+
         <div class="page-faq">
 
             <p class="subtitle">FREQUENTLY ASKED QUESTIONS</p>
@@ -197,7 +216,8 @@
                 <p class="subscribe-subtitle">
                     Lorum ipsum dolor sit amet..
                 </p>
-                <form action="#" class="newsletter-form" method="POST">
+                <form action="/store/email" class="newsletter-form" method="POST">
+                    {{ csrf_field() }}
                     <input type="email" name="email" class="newsletter-email-input" placeholder="Domain@name.com">
                     <input type="submit" class="newsletter-submit" value="OK">
                 </form>

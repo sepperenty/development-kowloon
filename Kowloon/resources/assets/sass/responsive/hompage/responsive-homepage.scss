@@ -187,9 +187,22 @@
   }
 }
 
-
+.mobile-hotItems-homePage{
+  display: none;
+}
 
 @media screen and (max-width: $mobile-portrait) {
+
+  .hot_items{
+    display: none;
+  }
+  .mobile-hotItems-homePage{
+    display: block;
+  }
+
+  .visitStoreLink{
+    margin-bottom: 30px;
+  }
 
   #app
   {
