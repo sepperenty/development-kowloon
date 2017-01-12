@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    <title>Kowloon {{$category}} product</title>
+@endsection
+
 @section('content')
 
     @if( $message != "")

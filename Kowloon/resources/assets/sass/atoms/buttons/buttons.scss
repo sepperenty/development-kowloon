@@ -223,3 +223,20 @@
   top:0px;
   width: 15%;
 }
+
+.clear-button{
+  cursor: pointer;
+  .clearSymbol{
+    background: url("../images/faq-spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-position: -57px -5px;
+    float: left;
+    margin-right: 3px;
+  }
+  a{
+    float: left;
+  }
+}

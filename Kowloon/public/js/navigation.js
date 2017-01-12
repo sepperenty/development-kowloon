@@ -144,6 +144,7 @@ $(document).ready(function(){
                 faqClicked=true;
                 $("#search-button").removeClass("activeFAQ");
                 $("#search-overlay").removeClass(("search-visible"));
+                $("#faq-input").focus();
                 searchClicked=false;
             }
             else {
@@ -169,7 +170,7 @@ $(document).ready(function(){
                 $("#search-button").addClass("activeFAQ");
                 $("#search-overlay").addClass(("search-visible"));
                 searchClicked=true;
-
+                $(".overlay-input").focus();
                 $("#FAQ-overlay").removeClass("fAQ-visible");
                 $("#FAQ").removeClass("activeFAQ");
                 faqClicked=false;
@@ -179,6 +180,14 @@ $(document).ready(function(){
                 $("#search-overlay").removeClass(("search-visible"));
                 searchClicked=false;
             }
+        });
+
+        $("#clearFAQ").on('click', function(){
+            $("#faq-input").val("");
+        });
+
+        $("#clearSearch").on('click', function(){
+            $("#search-overlay .overlay-input").val("");
         });
 
 

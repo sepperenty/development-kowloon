@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    @yield('title')
 
     <! styles -->
     <link rel="stylesheet" href="/assets/css/app.css">
@@ -20,6 +20,8 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
 </head>
 <body>
 <div id="app">
@@ -42,7 +44,6 @@
 
         </div>
     @endif
-
 
 
     <div class="navigation-bar">
@@ -231,7 +232,8 @@
                     </div>
 
                     <input  class="overlay-input"  type="text" placeholder="Just start typing and hit        to search">
-                    <a href="#" class="clear-button">clear</a>
+                    <div class="clear-button" id="clearSearch"><div class="clearSymbol"></div><a>clear</a></div>
+
                     <p class="search-info">3 results for the word "crafted"</p>
 
                     <div class="overlay-item">
@@ -256,7 +258,7 @@
                     <p class="overlay-title" id="notMobileFAQTitle">FREQUENTLY ASKED QUESTIONS</p>
                     <p class="overlay-title" id="mobileFAQTile">FAQ</p>
                     <input class="overlay-input" type="text" placeholder="Search on keyword" id="faq-input">
-                    <a href="#" class="clear-button">clear</a>
+                    <div class="clear-button" id="clearFAQ"><div class="clearSymbol"></div><a>clear</a></div>
 
                     <div class="faq-customer-information">
                         <p>Can't find what you're looking for ?</p>

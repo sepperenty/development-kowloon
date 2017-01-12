@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    <title>Kowloon home</title>
+    @endsection
+
 @section('content')
     @if( $message != "")
         <div class="message">
@@ -12,6 +16,8 @@
             <p>{{ $errors->first('email')}}</p>
         </div>
     @endif
+
+    <h1 hidden>Kowloon Home</h1>
 
     <div class="header-picture pictureA">
         <a href="/"><img class="header-logo" src="assets/images/logo.png" alt=""></a>
@@ -91,7 +97,7 @@
 
 
         <div class="hot_items">
-            <h1 class="title">HOT ITEMS.</h1>
+            <h2 class="title">HOT ITEMS.</h2>
             <div class="hot-item">
                 <div class="hot-item-image">
                     <img src="../assets/images/hotItem.png" alt="">

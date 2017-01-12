@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    <title>Kowloon about</title>
+@endsection
+
 @section('content')
 
     <div class="header-picture pictureA">

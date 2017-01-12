@@ -355,6 +355,25 @@
   width: 15%;
 }
 
+.clear-button {
+  cursor: pointer;
+}
+
+.clear-button .clearSymbol {
+  background: url("../images/faq-spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-position: -57px -5px;
+  float: left;
+  margin-right: 3px;
+}
+
+.clear-button a {
+  float: left;
+}
+
 .sprite-cookie {
   background-image: url("../images/cookie-spritesheet.png");
   background-repeat: no-repeat;
@@ -1744,6 +1763,61 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
+button.accordion {
+  background-color: #717171;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Arial;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 12px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Style the accordion panel. Note: hidden by default */
+.page-faq div.panel {
+  padding: 0 18px;
+  background-color: #717171;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.16s ease-in-out;
+  transition: 0.16s ease-in-out;
+  opacity: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+.page-faq div.panel.show {
+  opacity: 1;
+  max-height: 700px;
+  /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.faq-arrow {
+  float: right;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
 .passive-product-detail-item {
   width: 32.6%;
   float: left;
@@ -1854,61 +1928,6 @@
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-button.accordion {
-  background-color: #717171;
-  color: #ffffff;
-  font-size: 20px;
-  font-family: Arial;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  margin-top: 12px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-/* Style the accordion panel. Note: hidden by default */
-.page-faq div.panel {
-  padding: 0 18px;
-  background-color: #717171;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: 0.16s ease-in-out;
-  transition: 0.16s ease-in-out;
-  opacity: 0;
-  padding-left: 60px;
-  padding-right: 60px;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 14px;
-}
-
-/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
-.page-faq div.panel.show {
-  opacity: 1;
-  max-height: 700px;
-  /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
-}
-
-.faq-arrow {
-  float: right;
-  margin: 0px;
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
 .product-view-products-left, .product-view-products-right {
   width: 50%;
   float: left;
@@ -1996,71 +2015,6 @@ button.accordion {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-.overlay-content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-}
-
-.overlay-content .overlay-title {
-  margin-top: 250px;
-}
-
-.advanced-filter-content, .product-view-advanced-filter-content {
-  clear: both;
-  min-height: 280px;
-  width: 100%;
-}
-
-.advanced-filter-content .category, .product-view-advanced-filter-content .category {
-  box-sizing: border-box;
-  padding: 35px;
-  width: 50%;
-  overflow: hidden;
-  float: left;
-}
-
-.price-range {
-  float: left;
-  box-sizing: border-box;
-  width: 50%;
-  min-height: 150px;
-}
-
-.advanced-filter-content, .product-view-advanced-filter-content {
-  display: none;
-}
-
-.advanced-filter-visible {
-  display: block;
-}
-
-.faq-item-load {
-  margin-bottom: 100px;
-  position: relative;
-}
-
-#FAQ-overlay .loadBar {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-}
-
-#FAQ-overlay .loadBar .loader {
-  background: url("../images/loadingCirlceGray.png");
-}
-
-@font-face {
-  font-family: "Choplin";
-  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Choplin-light";
-  src: url("../fonts/32AAC6_0_0.woff") format("woff");
-}
-
 body {
   margin: 0;
 }
@@ -2120,6 +2074,71 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+.overlay-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.overlay-content .overlay-title {
+  margin-top: 250px;
+}
+
+.advanced-filter-content, .product-view-advanced-filter-content {
+  clear: both;
+  min-height: 280px;
+  width: 100%;
+}
+
+.advanced-filter-content .category, .product-view-advanced-filter-content .category {
+  box-sizing: border-box;
+  padding: 35px;
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+
+.price-range {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  min-height: 150px;
+}
+
+.advanced-filter-content, .product-view-advanced-filter-content {
+  display: none;
+}
+
+.advanced-filter-visible {
+  display: block;
+}
+
+.faq-item-load {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#FAQ-overlay .loadBar {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+#FAQ-overlay .loadBar .loader {
+  background: url("../images/loadingCirlceGray.png");
 }
 
 @font-face {
@@ -2279,6 +2298,40 @@ html {
 body {
   height: 100%;
   /* force the BODY element to match the height of the HTML element */
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("../fonts/Rene Bieder - Choplin Medium-DEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Choplin-light";
+  src: url("../fonts/32AAC6_0_0.woff") format("woff");
+}
+
+@media screen and (max-width: 768px) {
+  #app .contact-message {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  #app .about-info {
+    clear: both;
+    width: 100%;
+  }
+  #app .contact-info {
+    clear: both;
+    width: 100%;
+  }
+  #app .contact-email {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #app .send-contact-form {
+    width: 100%;
+  }
 }
 
 @font-face {
@@ -2532,27 +2585,30 @@ body {
   src: url("../fonts/32AAC6_0_0.woff") format("woff");
 }
 
-@media screen and (max-width: 768px) {
-  #app .contact-message {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 412px) {
-  #app .about-info {
-    clear: both;
-    width: 100%;
+  .sprite-cookieCrumble {
+    display: none;
   }
-  #app .contact-info {
-    clear: both;
-    width: 100%;
+  #cookieAlert {
+    background-color: transparent;
   }
-  #app .contact-email {
-    width: 100%;
-    box-sizing: border-box;
+  #cookieAlert button {
+    margin-top: 10px;
   }
-  #app .send-contact-form {
+  .cookie-modal {
+    margin-top: 0;
+    position: fixed;
     width: 100%;
+    padding: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+  .cookie-title {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  .cookie-info {
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }
 
