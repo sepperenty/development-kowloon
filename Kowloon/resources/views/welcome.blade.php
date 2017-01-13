@@ -99,40 +99,48 @@
         <div class="hot_items">
             <h2 class="title">HOT ITEMS.</h2>
             <div class="hot-item">
-                <div class="hot-item-image">
-                    <img src="../assets/images/hotItem.png" alt="">
-                    <div class="hot-item-overlay dogs-overlay"></div>
-                </div>
+                <a href="/products/dogs/product">
+                    <div class="hot-item-image">
+                        <img src="../assets/images/hotItem.png" alt="">
+                        <div class="hot-item-overlay dogs-overlay"></div>
+                    </div>
+                </a>
                 <div class="hot-item-info">
                     <p class="hot-item-name">Cooling Mat</p>
                     <p class="hot-item-price">€5,40</p>
                 </div>
             </div>
             <div class="hot-item">
-                <div class="hot-item-image">
-                    <img src="../assets/images/hotItem.png" alt="">
-                    <div class="hot-item-overlay dogs-overlay"></div>
-                </div>
+                <a href="/products/dogs/product">
+                    <div class="hot-item-image">
+                        <img src="../assets/images/hotItem.png" alt="">
+                        <div class="hot-item-overlay dogs-overlay"></div>
+                    </div>
+                </a>
                 <div class="hot-item-info">
                     <p class="hot-item-name">Cooling Mat</p>
                     <p class="hot-item-price">€5,40</p>
                 </div>
             </div>
             <div class="hot-item">
-                <div class="hot-item-image">
-                    <img src="../assets/images/hotItem.png" alt="">
-                    <div class="hot-item-overlay dogs-overlay"></div>
-                </div>
+                <a href="/products/dogs/product">
+                    <div class="hot-item-image">
+                        <img src="../assets/images/hotItem.png" alt="">
+                        <div class="hot-item-overlay dogs-overlay"></div>
+                    </div>
+                </a>
                 <div class="hot-item-info">
                     <p class="hot-item-name">Cooling Mat</p>
                     <p class="hot-item-price">€5,40</p>
                 </div>
             </div>
             <div class="hot-item multiple-borders">
-                <div class="hot-item-image">
-                    <img src="../assets/images/hotItem.png" alt="">
-                    <div class="hot-item-overlay dogs-overlay"></div>
-                </div>
+                <a href="/products/dogs/product">
+                    <div class="hot-item-image">
+                        <img src="../assets/images/hotItem.png" alt="">
+                        <div class="hot-item-overlay dogs-overlay"></div>
+                    </div>
+                </a>
                 <div class="hot-item-info">
                     <p class="hot-item-name">Cooling Mat</p>
                     <p class="hot-item-price">€5,40</p>
