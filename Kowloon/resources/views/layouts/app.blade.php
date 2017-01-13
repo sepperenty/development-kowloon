@@ -323,8 +323,8 @@
     <!-- Scripts -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/js/navigation.js"></script>
 <script src="/js/nouislider.js"></script>
+<script src="/js/navigation.js"></script>
 <script src="/js/faqScroller.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -18,7 +18,6 @@
                 faqClick = false;
                 controlHeight();
             }
-
         });
 
         $("#ecape-faq").on('click', function () {
@@ -41,7 +40,6 @@
                         controlHeight();
                     }
                 }
-
             }
         });
 
@@ -61,14 +59,11 @@
             for(var i = 0; i<4; i++){
                 $(".faq-item-load").append(template);
             }
-
         }
 
         function backToOriginalHeight(){
             $(".content-store").css('height', "auto");
-
         };
-
 
         function controlHeight(){
             var amountOfFaqs =0;
@@ -79,8 +74,6 @@
             });
             var newHeight = 500 + (amountOfFaqs*faqItemHeight);
             $(".content-store").css("height", newHeight);
-
-
         };
     });
 

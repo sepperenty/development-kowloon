@@ -757,6 +757,13 @@
   margin-top: 3px;
 }
 
+.searchCheckFilter {
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
 .squaredOne, .squareOneProductView {
   margin-left: 15px;
   margin-right: 14px;

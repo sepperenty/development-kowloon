@@ -6,7 +6,6 @@
     var interval = $(".geralateerde-producten-items .hot-item").width()+5;
 
     $("#scroll-left").on('click', function(){
-
         if(left > (maxScroll+205)){
             left-=205;
             move();
@@ -16,7 +15,6 @@
             left = maxScroll;
             move();
         }
-
         function move(){
             $(".overflow-scroll")
                 .animate({
@@ -24,15 +22,9 @@
                 }, 500);
             console.log(left + "   " + maxScroll);
         }
-
-
-
-
-
     });
 
     $("#scroll-right").on('click', function(){
-
         if(left < -205){
             left += 205;
             move();

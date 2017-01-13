@@ -1,4 +1,4 @@
-@import "../../variables";
+@import "../../_variables";
 
 
 .overlay-input{
@@ -51,6 +51,13 @@
       margin-top: 3px;
     }
   }
+}
+
+.searchCheckFilter{
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin-right: 10px;
 }
 
 .squaredOne, .squareOneProductView {

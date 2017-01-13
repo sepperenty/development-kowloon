@@ -2,11 +2,7 @@
 
 
 (function(){
-
-
-
     $(document).ready(function(){
-
         $(window).scroll(function() {
             if($(window).scrollTop() + $(window).height() >= ($(document).height()-1)) {
                 canload+=8;
@@ -15,7 +11,6 @@
         });
 
         var canload = 5;
-
         var $allArticles = [];
         console.log("ingeladen");
 
@@ -70,9 +65,6 @@
         '</div>'+
         '</div>';
 
-        console.log(template);
-
-
         function filterProducts()
         {
             var tag1 = 0;
@@ -80,10 +72,8 @@
             var tag3 = 0;
             var tag4 = 0;
             var tag5 = 0;
-
             var minPrice = Math.round($("#poduct-view-input-number-left").val());
             var maxPrice = Math.round($("#poduct-view-input-number").val());
-
             var sort = $("#product-view-sort").val();
 
             if($("#splash").is(':checked'))
@@ -115,8 +105,6 @@
             var success;
             var screenwidth = $(window).width();
             console.log(screenwidth);
-
-
             $.ajax({
                 dataType: "json",
                 url: "/sort/"+tag1+"/"+tag2+"/"+tag3+"/"+tag4+"/"+tag5+"/"+minPrice+"/"+maxPrice+"/"+sort,
@@ -164,7 +152,6 @@
                             for (var result = 0; result < maxload; result++) {
                                 $(".product-view-products-toload").append(template);
                             }
-
                     }
                 }
 
@@ -176,7 +163,6 @@
                         elementsVisible+=1;
                         $(this).find(".product-view-name").html(results[i]["name"]);
                         $(this).find(".product-view-price").html("€ "+results[i]["price"]);
-
                         var activeFoto = $(this).find(".product-view-active-info");
 
                         if(activeFoto) {

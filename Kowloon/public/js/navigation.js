@@ -7,22 +7,17 @@ $(document).ready(function(){
 
     (function(){
 
-        //Hamburger mobile
-        //console.log($(window).width());
+        var mobileClicked = false;
 
-
-            console.log($(window).width());
-            var mobileClicked = false;
-
-            $("#clickNavigation").on('click', function(){
-                if($(window).width() <= 1024) {
-                    if (!mobileClicked) {
-                        openMobileNav();
-                    } else {
+        $("#clickNavigation").on('click', function(){
+            if($(window).width() <= 1024) {
+                if (!mobileClicked) {
+                    openMobileNav();
+                } else {
                         shutMobileNavDown();
-                    }
                 }
-            });
+            }
+        });
 
         $(".nav-option").on("click", function(){
             if($(window).width() <= 1024) {
@@ -49,15 +44,15 @@ $(document).ready(function(){
 
         //message verwijderen
 
-            $(".message").on('click', function(){
-               $(this).fadeOut(200);
-            });
+        $(".message").on('click', function(){
+            $(this).fadeOut(200);
+        });
 
-            setTimeout(removeMessage, 5000);
+        setTimeout(removeMessage, 5000);
 
-            function removeMessage() {
-                $(".message").fadeOut(200);
-            }
+        function removeMessage() {
+            $(".message").fadeOut(200);
+        }
 
 
         //Hamburder menu werking
@@ -126,11 +121,7 @@ $(document).ready(function(){
                         $(".circle1").removeClass("activeCircle");
                 }
                 x[slideIndex-1].style.display = "block";
-
             }
-
-
-
         }
 
         //faq overlay tonen bij click op button
@@ -165,7 +156,6 @@ $(document).ready(function(){
         var searchClicked = false;
 
         $("#search-button").on("click", function(){
-
             if(!searchClicked){
                 $("#search-button").addClass("activeFAQ");
                 $("#search-overlay").addClass(("search-visible"));
@@ -189,9 +179,6 @@ $(document).ready(function(){
         $("#clearSearch").on('click', function(){
             $("#search-overlay .overlay-input").val("");
         });
-
-
-
 
         $("#ecape-search").on("click", function(){
             $("#search-button").removeClass("activeFAQ");
@@ -237,7 +224,6 @@ $(document).ready(function(){
             }
         });
 
-
         //cookies
 
         $(".cookie-modal button").on("click", function(){
@@ -253,7 +239,6 @@ $(document).ready(function(){
         var advancedFilterOpen = false;
 
         $(".advanced-dropdown").on("click", function(){
-
             if(!advancedFilterOpen) {
                 $(".advanced-filter-content").addClass("advanced-filter-visible");
                 $("#triangle").removeClass("arrow-right");
@@ -266,7 +251,6 @@ $(document).ready(function(){
                 $("#triangle").addClass("arrow-right");
                 advancedFilterOpen = false;
             }
-
         });
 
 
@@ -288,11 +272,11 @@ $(document).ready(function(){
         var inputNumberLeft = document.getElementById('input-number-left');
 
         html5Slider.noUiSlider.on('update', function( values, handle ) {
-
             var value = values[handle];
 
             if ( handle ) {
                 inputNumber.value =value;
+                console.log(value);
             } else {
                 inputNumberLeft.value =value;
             }
@@ -324,7 +308,6 @@ $(document).ready(function(){
                     element.removeClass("arrow-right");
                     element.addClass("arrow-down");
                 }
-
             }
         }
 
@@ -336,7 +319,6 @@ $(document).ready(function(){
         var productViewFilterOpen = false;
 
         $(".product-view-advanced-dropdown").on("click", function(){
-
             if(!productViewFilterOpen) {
                 $(".product-view-advanced-filter-content").addClass("advanced-filter-visible");
                 $(".product-view-triangle").removeClass("arrow-right");
@@ -349,7 +331,6 @@ $(document).ready(function(){
                 $(".product-view-triangle").addClass("arrow-right");
                 productViewFilterOpen = false;
             }
-
         });
 
 
@@ -357,41 +338,48 @@ $(document).ready(function(){
 
         var productViewSlider = document.getElementById('product-view-slider');
 
-        noUiSlider.create(productViewSlider, {
-            start: [ 8, 499 ],
-            connect: true,
-            range: {
-                'min': 8,
-                'max': 499
+        if(productViewSlider){
+            if(productViewSlider){
+                noUiSlider.create(productViewSlider, {
+                    start: [ 8, 499 ],
+                    connect: true,
+                    range: {
+                        'min': 8,
+                        'max': 499
+                    }
+                });
             }
-        });
 
-        var inputNumber = document.getElementById('poduct-view-input-number');
 
-        var inputNumberLeft = document.getElementById('poduct-view-input-number-left');
+            var inputNumber = document.getElementById('poduct-view-input-number');
 
-        productViewSlider.noUiSlider.on('set', function(){
-            $("#poduct-view-input-number-left").trigger("change");
-        });
+            var inputNumberLeft = document.getElementById('poduct-view-input-number-left');
 
-        productViewSlider.noUiSlider.on('update', function( values, handle ) {
+            productViewSlider.noUiSlider.on('set', function(){
+                $("#poduct-view-input-number-left").trigger("change");
+            });
 
-            var value = values[handle];
+            productViewSlider.noUiSlider.on('update', function( values, handle ) {
 
-            if ( handle ) {
-                inputNumber.value =value;
-            } else {
-                inputNumberLeft.value =value;
-            }
-        });
+                var value = values[handle];
 
-        inputNumberLeft.addEventListener('change', function(){
-            productViewSlider.noUiSlider.set([this.value, null]);
-        });
+                if ( handle ) {
+                    inputNumber.value =value;
+                } else {
+                    inputNumberLeft.value =value;
+                }
+            });
 
-        inputNumber.addEventListener('change', function(){
-            productViewSlider.noUiSlider.set([null, this.value]);
-        });
+            inputNumberLeft.addEventListener('change', function(){
+                productViewSlider.noUiSlider.set([this.value, null]);
+            });
+
+            inputNumber.addEventListener('change', function(){
+                productViewSlider.noUiSlider.set([null, this.value]);
+            });
+        }
+
+
 
     })();
 });
